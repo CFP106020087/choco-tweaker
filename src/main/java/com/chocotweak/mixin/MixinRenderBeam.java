@@ -12,12 +12,13 @@ import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Coerce;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 /**
  * 优化 RenderBeam 渲染性能
- * 
+ *
  * 优化内容:
  * 1. 启用背面剔除 (减少~33%顶点)
  * 2. 减少多余的纹理绑定
@@ -30,10 +31,10 @@ public abstract class MixinRenderBeam {
 
     // 缓存纹理资源，避免每帧创建新对象
     @Unique
-    private static final ResourceLocation SHINE_TEXTURE = new ResourceLocation(
+    private static final ResourceLocation chocotweak$SHINE_TEXTURE = new ResourceLocation(
             "chocolatequest:textures/entity/shine.png");
     @Unique
-    private static final ResourceLocation WATER_TEXTURE = new ResourceLocation(
+    private static final ResourceLocation chocotweak$WATER_TEXTURE = new ResourceLocation(
             "textures/blocks/water_flow.png");
 
     @Unique
@@ -41,9 +42,10 @@ public abstract class MixinRenderBeam {
 
     /**
      * 在渲染前启用优化设置
+     * 使用 @Coerce 将 EntityProjectileBeam 强制转换为 Object
      */
     @Inject(method = "doRender", at = @At("HEAD"))
-    private void chocotweak$onDoRenderHead(Object entity, double x, double y, double z, float f, float f1,
+    private void chocotweak$onDoRenderHead(@Coerce Object entity, double x, double y, double z, float f, float f1,
             CallbackInfo ci) {
         if (!chocotweak$initialized) {
             ChocoTweak.LOGGER.info("[ChocoTweak] Beam rendering optimization active");
@@ -59,7 +61,7 @@ public abstract class MixinRenderBeam {
      * 在渲染后恢复状态
      */
     @Inject(method = "doRender", at = @At("RETURN"))
-    private void chocotweak$onDoRenderReturn(Object entity, double x, double y, double z, float f, float f1,
+    private void chocotweak$onDoRenderReturn(@Coerce Object entity, double x, double y, double z, float f, float f1,
             CallbackInfo ci) {
         // 恢复剔除状态
         GlStateManager.disableCull();
@@ -67,7 +69,7 @@ public abstract class MixinRenderBeam {
 
     /**
      * 优化后的盒子绘制方法
-     * 
+     *
      * @reason 减少顶点数量，优化渲染顺序
      * @author ChocoTweak
      */
