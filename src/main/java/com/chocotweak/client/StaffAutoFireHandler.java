@@ -5,7 +5,7 @@ import com.chocolate.chocolateQuest.items.ItemStaffBase;
 import com.chocolate.chocolateQuest.magic.Awakements;
 import com.chocotweak.ChocoTweak;
 import com.chocotweak.magic.AwakementHighSpeedChant;
-import com.chocotweak.mixin.MixinAwakementsRegister;
+import com.chocotweak.core.AwakementsInitializer;
 import com.chocotweak.network.ChocoNetwork;
 import com.chocotweak.network.PacketClearSpellCD;
 import net.minecraft.client.Minecraft;
@@ -73,8 +73,8 @@ public class StaffAutoFireHandler {
 
         // 检查高速神言觉醒等级
         int awakementLevel = 0;
-        if (MixinAwakementsRegister.highSpeedChant != null) {
-            awakementLevel = Awakements.getEnchantLevel(mainHand, MixinAwakementsRegister.highSpeedChant);
+        if (AwakementsInitializer.highSpeedChant != null) {
+            awakementLevel = Awakements.getEnchantLevel(mainHand, AwakementsInitializer.highSpeedChant);
         }
 
         // 无觉醒则不触发连续施法
