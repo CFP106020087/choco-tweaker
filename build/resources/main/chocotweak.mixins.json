@@ -1,0 +1,46 @@
+{
+    "required": false,
+    "package": "com.chocotweak.mixin",
+    "refmap": "chocotweak.mixins.refmap.json",
+    "compatibilityLevel": "JAVA_8",
+    "target": "@env(DEFAULT)",
+    "minVersion": "0.8",
+    "mixins": [
+        "MixinArmorTooltip",
+        "MixinBagCapacity",
+        "MixinBlockDungeonChestTileEntity",
+        "MixinDaggerCritical",
+        "MixinDaggerTooltip",
+        "MixinDialogAction",
+        "MixinDialogActionList",
+        "MixinDialogActionSpawnMonster",
+        "MixinEntityHumanBaseXP",
+        "MixinEntityHumanMob",
+        "MixinEnumEnchantType",
+        "MixinEventHandlerCQ",
+        "MixinItemSwordTurtle",
+        "MixinMonkingSword",
+        "MixinMonkingSwordShield",
+        "MixinMonkingTooltip",
+        "MixinSpellStats",
+        "MixinSwordShieldBlock",
+        "MixinSwordShieldTooltip",
+        "MixinTerrainManager",
+        "MixinWeaponStats",
+        "MixinWeaponTooltip",
+        "MixinGunDamage",
+        "MixinWorldGeneratorNew",
+        "MixinStaffContinuousCast",
+        "MixinHelperDamageSource"
+    ],
+    "client": [
+        "MixinGuiAwakement",
+        "MixinGuiButtonDisplayString",
+        "MixinGuiLinked",
+        "MixinGuiNPC",
+        "MixinRenderBeam"
+    ],
+    "injectors": {
+        "maxShiftBy": 10
+    }
+}

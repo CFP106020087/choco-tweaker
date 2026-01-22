@@ -1,0 +1,84 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://repo.spongepowered.org/maven' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'org.spongepowered.mixin'
+
+version = "1.12.2-1.0.0"
+group = "com.chocotweak"
+archivesBaseName = "chocotweak"
+
+sourceCompatibility = targetCompatibility = '1.8'
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+    options.encoding = 'UTF-8'
+}
+
+minecraft {
+    version = "1.12.2-14.23.5.2847"
+    runDir = "run"
+    mappings = "stable_39"
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'Forge'
+        url = 'https://files.minecraftforge.net/maven'
+    }
+    maven {
+        name = 'Sponge'
+        url = 'https://repo.spongepowered.org/maven'
+    }
+}
+
+dependencies {
+    // Mixin
+    compile('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
+        exclude module: 'guava'
+        exclude module: 'commons-io'
+        exclude module: 'gson'
+    }
+    
+    // Chocolate Quest Repoured & Baubles (place jars in libs/ folder)
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+mixin {
+    add sourceSets.main, "chocotweak.mixins.refmap.json"
+}
+
+jar {
+    manifest {
+        attributes(
+            // 暂时禁用以测试是否 Mixin 加载导致崩溃
+            // 'TweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
+            // 'MixinConfigs': 'chocotweak.mixins.json',
+            'FMLCorePlugin': 'com.chocotweak.core.ChocoTweakMixinPlugin',
+            'FMLCorePluginContainsFMLMod': 'true'
+        )
+    }
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand 'version': project.version, 'mcversion': project.minecraft.version
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}

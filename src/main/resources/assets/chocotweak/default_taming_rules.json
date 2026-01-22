@@ -1,0 +1,52 @@
+{
+    "rules": [
+        {
+            "entityClass": "com.github.alexthe666.iceandfire.entity.EntityFireDragon",
+            "tameMethod": "setTamed",
+            "ownerMethod": "setOwnerUUID",
+            "ownerType": "UUID",
+            "postTameMethod": null,
+            "description": "Ice and Fire - Fire Dragon"
+        },
+        {
+            "entityClass": "com.github.alexthe666.iceandfire.entity.EntityIceDragon",
+            "tameMethod": "setTamed",
+            "ownerMethod": "setOwnerUUID",
+            "ownerType": "UUID",
+            "postTameMethod": null,
+            "description": "Ice and Fire - Ice Dragon"
+        },
+        {
+            "entityClass": "com.github.alexthe666.iceandfire.entity.EntityLightningDragon",
+            "tameMethod": "setTamed",
+            "ownerMethod": "setOwnerUUID",
+            "ownerType": "UUID",
+            "postTameMethod": null,
+            "description": "Ice and Fire - Lightning Dragon"
+        },
+        {
+            "entityClass": "com.github.alexthe666.iceandfire.entity.EntityHippogryph",
+            "tameMethod": "setTamed",
+            "ownerMethod": "setOwnerUUID",
+            "ownerType": "UUID",
+            "postTameMethod": null,
+            "description": "Ice and Fire - Hippogryph"
+        },
+        {
+            "entityClass": "com.github.alexthe666.iceandfire.entity.EntityAmphithere",
+            "tameMethod": "setTamed",
+            "ownerMethod": "setOwnerUUID",
+            "ownerType": "UUID",
+            "postTameMethod": null,
+            "description": "Ice and Fire - Amphithere"
+        },
+        {
+            "entityClass": "com.lycanitesmobs.core.entity.BaseCreatureEntity",
+            "tameMethod": "setTamed",
+            "ownerMethod": "setPlayerOwner",
+            "ownerType": "EntityPlayer",
+            "postTameMethod": null,
+            "description": "Lycanites Mobs - Base Creature (covers all summonable pets)"
+        }
+    ]
+}

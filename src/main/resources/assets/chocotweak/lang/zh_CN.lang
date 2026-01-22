@@ -1,0 +1,377 @@
+# Choco Tweak 语言文件 (简体中文)
+
+# 附魔名称
+enchantment.chocotweak.soul_harvest=灵魂收割
+enchantment.chocotweak.vampiric=吸血
+enchantment.chocotweak.dragon_slayer=屠龙者
+enchantment.chocotweak.beast_tamer=驯兽师
+enchantment.chocotweak.permafrost=冰霜行者
+enchantment.chocotweak.intimidation=威压
+
+# 附魔描述 (用于工具提示模组)
+enchantment.chocotweak.soul_harvest.desc=击杀时有几率获得双倍经验
+enchantment.chocotweak.vampiric.desc=攻击时回复造成伤害的一定比例生命值
+enchantment.chocotweak.dragon_slayer.desc=对龙类生物造成额外伤害
+enchantment.chocotweak.beast_tamer.desc=攻击时有几率直接驯服生物
+enchantment.chocotweak.permafrost.desc=受到攻击时有几率冻结攻击者
+enchantment.chocotweak.intimidation.desc=使附近的敌对生物受到虚弱效果
+
+# 消息
+chocotweak.tame.success=成功驯服了 %s！
+chocotweak.tame.failed=驯服 %s 失败
+
+# NPC 附魔类型翻译
+chocotweak.enchanttype.enchant=附魔
+chocotweak.enchanttype.blacksmith=铁匠
+chocotweak.enchanttype.gunsmith=枪匠
+chocotweak.enchanttype.staves=法杖附魔
+chocotweak.enchanttype.tailor=护甲附魔
+
+# NPC 对话动作翻译
+chocotweak.dialog.open_shop=打开商店
+chocotweak.dialog.open_item_upgrade=物品升级
+chocotweak.dialog.open_inventory=打开背包
+chocotweak.dialog.join_team=加入队伍
+chocotweak.dialog.npc_variable=NPC变量
+chocotweak.dialog.global_variable=全局变量
+chocotweak.dialog.reputation=声望
+chocotweak.dialog.give_item=给予物品
+chocotweak.dialog.consume_item=消耗物品
+chocotweak.dialog.command=命令
+chocotweak.dialog.set_owner=设置主人
+chocotweak.dialog.set_equipement=设置装备
+chocotweak.dialog.set_ai=设置AI
+chocotweak.dialog.load_data_from_nbt=从NBT加载数据
+chocotweak.dialog.spawn_monster=生成怪物
+chocotweak.dialog.kill_counter=击杀计数器
+chocotweak.dialog.timer=计时器
+chocotweak.dialog.set_home=设置家
+chocotweak.dialog.build_schematic=建造结构
+chocotweak.dialog.put_in_a_bottle=装入瓶中
+
+# 命令翻译
+chocotweak.command.spawn_success=成功生成结构: %s
+chocotweak.command.spawn_failed=找不到结构: %s
+chocotweak.command.save_success=结构已保存到: %s
+chocotweak.command.pos1_set=选区点1 设置为: %d, %d, %d
+chocotweak.command.pos2_set=选区点2 设置为: %d, %d, %d
+chocotweak.command.selection_size=选区大小: %d x %d x %d
+chocotweak.command.need_pos=请先用 /chocotweak pos1 和 pos2 设置选区!
+chocotweak.command.available_structures=可用结构 (%d)
+chocotweak.command.help_title=Choco Tweak 命令
+chocotweak.command.help_spawn=/chocotweak spawn <结构名> - 在脚下生成结构
+chocotweak.command.help_save=/chocotweak save <名称> - 保存选区为 schematic
+chocotweak.command.help_list=/chocotweak list - 列出可用的 schematic
+chocotweak.command.help_pos1=/chocotweak pos1 - 设置选区点1 (脚下)
+chocotweak.command.help_pos2=/chocotweak pos2 - 设置选区点2 (脚下)
+
+# GUI 翻译
+chocotweak.gui.select_creature=选择驯服生物
+chocotweak.gui.select_enchantment=选择附魔
+chocotweak.gui.confirm=确认
+chocotweak.gui.cancel=取消
+chocotweak.gui.add_cost_item=添加价格物品 (手持)
+chocotweak.gui.clear_cost=清空价格
+chocotweak.gui.cost_items=所需物品
+chocotweak.gui.level=等级
+
+# 快捷键
+key.categories.chocotweak=Choco Tweak
+key.chocotweak.creature_gui=打开生物选择器
+key.chocotweak.enchant_gui=打开附魔选择器
+
+# 对话动作翻译
+chocotweak.dialog.buy_tamed_creature=购买驯服生物
+chocotweak.dialog.enchant_item=附魔物品
+chocotweak.dialog.open_shop=打开商店
+chocotweak.dialog.open_item_upgrade=打开物品升级
+chocotweak.dialog.open_inventory=打开物品栏
+chocotweak.dialog.join_team=加入队伍
+chocotweak.dialog.npc_variable=NPC变量
+chocotweak.dialog.global_variable=全局变量
+chocotweak.dialog.reputation=声望
+chocotweak.dialog.give_item=给予物品
+chocotweak.dialog.consume_item=消耗物品
+chocotweak.dialog.command=命令
+chocotweak.dialog.set_owner=设置主人
+chocotweak.dialog.set_equipement=设置装备
+chocotweak.dialog.set_ai=设置AI
+chocotweak.dialog.load_data_from_nbt=从NBT加载数据
+chocotweak.dialog.spawn_monster=生成怪物
+chocotweak.dialog.kill_counter=击杀计数
+chocotweak.dialog.timer=计时器
+chocotweak.dialog.set_home=设置家
+chocotweak.dialog.build_schematic=建造结构
+chocotweak.dialog.put_in_a_bottle=装入瓶子
+
+# 自定义动作 (用于对话编辑器显示)
+chocotweak.action.buy_creature=购买驯服生物
+chocotweak.action.enchant_item=附魔物品
+
+# 动作执行消息
+chocotweak.action.no_entity_id=未设置生物ID
+chocotweak.action.no_enchantment_id=未设置附魔ID
+chocotweak.action.entity_not_found=无法创建实体: %s
+chocotweak.action.not_enough_items=物品不足！
+chocotweak.action.tame_success=成功获得驯服的 %s!
+chocotweak.action.spawn_success=生成了 %s (无法驯服)
+chocotweak.action.hold_item=请手持要附魔的物品
+chocotweak.action.unknown_enchantment=未知附魔: %s
+chocotweak.action.enchant_incompatible=此物品无法附加此附魔
+chocotweak.action.enchant_success=成功附魔: %s
+
+# NPC 编辑器菜单按钮
+chocotweak.npc.edit_dialogs=编辑对话
+chocotweak.npc.edit_stats=编辑属性
+chocotweak.npc.inventory=背包
+chocotweak.npc.import_export=导入/导出
+chocotweak.npc.edit_ai=编辑AI
+
+# NPC 属性编辑器字段
+chocotweak.npc.name_identifier=名称 (标识符)
+chocotweak.npc.display_name=显示名称
+chocotweak.npc.texture=材质
+chocotweak.npc.texture_type=材质类型
+chocotweak.npc.gender=性别
+chocotweak.npc.color=颜色
+chocotweak.npc.race=种族
+chocotweak.npc.size=大小
+chocotweak.npc.faction=阵营
+chocotweak.npc.reputation_friendly=友好声望
+chocotweak.npc.reputation_on_kill=击杀声望
+chocotweak.npc.is_invincible=无敌
+chocotweak.npc.visible_name=显示名称
+chocotweak.npc.can_pick_loot=拾取战利品
+chocotweak.npc.target_monsters=攻击怪物
+chocotweak.npc.can_teleport=可传送
+chocotweak.npc.voice=语音
+chocotweak.npc.health=生命值
+chocotweak.npc.speed=速度
+chocotweak.npc.home_x=家 X
+chocotweak.npc.home_y=家 Y
+chocotweak.npc.home_z=家 Z
+chocotweak.npc.home_radius=活动范围
+chocotweak.npc.red=红
+chocotweak.npc.green=绿
+chocotweak.npc.blue=蓝
+chocotweak.npc.yes=是
+chocotweak.npc.no=否
+chocotweak.npc.player=玩家
+chocotweak.npc.entity=实体
+chocotweak.npc.male=男
+chocotweak.npc.female=女
+
+# 对话编辑器
+chocotweak.dialog.add=添加
+chocotweak.dialog.edit=编辑
+chocotweak.dialog.remove=删除
+chocotweak.dialog.file=文件
+chocotweak.dialog.option_name=选项名称
+chocotweak.dialog.display_name=显示名称
+chocotweak.dialog.answers=回答选项
+chocotweak.dialog.conditions=条件
+chocotweak.dialog.actions=动作
+chocotweak.dialog.save_text=保存文本
+
+# 对话条件
+chocotweak.condition.item=物品
+chocotweak.condition.variable=变量
+chocotweak.condition.faction_reputation=阵营声望
+chocotweak.condition.player_reputation=玩家声望
+chocotweak.condition.time=时间
+chocotweak.condition.quest=任务
+
+# AI 模式
+chocotweak.ai.melee=近战
+chocotweak.ai.ranged=远程
+chocotweak.ai.passive=被动
+chocotweak.ai.guard=守卫
+chocotweak.ai.follow=跟随
+chocotweak.ai.wander=游荡
+
+# 标签
+chocotweak.label.action=动作
+chocotweak.label.condition=条件
+
+# 配置界面
+chocotweak.config.title=Choco Tweak 配置
+chocotweak.config.monsters=怪物属性
+chocotweak.config.monsters.health_multiplier=血量倍率
+chocotweak.config.monsters.damage_multiplier=伤害倍率
+chocotweak.config.monsters.attack_range_multiplier=攻击范围倍率
+chocotweak.config.monsters.speed_multiplier=移动速度倍率
+chocotweak.config.drops=掉落设置
+chocotweak.config.drops.xp_multiplier=经验值倍率
+chocotweak.config.drops.loot_multiplier=掉落物倍率
+chocotweak.config.drops.custom_loot_enabled=启用自定义掉落表
+chocotweak.config.dungeons=地牢生成
+chocotweak.config.dungeons.spawn_chance=生成几率倍率
+chocotweak.config.dungeons.min_distance=最小间距(区块)
+chocotweak.config.dungeons.enabled=启用地牢生成
+chocotweak.config.spawns=生成设置
+chocotweak.config.spawns.npc_multiplier=NPC生成倍率
+chocotweak.config.spawns.faction_multiplier=阵营权重倍率
+chocotweak.config.spawns.monster_count_multiplier=怪物数量倍率
+
+# 第四层翻译
+chocotweak.shop.add_trade=添加交易
+chocotweak.shop.load=加载
+chocotweak.shop.save=保存
+chocotweak.npc.blocks_movement=阻挡移动
+chocotweak.npc.attack_damage=攻击伤害
+chocotweak.npc.armor=护甲
+chocotweak.npc.knockback_resistance=击退抗性
+
+# 操作符
+chocotweak.operator.equals=等于
+chocotweak.operator.not_equals=不等于
+chocotweak.operator.greater=大于
+chocotweak.operator.less=小于
+chocotweak.operator.add=增加
+chocotweak.operator.subtract=减少
+chocotweak.operator.set=设置
+
+# 箱子战利品配置
+chocotweak.config.drops.use_vanilla_loot=使用原版战利品表
+chocotweak.config.drops.custom_loot_path=自定义战利品路径
+
+# 第五层翻译 - AI 编辑器
+chocotweak.ai.delete=删除
+chocotweak.ai.get_item=获取物品
+chocotweak.ai.add_ai=添加AI
+chocotweak.ai.remove_ai=移除AI
+chocotweak.ai.position=位置
+chocotweak.ai.target=目标
+chocotweak.ai.priority=优先级
+
+# 觉醒界面
+chocotweak.awakement.awaken=觉醒
+chocotweak.awakement.cancel=取消
+chocotweak.awakement.select_enchantment=选择附魔
+
+# 通用按钮
+chocotweak.common.back=返回
+chocotweak.common.next=下一个
+chocotweak.common.previous=上一个
+chocotweak.common.apply=应用
+chocotweak.common.reset=重置
+chocotweak.common.copy=复制
+chocotweak.common.paste=粘贴
+chocotweak.common.clear=清空
+chocotweak.common.select=选择
+chocotweak.common.empty=空
+
+# 武器设置
+chocotweak.config.weapons=武器设置
+chocotweak.config.weapons.special_effects_enabled=启用武器特殊效果
+chocotweak.config.weapons.custom_damage_enabled=启用自定义伤害
+chocotweak.config.weapons.custom_speed_enabled=启用自定义攻速
+
+# ========== 武器特效 Tooltip ==========
+
+# 铁剑盾
+chocotweak.weapon.iron_shield.title=坚固护盾
+chocotweak.weapon.iron_shield.desc1=常驻减伤 12%
+
+# 钻石剑盾
+chocotweak.weapon.diamond_shield.title=精钢护盾
+chocotweak.weapon.diamond_shield.desc1=常驻减伤 18%
+
+# 锈剑盾 - 挫伤
+chocotweak.weapon.rusted.title=挫伤
+chocotweak.weapon.rusted.desc1=攻击力降低 30%
+chocotweak.weapon.rusted.desc2=攻击有 35% 概率施加挫伤
+chocotweak.weapon.rusted.desc3=每级挫伤减少敌人 2 无敌帧 (最高3级)
+
+# 龟盾 - 铁壁
+chocotweak.weapon.turtle.title=铁壁
+chocotweak.weapon.turtle.desc1=移动速度 -50%
+chocotweak.weapon.turtle.desc2=格挡时超高频回血，免伤 80%
+chocotweak.weapon.turtle.desc3=攻击后 5秒 内免伤 30%
+chocotweak.weapon.turtle.desc4=基础伤害 25 | 攻速极慢
+
+# 蜘蛛剑盾 - 剧毒
+chocotweak.weapon.spider.title=剧毒
+chocotweak.weapon.spider.desc1=移动速度 +20%
+chocotweak.weapon.spider.desc2=护甲减少 20%
+chocotweak.weapon.spider.desc3=对有负面效果的敌人造成 (1+0.2×负面效果数) 倍伤害
+chocotweak.weapon.spider.desc4=格挡时给攻击者施加随机负面效果
+
+# 阳光剑 - 阳光普照
+chocotweak.weapon.sun.title=阳光普照
+chocotweak.weapon.sun.desc1=白天时伤害提升 2.5倍
+chocotweak.weapon.sun.desc2=攻击与格挡点燃敌人 30秒
+chocotweak.weapon.sun.desc3=敌人受到的燃烧伤害 ×5
+
+# 月光剑 - 暗夜低语
+chocotweak.weapon.moon.title=暗夜低语
+chocotweak.weapon.moon.desc1=夜晚时伤害提升 2.5倍
+chocotweak.weapon.moon.desc2=攻击与格挡使敌人陷入恐惧与混乱
+chocotweak.weapon.moon.desc3=周围15格亮度越低，敌人受到的易伤越高 (最高 +50%)
+
+# 行者之剑 - 深渊侵蚀
+chocotweak.weapon.walker.title=深渊侵蚀
+chocotweak.weapon.walker.desc1=闪避率 +30% | 高攻速 | 基础伤害 20
+chocotweak.weapon.walker.desc2=击中敌人: 增加 10% 攻击，承受 20% 易伤
+chocotweak.weapon.walker.desc3=格挡时在敌人脚下渲染深渊黑雾
+chocotweak.weapon.walker.desc4=被黑雾笼罩的敌人减速 60%，持续 5秒
+
+# ========== 药水效果 ==========
+effect.chocotweak.dungeon_explorer=寻找巧克力!
+
+# Element Enhancements
+chocotweak.config.elementenhance=元素增强设置
+chocotweak.config.elementenhance.enabled=启用元素增强
+chocotweak.config.elementenhance.fire_burn_base=火焰基础伤害加成
+chocotweak.config.elementenhance.fire_burn_per_level=火焰每级伤害加成
+chocotweak.config.elementenhance.blast_stun_chance=爆炸晕眩概率
+chocotweak.config.elementenhance.blast_stun_duration=爆炸晕眩时间
+chocotweak.config.elementenhance.water_slow_amount=水属性减速幅度
+chocotweak.config.elementenhance.water_drown_damage=水属性溺水伤害
+chocotweak.config.elementenhance.darkness_wither_bonus=黑暗凋零伤害加成
+chocotweak.config.elementenhance.light_undead_base=光明亡灵伤害基础倍率
+chocotweak.config.elementenhance.light_undead_per_level=光明亡灵伤害每级倍率
+chocotweak.config.elementenhance.light_range_per_level=光明每级攻击距离增加
+chocotweak.config.elementenhance.magic_stacks_per_level=魔法易伤每级最大层数
+chocotweak.config.elementenhance.magic_bonus_per_stack=魔法易伤每层增伤幅度
+
+# Potions
+effect.chocotweak.magic_vulnerability=奥术易伤
+potion.effect.chocotweak.magic_vulnerability=奥术易伤药水
+chocotweak.config.elementenhance.physical_base=物理伤害基础倍率
+chocotweak.config.elementenhance.physical_per_level=物理伤害每级倍率
+
+# Keybinds
+key.chocotweak.swap_spell=切换法术
+
+# Awakenings
+enchantment.highSpeedChant.name=高速神言
+enchantment.highSpeedChant.desc=按住右键时连续施法，等级越高持续时间越长
+
+enchantment.spellAmplification.name=咒文增幅
+enchantment.spellAmplification.desc=提升法术伤害 (Lv5: 10倍)
+
+enchantment.instantCast.name=瞬发咏唱
+enchantment.instantCast.desc=减少施法时间和冷却 (Lv5: -95%)
+
+enchantment.manaSurge.name=魔力洪流
+enchantment.manaSurge.desc=降低法术消耗 (Lv5: -95%)
+
+enchantment.longRange.name=远距咏唱
+enchantment.longRange.desc=增加法术射程 (Lv5: 6倍)
+
+enchantment.echoingVoice.name=回响之音
+enchantment.echoingVoice.desc=施法后有几率免费重放 (Lv5: 80%)
+
+# 药水瓶扩展觉醒
+enchantment.potionCapacity.name=药剂瓶扩展
+enchantment.potionCapacity.desc=增加武器药水槽数量 (Lv1: 2槽, Lv2: 3槽, Lv3: 3槽+25%效果)
+
+enchantment.potionInfusion.name=药水灌注
+enchantment.potionInfusion.desc=消耗背包药水附加到武器 (需要5级经验)
+
+# 药水灌注GUI
+gui.chocotweak.potion_infusion=药水灌注
+gui.chocotweak.infuse=灌注
+gui.chocotweak.xp_cost=消耗 %d 经验等级
+gui.chocotweak.potion_slots=药水槽: %d/%d

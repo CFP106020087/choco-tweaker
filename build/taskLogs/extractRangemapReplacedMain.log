@@ -1,0 +1,386 @@
+Unsupposrted library path: C:\mywork\ChocoTweak\libs\README.md
+Unsupposrted library path: C:\mywork\ChocoTweak\build\classes\java\api
+Unsupposrted library path: C:\mywork\ChocoTweak\build\resources\api
+Symbol range map extraction starting
+Processing 127 files
+startProcessing "com/chocotweak/ChocoTweak.java" md5: 1f9597d0ae03096f0b8f9539613ed877
+endProcessing "com/chocotweak/ChocoTweak.java"
+
+startProcessing "com/chocotweak/ClientProxy.java" md5: 00bb1a0ad85b67bc18ac2f37bf746f03
+endProcessing "com/chocotweak/ClientProxy.java"
+
+startProcessing "com/chocotweak/api/IShieldAttackItem.java" md5: 9cb10ea11cc0935baa612094a31c5652
+endProcessing "com/chocotweak/api/IShieldAttackItem.java"
+
+startProcessing "com/chocotweak/client/AccessoryRenderLayer.java" md5: c37d9bcce4be990c95a2ea0a588afaa1
+endProcessing "com/chocotweak/client/AccessoryRenderLayer.java"
+
+startProcessing "com/chocotweak/client/ArmorTooltipHandler.java" md5: 8fa80eb0ea783401754ebcfb8c9c1c98
+endProcessing "com/chocotweak/client/ArmorTooltipHandler.java"
+
+startProcessing "com/chocotweak/client/ChocoTweakClientInit.java" md5: a16ff20b93bc7087cb09b72c0494aa08
+endProcessing "com/chocotweak/client/ChocoTweakClientInit.java"
+
+startProcessing "com/chocotweak/client/GuiTranslationHandler.java" md5: c1e2486fe812d28196d463fdb3ab0484
+endProcessing "com/chocotweak/client/GuiTranslationHandler.java"
+
+startProcessing "com/chocotweak/client/ScouterTargetingSystem.java" md5: 6014cc33cbfdd6f0c24fa23cde732412
+endProcessing "com/chocotweak/client/ScouterTargetingSystem.java"
+
+startProcessing "com/chocotweak/client/SpellSlotSwitchHandler.java" md5: cad7c952c41dd9fcc1710e3cbbd143c0
+endProcessing "com/chocotweak/client/SpellSlotSwitchHandler.java"
+
+startProcessing "com/chocotweak/client/StaffAutoFireHandler.java" md5: 536676aa1ac8b070f2da32c77a9cd374
+endProcessing "com/chocotweak/client/StaffAutoFireHandler.java"
+
+startProcessing "com/chocotweak/client/WeaponTooltipHandler.java" md5: 58fb7fd4d3c4ea502ad458ab76a36521
+endProcessing "com/chocotweak/client/WeaponTooltipHandler.java"
+
+startProcessing "com/chocotweak/command/CommandChocoTweak.java" md5: 9151f51ea873387f2b8236acf4728e81
+endProcessing "com/chocotweak/command/CommandChocoTweak.java"
+
+startProcessing "com/chocotweak/command/CommandChocoTweakClient.java" md5: ced13b4b52d677e0be81f43b6f79d23f
+endProcessing "com/chocotweak/command/CommandChocoTweakClient.java"
+
+startProcessing "com/chocotweak/command/CommandPotionInfuse.java" md5: f9f05b7c3e3cc4c8a3695695e45044a8
+endProcessing "com/chocotweak/command/CommandPotionInfuse.java"
+
+startProcessing "com/chocotweak/command/CommandSpellAwaken.java" md5: 3444218b7688e56aa705c0b69a9acc8d
+endProcessing "com/chocotweak/command/CommandSpellAwaken.java"
+
+startProcessing "com/chocotweak/command/StructureUtils.java" md5: 47fec4f927dd59a765ecda66f548675c
+endProcessing "com/chocotweak/command/StructureUtils.java"
+
+startProcessing "com/chocotweak/compat/BaublesCompat.java" md5: dccc90e9b6910c6a5e8a21b0417cdbfc
+endProcessing "com/chocotweak/compat/BaublesCompat.java"
+
+startProcessing "com/chocotweak/compat/BaublesItemCapability.java" md5: 1688b0dc2ab7280579fcc58b66a95f2e
+endProcessing "com/chocotweak/compat/BaublesItemCapability.java"
+
+startProcessing "com/chocotweak/config/CQTweakConfig.java" md5: 9f4c4d1753d901af3c589e479b70acf1
+endProcessing "com/chocotweak/config/CQTweakConfig.java"
+
+startProcessing "com/chocotweak/config/EnchantmentNpcConfig.java" md5: 0090bab70b6ac12e216c22edacbad62c
+endProcessing "com/chocotweak/config/EnchantmentNpcConfig.java"
+
+startProcessing "com/chocotweak/config/NpcDialogConfig.java" md5: ae0092b48a1f476f78dc53ea244f7c20
+endProcessing "com/chocotweak/config/NpcDialogConfig.java"
+
+startProcessing "com/chocotweak/config/TamingConfig.java" md5: 4a9ccc56badabcaaf494774d28f75e1c
+endProcessing "com/chocotweak/config/TamingConfig.java"
+
+startProcessing "com/chocotweak/core/ChocoTweakMixinPlugin.java" md5: 302e6c50e4ca7b6e4db11779a42e77f2
+endProcessing "com/chocotweak/core/ChocoTweakMixinPlugin.java"
+
+startProcessing "com/chocotweak/dialog/DialogActionBuyCreature.java" md5: f038f6f390d07b4d0ee18772f61ae5b9
+endProcessing "com/chocotweak/dialog/DialogActionBuyCreature.java"
+
+startProcessing "com/chocotweak/dialog/DialogActionBuyTamedCreature.java" md5: 81894476b292791b1f5ca49d79007ba3
+endProcessing "com/chocotweak/dialog/DialogActionBuyTamedCreature.java"
+
+startProcessing "com/chocotweak/dialog/DialogActionEnchantItem.java" md5: 0759b19c398d2cfad119f88bf73f581b
+endProcessing "com/chocotweak/dialog/DialogActionEnchantItem.java"
+
+startProcessing "com/chocotweak/dialog/DialogActionEnchantService.java" md5: 84fac12d64f206792a6a3d8134e98b32
+endProcessing "com/chocotweak/dialog/DialogActionEnchantService.java"
+
+startProcessing "com/chocotweak/dialog/DialogActionRegistry.java" md5: 1b7d1cdc64539d1a054421a75361ccc3
+endProcessing "com/chocotweak/dialog/DialogActionRegistry.java"
+
+startProcessing "com/chocotweak/enchantment/EnchantmentBeastTamer.java" md5: 84bdf8c84994753f7fd2a4fa234a5819
+endProcessing "com/chocotweak/enchantment/EnchantmentBeastTamer.java"
+
+startProcessing "com/chocotweak/enchantment/EnchantmentDragonSlayer.java" md5: 6aa2d7ef0d560a6c0726790d9bcebd0c
+endProcessing "com/chocotweak/enchantment/EnchantmentDragonSlayer.java"
+
+startProcessing "com/chocotweak/enchantment/EnchantmentIntimidation.java" md5: 88880e546a41f3aa0f1ba8395e8ab859
+endProcessing "com/chocotweak/enchantment/EnchantmentIntimidation.java"
+
+startProcessing "com/chocotweak/enchantment/EnchantmentPermafrost.java" md5: d5a1549320c9dda0eb7f59d02f6e1590
+endProcessing "com/chocotweak/enchantment/EnchantmentPermafrost.java"
+
+startProcessing "com/chocotweak/enchantment/EnchantmentSoulHarvest.java" md5: b0375e06a9d91d75fdcd5c7545250444
+endProcessing "com/chocotweak/enchantment/EnchantmentSoulHarvest.java"
+
+startProcessing "com/chocotweak/enchantment/EnchantmentVampiric.java" md5: 6f134621484709de063b3a2a7e7b1da2
+endProcessing "com/chocotweak/enchantment/EnchantmentVampiric.java"
+
+startProcessing "com/chocotweak/enchantment/ModEnchantments.java" md5: 482cd8b60edbad81a0e7e6b5dcb0a5c9
+endProcessing "com/chocotweak/enchantment/ModEnchantments.java"
+
+startProcessing "com/chocotweak/enchantment/NpcExclusiveEnchantment.java" md5: 61d97051af360b23fae696f5a602e3eb
+endProcessing "com/chocotweak/enchantment/NpcExclusiveEnchantment.java"
+
+startProcessing "com/chocotweak/gui/ChocoTweakGuiHandler.java" md5: 4f09832e12e3b829bdecb8fe811b9672
+endProcessing "com/chocotweak/gui/ChocoTweakGuiHandler.java"
+
+startProcessing "com/chocotweak/gui/ContainerBackpack.java" md5: 98905fef726eae4005753bf948557f17
+endProcessing "com/chocotweak/gui/ContainerBackpack.java"
+
+startProcessing "com/chocotweak/gui/GuiBackpack.java" md5: c2524a99e783c27b04681aa076e23874
+endProcessing "com/chocotweak/gui/GuiBackpack.java"
+
+startProcessing "com/chocotweak/gui/GuiSelectCreature.java" md5: f5b5fc59a5cf76147504286f33c3039e
+endProcessing "com/chocotweak/gui/GuiSelectCreature.java"
+
+startProcessing "com/chocotweak/gui/GuiSelectEnchantment.java" md5: 10fd74afc4f05ccab774094b2e104f4c
+endProcessing "com/chocotweak/gui/GuiSelectEnchantment.java"
+
+startProcessing "com/chocotweak/gui/potion/ContainerPotionInfusion.java" md5: 19dcaab1072a7d5920c86d083504e4f1
+endProcessing "com/chocotweak/gui/potion/ContainerPotionInfusion.java"
+
+startProcessing "com/chocotweak/gui/potion/GuiPotionInfusion.java" md5: 3945bd048ebff9e913d7ecd5e8d49d19
+endProcessing "com/chocotweak/gui/potion/GuiPotionInfusion.java"
+
+startProcessing "com/chocotweak/gui/potion/InventoryPotionInfusion.java" md5: 9326b7ec41371c5f2702201e493462cf
+endProcessing "com/chocotweak/gui/potion/InventoryPotionInfusion.java"
+
+startProcessing "com/chocotweak/handler/AbyssWalkerArmorHandler.java" md5: d0257bbe5968924a1056f16cdf393c03
+endProcessing "com/chocotweak/handler/AbyssWalkerArmorHandler.java"
+
+startProcessing "com/chocotweak/handler/ArmorEffectHandler.java" md5: 5c5f827b6a849311f44bb76e542c6d1a
+endProcessing "com/chocotweak/handler/ArmorEffectHandler.java"
+
+startProcessing "com/chocotweak/handler/CloudBootsMultiJumpHandler.java" md5: 71b051b993d0a3fc084bb70594fcd83e
+endProcessing "com/chocotweak/handler/CloudBootsMultiJumpHandler.java"
+
+startProcessing "com/chocotweak/handler/DungeonProtectionHandler.java" md5: d53e8bbe5f13662b46d9a9c5a11720ac
+endProcessing "com/chocotweak/handler/DungeonProtectionHandler.java"
+
+startProcessing "com/chocotweak/handler/ElementEnhanceHandler.java" md5: 6c3c8be1d8e9576d2f922d15838de772
+endProcessing "com/chocotweak/handler/ElementEnhanceHandler.java"
+
+startProcessing "com/chocotweak/handler/EnchantmentEventHandler.java" md5: 5cbc0107020c98c232d31a6281d3620b
+endProcessing "com/chocotweak/handler/EnchantmentEventHandler.java"
+
+startProcessing "com/chocotweak/handler/HookSwordFallHandler.java" md5: d29276876747da017e45c9ba0c780b18
+endProcessing "com/chocotweak/handler/HookSwordFallHandler.java"
+
+startProcessing "com/chocotweak/handler/LightRangeHandler.java" md5: e687a3cc8b1ac53f30075b1dee3b211b
+endProcessing "com/chocotweak/handler/LightRangeHandler.java"
+
+startProcessing "com/chocotweak/handler/MonkingSwordShieldHandler.java" md5: eeec4ab78a4f5fa3148939f0ead6a393
+endProcessing "com/chocotweak/handler/MonkingSwordShieldHandler.java"
+
+startProcessing "com/chocotweak/handler/RobeArmorEffectHandler.java" md5: 89388d4988507121a5630c92ea9abc66
+endProcessing "com/chocotweak/handler/RobeArmorEffectHandler.java"
+
+startProcessing "com/chocotweak/handler/ShieldAttackHandler.java" md5: 72ffaf80a7da076b18d83e36ed30aff2
+endProcessing "com/chocotweak/handler/ShieldAttackHandler.java"
+
+startProcessing "com/chocotweak/handler/SpecialItemHandler.java" md5: 77c923bc9a063ad489d53fa714e4ab8d
+endProcessing "com/chocotweak/handler/SpecialItemHandler.java"
+
+startProcessing "com/chocotweak/handler/SpellEffectHandler.java" md5: adcee916d66f318e7a96e49412ae3943
+endProcessing "com/chocotweak/handler/SpellEffectHandler.java"
+
+startProcessing "com/chocotweak/handler/SummonedCreatureHandler.java" md5: 20581ee5713e5e8840d459f54908efe4
+endProcessing "com/chocotweak/handler/SummonedCreatureHandler.java"
+
+startProcessing "com/chocotweak/handler/TricksterDaggerHandler.java" md5: bb2882d5aeebe15441b2ddcb46d1dd44
+endProcessing "com/chocotweak/handler/TricksterDaggerHandler.java"
+
+startProcessing "com/chocotweak/magic/AwakementEchoingVoice.java" md5: 62fbc0c61abbd57b6d4988488f9f3082
+endProcessing "com/chocotweak/magic/AwakementEchoingVoice.java"
+
+startProcessing "com/chocotweak/magic/AwakementHighSpeedChant.java" md5: 14ea470d7bc3f603da001e63e31a3cd1
+endProcessing "com/chocotweak/magic/AwakementHighSpeedChant.java"
+
+startProcessing "com/chocotweak/magic/AwakementInstantCast.java" md5: 789e7b8528d7a93a3e3605d4f3b29f0b
+endProcessing "com/chocotweak/magic/AwakementInstantCast.java"
+
+startProcessing "com/chocotweak/magic/AwakementLongRange.java" md5: d5d96f25262fdd30786a28b33be7491e
+endProcessing "com/chocotweak/magic/AwakementLongRange.java"
+
+startProcessing "com/chocotweak/magic/AwakementManaSurge.java" md5: 43932e55f66f5ac6f7d7e741908edb01
+endProcessing "com/chocotweak/magic/AwakementManaSurge.java"
+
+startProcessing "com/chocotweak/magic/AwakementPotionCapacity.java" md5: ba43334870e00a70c66c797907e58292
+endProcessing "com/chocotweak/magic/AwakementPotionCapacity.java"
+
+startProcessing "com/chocotweak/magic/AwakementPotionInfusion.java" md5: 00894aeab17f401a39b7ab2bfe42703d
+endProcessing "com/chocotweak/magic/AwakementPotionInfusion.java"
+
+startProcessing "com/chocotweak/magic/AwakementSpellAmplification.java" md5: 7405a0b0b4198f16fd7d1bde0b84033a
+endProcessing "com/chocotweak/magic/AwakementSpellAmplification.java"
+
+startProcessing "com/chocotweak/magic/SpellAwakeningUnlockTracker.java" md5: 2aaac0f3f5e5aad6ff6897fefa88e6b5
+endProcessing "com/chocotweak/magic/SpellAwakeningUnlockTracker.java"
+
+startProcessing "com/chocotweak/mixin/MixinArmorTooltip.java" md5: 4cf3c80426c741fb98be849936cec358
+endProcessing "com/chocotweak/mixin/MixinArmorTooltip.java"
+
+startProcessing "com/chocotweak/mixin/MixinAwakementsRegister.java" md5: deeea930e74516351f16258cfe82c753
+endProcessing "com/chocotweak/mixin/MixinAwakementsRegister.java"
+
+startProcessing "com/chocotweak/mixin/MixinBagCapacity.java" md5: a1a3d399976e1e63652b8e850b8f6822
+endProcessing "com/chocotweak/mixin/MixinBagCapacity.java"
+
+startProcessing "com/chocotweak/mixin/MixinBlockDungeonChestTileEntity.java" md5: 62a4ef5842269e1a92c251b84a2156e7
+endProcessing "com/chocotweak/mixin/MixinBlockDungeonChestTileEntity.java"
+
+startProcessing "com/chocotweak/mixin/MixinDaggerCritical.java" md5: 1245307c402f3195217e1727e0ab4726
+endProcessing "com/chocotweak/mixin/MixinDaggerCritical.java"
+
+startProcessing "com/chocotweak/mixin/MixinDaggerTooltip.java" md5: d39d260fabc58491cbc9692bc146094d
+endProcessing "com/chocotweak/mixin/MixinDaggerTooltip.java"
+
+startProcessing "com/chocotweak/mixin/MixinDialogAction.java" md5: d4b11c08bc56d6061f783d9f37ede437
+endProcessing "com/chocotweak/mixin/MixinDialogAction.java"
+
+startProcessing "com/chocotweak/mixin/MixinDialogActionList.java" md5: 41eb376e938196a4b3a0904ea09de504
+endProcessing "com/chocotweak/mixin/MixinDialogActionList.java"
+
+startProcessing "com/chocotweak/mixin/MixinDialogActionSpawnMonster.java" md5: 6fb93432cca749f44f80bb3defef7397
+endProcessing "com/chocotweak/mixin/MixinDialogActionSpawnMonster.java"
+
+startProcessing "com/chocotweak/mixin/MixinEntityHumanBaseXP.java" md5: 3c88db0b57b70718d63129e0fe1c38aa
+endProcessing "com/chocotweak/mixin/MixinEntityHumanBaseXP.java"
+
+startProcessing "com/chocotweak/mixin/MixinEntityHumanMob.java" md5: 3170b743c04b8e982b2ddbc4160503b2
+endProcessing "com/chocotweak/mixin/MixinEntityHumanMob.java"
+
+startProcessing "com/chocotweak/mixin/MixinEnumEnchantType.java" md5: 26823c237e6407f07c53b0a049aa3a49
+endProcessing "com/chocotweak/mixin/MixinEnumEnchantType.java"
+
+startProcessing "com/chocotweak/mixin/MixinEventHandlerCQ.java" md5: 64384d8f6df4e6624c47149e74296cdc
+endProcessing "com/chocotweak/mixin/MixinEventHandlerCQ.java"
+
+startProcessing "com/chocotweak/mixin/MixinGuiAwakement.java" md5: 210f865d0fd7ee03467290e9eb911ea2
+endProcessing "com/chocotweak/mixin/MixinGuiAwakement.java"
+
+startProcessing "com/chocotweak/mixin/MixinGuiButtonDisplayString.java" md5: e4a17b27cf28bb77061ba4fc48a256fe
+endProcessing "com/chocotweak/mixin/MixinGuiButtonDisplayString.java"
+
+startProcessing "com/chocotweak/mixin/MixinGuiLinked.java" md5: 8fb7ef1b9c0ca097478f4d84c20baa5f
+endProcessing "com/chocotweak/mixin/MixinGuiLinked.java"
+
+startProcessing "com/chocotweak/mixin/MixinGuiNPC.java" md5: c9ed74e7831c0dc783a559befde0e200
+endProcessing "com/chocotweak/mixin/MixinGuiNPC.java"
+
+startProcessing "com/chocotweak/mixin/MixinGunDamage.java" md5: fc17f18aec8e941a8a18a7ed56f047dc
+endProcessing "com/chocotweak/mixin/MixinGunDamage.java"
+
+startProcessing "com/chocotweak/mixin/MixinHelperDamageSource.java" md5: 6efe6a617ffe600fd855993787919210
+endProcessing "com/chocotweak/mixin/MixinHelperDamageSource.java"
+
+startProcessing "com/chocotweak/mixin/MixinItemSwordTurtle.java" md5: 2d868831c0a9f7600ef7ef8133c84947
+endProcessing "com/chocotweak/mixin/MixinItemSwordTurtle.java"
+
+startProcessing "com/chocotweak/mixin/MixinKingArmorTooltip.java" md5: b487f72425d3b736c998204f0a12ef72
+endProcessing "com/chocotweak/mixin/MixinKingArmorTooltip.java"
+
+startProcessing "com/chocotweak/mixin/MixinLayerArmorBase.java" md5: 93db66c0f9f20f1aff6583e3a99e171b
+endProcessing "com/chocotweak/mixin/MixinLayerArmorBase.java"
+
+startProcessing "com/chocotweak/mixin/MixinMonkingSword.java" md5: dec1fbbe62ccbd20aa654f7873bc7b6e
+endProcessing "com/chocotweak/mixin/MixinMonkingSword.java"
+
+startProcessing "com/chocotweak/mixin/MixinMonkingSwordShield.java" md5: 55099cd809fc0b72f68c944506f253ef
+endProcessing "com/chocotweak/mixin/MixinMonkingSwordShield.java"
+
+startProcessing "com/chocotweak/mixin/MixinMonkingTooltip.java" md5: 5d805c38b32d57f5587eb3e955159a76
+endProcessing "com/chocotweak/mixin/MixinMonkingTooltip.java"
+
+startProcessing "com/chocotweak/mixin/MixinPlayerControllerAttack.java" md5: b96eefba4b37b40b79d4b6079e71b12c
+endProcessing "com/chocotweak/mixin/MixinPlayerControllerAttack.java"
+
+startProcessing "com/chocotweak/mixin/MixinRenderBeam.java" md5: a5c0f9105637747ca43f786cdcccc1cd
+endProcessing "com/chocotweak/mixin/MixinRenderBeam.java"
+
+startProcessing "com/chocotweak/mixin/MixinSpellAwakeningEffects.java" md5: 2b0b96a1c9c8334f98755f7ba7593047
+endProcessing "com/chocotweak/mixin/MixinSpellAwakeningEffects.java"
+
+startProcessing "com/chocotweak/mixin/MixinSpellBeam.java" md5: 48e45199234dc3061512157e52068334
+endProcessing "com/chocotweak/mixin/MixinSpellBeam.java"
+
+startProcessing "com/chocotweak/mixin/MixinSpellMiner.java" md5: 8b69a7d55ba649cc8e196cba3fdef45c
+endProcessing "com/chocotweak/mixin/MixinSpellMiner.java"
+
+startProcessing "com/chocotweak/mixin/MixinSpellSpray.java" md5: 6b7f97afc4071516c188e3de425db2d7
+endProcessing "com/chocotweak/mixin/MixinSpellSpray.java"
+
+startProcessing "com/chocotweak/mixin/MixinSpellStats.java" md5: 4c3eb7cd6cb4fb17f2a6094f08d20a03
+endProcessing "com/chocotweak/mixin/MixinSpellStats.java"
+
+startProcessing "com/chocotweak/mixin/MixinSpellStorm.java" md5: 43851f8bc74b23b9a82c3439498bb77b
+endProcessing "com/chocotweak/mixin/MixinSpellStorm.java"
+
+startProcessing "com/chocotweak/mixin/MixinSpellSummonElemental.java" md5: bd8f3bd813b8a9767c83cfd8c99cd666
+endProcessing "com/chocotweak/mixin/MixinSpellSummonElemental.java"
+
+startProcessing "com/chocotweak/mixin/MixinSpellTeleport.java" md5: ebc427c2a1a25a3c4e11abed69defbba
+endProcessing "com/chocotweak/mixin/MixinSpellTeleport.java"
+
+startProcessing "com/chocotweak/mixin/MixinStaffAwakeningEffects.java" md5: 25a37a460560733170f157bd11535e66
+endProcessing "com/chocotweak/mixin/MixinStaffAwakeningEffects.java"
+
+startProcessing "com/chocotweak/mixin/MixinStaffContinuousCast.java" md5: e2129ad64103eb58f12d0e7e0d384be3
+endProcessing "com/chocotweak/mixin/MixinStaffContinuousCast.java"
+
+startProcessing "com/chocotweak/mixin/MixinSwordShieldBlock.java" md5: 845ec3b8192ed377b99f546671c8b18e
+endProcessing "com/chocotweak/mixin/MixinSwordShieldBlock.java"
+
+startProcessing "com/chocotweak/mixin/MixinSwordShieldTooltip.java" md5: 4fb83cd5a26b2460d2520d8a4701bd4a
+endProcessing "com/chocotweak/mixin/MixinSwordShieldTooltip.java"
+
+startProcessing "com/chocotweak/mixin/MixinTerrainManager.java" md5: 1d2a78d43f2e8aafe5c3f9db36605e3c
+endProcessing "com/chocotweak/mixin/MixinTerrainManager.java"
+
+startProcessing "com/chocotweak/mixin/MixinWeaponStats.java" md5: 1f1eb6068d0f70cde18f894e03a912ec
+endProcessing "com/chocotweak/mixin/MixinWeaponStats.java"
+
+startProcessing "com/chocotweak/mixin/MixinWeaponTooltip.java" md5: e8899064b85cb0fdf95bb923633d61d4
+endProcessing "com/chocotweak/mixin/MixinWeaponTooltip.java"
+
+startProcessing "com/chocotweak/mixin/MixinWorldGeneratorNew.java" md5: 687075aa8cafcaacd816358993275c3c
+endProcessing "com/chocotweak/mixin/MixinWorldGeneratorNew.java"
+
+startProcessing "com/chocotweak/network/ChocoNetwork.java" md5: cee286f97d4ad552c035363a708aadf0
+endProcessing "com/chocotweak/network/ChocoNetwork.java"
+
+startProcessing "com/chocotweak/network/PacketClearSpellCD.java" md5: 86302c4fb99b8d940bfdfff59d1fa946
+endProcessing "com/chocotweak/network/PacketClearSpellCD.java"
+
+startProcessing "com/chocotweak/network/PacketClearSpellCDHandler.java" md5: 651db43e801f02bc7f4c6cccf1aea470
+endProcessing "com/chocotweak/network/PacketClearSpellCDHandler.java"
+
+startProcessing "com/chocotweak/network/PacketPotionInfusion.java" md5: 0590bdd70e675f37e1c4eae7dbfc8dda
+endProcessing "com/chocotweak/network/PacketPotionInfusion.java"
+
+startProcessing "com/chocotweak/network/PacketShieldAttack.java" md5: 14e18efd5974643bf0709216d095611e
+endProcessing "com/chocotweak/network/PacketShieldAttack.java"
+
+startProcessing "com/chocotweak/network/PacketShieldAttackHandler.java" md5: 0d184e3680a4f5f9193b069b6028fab2
+endProcessing "com/chocotweak/network/PacketShieldAttackHandler.java"
+
+startProcessing "com/chocotweak/network/PacketSwapSpellSlot.java" md5: 3bb34eb505c807d4d09221b2a5c5b117
+endProcessing "com/chocotweak/network/PacketSwapSpellSlot.java"
+
+startProcessing "com/chocotweak/network/PacketSwapSpellSlotHandler.java" md5: d64c7c27ec171f81d0bb3119c750e2a7
+endProcessing "com/chocotweak/network/PacketSwapSpellSlotHandler.java"
+
+startProcessing "com/chocotweak/potion/PotionDungeonExplorer.java" md5: f4664f6012ea95f1fa23379d9aab2bff
+endProcessing "com/chocotweak/potion/PotionDungeonExplorer.java"
+
+startProcessing "com/chocotweak/potion/PotionMagicVulnerability.java" md5: 9cf4c5e97eba9e953cef2c1e0dec5c43
+endProcessing "com/chocotweak/potion/PotionMagicVulnerability.java"
+
+startProcessing "com/chocotweak/potion/PotionRegistry.java" md5: 3c9b04a2373a2ee652688d296e55b5c2
+endProcessing "com/chocotweak/potion/PotionRegistry.java"
+
+startProcessing "com/chocotweak/potion/PotionStun.java" md5: 82163c7d57c9ffd9d84119d667a4362f
+endProcessing "com/chocotweak/potion/PotionStun.java"
+
+startProcessing "com/chocotweak/potion/PotionWound.java" md5: 0f4f0dbc0f828b1d955d3672896f0b9d
+endProcessing "com/chocotweak/potion/PotionWound.java"
+
+startProcessing "com/chocotweak/util/CQItemHelper.java" md5: 40e0c2cca472f14fb55fa527d340665b
+endProcessing "com/chocotweak/util/CQItemHelper.java"
+
+startProcessing "com/chocotweak/weapon/WeaponEventHandler.java" md5: 749cb50bfd2fb157187fcdec673b472f
+endProcessing "com/chocotweak/weapon/WeaponEventHandler.java"
+
+startProcessing "com/chocotweak/weapon/WeaponStatModifier.java" md5: 94cb45d7f1eda5f60c382748316feb0a
+endProcessing "com/chocotweak/weapon/WeaponStatModifier.java"
+

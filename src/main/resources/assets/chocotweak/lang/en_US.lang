@@ -1,0 +1,256 @@
+# Choco Tweak Language File (English)
+
+# Enchantments
+enchantment.chocotweak.soul_harvest=Soul Harvest
+enchantment.chocotweak.vampiric=Vampiric
+enchantment.chocotweak.dragon_slayer=Dragon Slayer
+enchantment.chocotweak.beast_tamer=Beast Tamer
+enchantment.chocotweak.permafrost=Permafrost
+enchantment.chocotweak.intimidation=Intimidation
+
+# Enchantment Descriptions (for tooltip mods)
+enchantment.chocotweak.soul_harvest.desc=Chance to get double XP on kill
+enchantment.chocotweak.vampiric.desc=Heals you for a portion of damage dealt
+enchantment.chocotweak.dragon_slayer.desc=Extra damage to dragons
+enchantment.chocotweak.beast_tamer.desc=Chance to tame creatures on attack
+enchantment.chocotweak.permafrost.desc=Freezes attackers when hit
+enchantment.chocotweak.intimidation.desc=Weakens nearby enemies
+
+# Messages
+chocotweak.tame.success=Successfully tamed %s!
+chocotweak.tame.failed=Failed to tame %s
+
+# NPC Enchant Type Translations
+chocotweak.enchanttype.enchant=Enchantment
+chocotweak.enchanttype.blacksmith=Blacksmith
+chocotweak.enchanttype.gunsmith=Gunsmith
+chocotweak.enchanttype.staves=Staff Enchantment
+chocotweak.enchanttype.tailor=Armor Enchantment
+
+# NPC Dialog Action Translations
+chocotweak.dialog.open_shop=Open Shop
+chocotweak.dialog.open_item_upgrade=Open Item Upgrade
+chocotweak.dialog.open_inventory=Open Inventory
+chocotweak.dialog.join_team=Join Team
+chocotweak.dialog.npc_variable=NPC Variable
+chocotweak.dialog.global_variable=Global Variable
+chocotweak.dialog.reputation=Reputation
+chocotweak.dialog.give_item=Give Item
+chocotweak.dialog.consume_item=Consume Item
+chocotweak.dialog.command=Command
+chocotweak.dialog.set_owner=Set Owner
+chocotweak.dialog.set_equipement=Set Equipment
+chocotweak.dialog.set_ai=Set AI
+chocotweak.dialog.load_data_from_nbt=Load Data from NBT
+chocotweak.dialog.spawn_monster=Spawn Monster
+chocotweak.dialog.kill_counter=Kill Counter
+chocotweak.dialog.timer=Timer
+chocotweak.dialog.set_home=Set Home
+chocotweak.dialog.build_schematic=Build Schematic
+chocotweak.dialog.put_in_a_bottle=Put in a Bottle
+
+# Command Translations
+chocotweak.command.spawn_success=Successfully spawned structure: %s
+chocotweak.command.spawn_failed=Structure not found: %s
+chocotweak.command.save_success=Structure saved to: %s
+chocotweak.command.pos1_set=Selection point 1 set to: %d, %d, %d
+chocotweak.command.pos2_set=Selection point 2 set to: %d, %d, %d
+chocotweak.command.selection_size=Selection size: %d x %d x %d
+chocotweak.command.need_pos=Please set selection with /chocotweak pos1 and pos2 first!
+chocotweak.command.available_structures=Available Structures (%d)
+chocotweak.command.help_title=Choco Tweak Commands
+chocotweak.command.help_spawn=/chocotweak spawn <name> - Spawn structure at your feet
+chocotweak.command.help_save=/chocotweak save <name> - Save selection as schematic
+chocotweak.command.help_list=/chocotweak list - List available schematics
+chocotweak.command.help_pos1=/chocotweak pos1 - Set selection point 1 (at feet)
+chocotweak.command.help_pos2=/chocotweak pos2 - Set selection point 2 (at feet)
+
+# GUI Translations
+chocotweak.gui.select_creature=Select Tameable Creature
+chocotweak.gui.select_enchantment=Select Enchantment
+chocotweak.gui.confirm=Confirm
+chocotweak.gui.cancel=Cancel
+chocotweak.gui.add_cost_item=Add Cost Item (Held)
+chocotweak.gui.clear_cost=Clear Cost
+chocotweak.gui.cost_items=Cost Items
+chocotweak.gui.level=Level
+
+# Key Bindings
+key.categories.chocotweak=Choco Tweak
+key.chocotweak.creature_gui=Open Creature Selector
+key.chocotweak.enchant_gui=Open Enchantment Selector
+
+# Custom Actions (for dialog editor display)
+chocotweak.action.buy_creature=Buy Tamed Creature
+chocotweak.action.enchant_item=Enchant Item
+
+# Action Execution Messages
+chocotweak.action.no_entity_id=No entity ID set
+chocotweak.action.no_enchantment_id=No enchantment ID set
+chocotweak.action.entity_not_found=Cannot create entity: %s
+chocotweak.action.not_enough_items=Not enough items!
+chocotweak.action.tame_success=Successfully obtained tamed %s!
+chocotweak.action.spawn_success=Spawned %s (cannot tame)
+chocotweak.action.hold_item=Please hold the item to enchant
+chocotweak.action.unknown_enchantment=Unknown enchantment: %s
+chocotweak.action.enchant_incompatible=This item cannot receive this enchantment
+chocotweak.action.enchant_success=Successfully enchanted: %s
+
+# NPC Editor Menu Buttons
+chocotweak.npc.edit_dialogs=Edit Dialogs
+chocotweak.npc.edit_stats=Edit Stats
+chocotweak.npc.inventory=Inventory
+chocotweak.npc.import_export=Import/Export
+chocotweak.npc.edit_ai=Edit AI
+
+# NPC Stats Editor Fields
+chocotweak.npc.name_identifier=Name (Identifier)
+chocotweak.npc.display_name=Display Name
+chocotweak.npc.texture=Texture
+chocotweak.npc.texture_type=Texture Type
+chocotweak.npc.gender=Gender
+chocotweak.npc.color=Color
+chocotweak.npc.race=Race
+chocotweak.npc.size=Size
+chocotweak.npc.faction=Faction
+chocotweak.npc.reputation_friendly=Reputation Friendly
+chocotweak.npc.reputation_on_kill=Reputation on Kill
+chocotweak.npc.is_invincible=Is Invincible
+chocotweak.npc.visible_name=Visible Name
+chocotweak.npc.can_pick_loot=Can Pick Loot
+chocotweak.npc.target_monsters=Target Monsters
+chocotweak.npc.can_teleport=Can Teleport
+chocotweak.npc.voice=Voice
+chocotweak.npc.health=Health
+chocotweak.npc.speed=Speed
+chocotweak.npc.home_x=Home X
+chocotweak.npc.home_y=Home Y
+chocotweak.npc.home_z=Home Z
+chocotweak.npc.home_radius=Home Radius
+chocotweak.npc.red=Red
+chocotweak.npc.green=Green
+chocotweak.npc.blue=Blue
+chocotweak.npc.yes=Yes
+chocotweak.npc.no=No
+chocotweak.npc.player=Player
+chocotweak.npc.entity=Entity
+chocotweak.npc.male=Male
+chocotweak.npc.female=Female
+
+# Dialog Editor
+chocotweak.dialog.add=Add
+chocotweak.dialog.edit=Edit
+chocotweak.dialog.remove=Remove
+chocotweak.dialog.file=File
+chocotweak.dialog.option_name=Option Name
+chocotweak.dialog.display_name=Display Name
+chocotweak.dialog.answers=Answers
+chocotweak.dialog.conditions=Conditions
+chocotweak.dialog.actions=Actions
+chocotweak.dialog.save_text=Save Text
+
+# ========== Weapon Effect Tooltips ==========
+
+# Iron Sword and Shield
+chocotweak.weapon.iron_shield.title=Sturdy Shield
+chocotweak.weapon.iron_shield.desc1=§7Constant damage reduction §e12%
+
+# Diamond Sword and Shield
+chocotweak.weapon.diamond_shield.title=Tempered Shield
+chocotweak.weapon.diamond_shield.desc1=§7Constant damage reduction §e18%
+
+# Rusted Sword and Shield - Wound
+chocotweak.weapon.rusted.title=Wound
+chocotweak.weapon.rusted.desc1=§cAttack power reduced 30%
+chocotweak.weapon.rusted.desc2=§7Attacks have §e35% §7chance to apply Wound
+chocotweak.weapon.rusted.desc3=§7Each Wound level reduces enemy invulnerability by §c2 §7frames (max 3)
+
+# Turtle Shield - Iron Wall
+chocotweak.weapon.turtle.title=Iron Wall
+chocotweak.weapon.turtle.desc1=§cMovement speed -50%
+chocotweak.weapon.turtle.desc2=§7Blocking: rapid healing, §e80% §7damage reduction
+chocotweak.weapon.turtle.desc3=§7After attacking: §e30% §7damage reduction for §e5 sec
+chocotweak.weapon.turtle.desc4=§7Base damage §c25 §7| Very slow attack speed
+
+# Spider Sword and Shield - Venom
+chocotweak.weapon.spider.title=Venom
+chocotweak.weapon.spider.desc1=§aMovement speed +20%
+chocotweak.weapon.spider.desc2=§cArmor reduced 20%
+chocotweak.weapon.spider.desc3=§7Deals §e(1 + 0.2 × debuff count) §7multiplied damage
+chocotweak.weapon.spider.desc4=§7Blocking applies random debuff to attacker
+
+# Sun Sword - Sunlight
+chocotweak.weapon.sun.title=Radiant Sunlight
+chocotweak.weapon.sun.desc1=§eDaytime damage increased by §c2.5x
+chocotweak.weapon.sun.desc2=§7Attack and block ignite enemies for §c30 sec
+chocotweak.weapon.sun.desc3=§7Fire damage dealt §c×5
+
+# Moon Sword - Nightfall
+chocotweak.weapon.moon.title=Nightfall Whisper
+chocotweak.weapon.moon.desc1=§5Nighttime damage increased by §c2.5x
+chocotweak.weapon.moon.desc2=§7Attack and block cause fear and confusion
+chocotweak.weapon.moon.desc3=§7Lower light level = higher vulnerability (up to §c+50%§7)
+
+# Walker Sword - Abyss Corrosion
+chocotweak.weapon.walker.title=Abyss Corrosion
+chocotweak.weapon.walker.desc1=§7Dodge §e+30%§7 | Fast attack | Base damage §c20
+chocotweak.weapon.walker.desc2=§7Hit enemies: +§c10% §7attack taken, +§c20% §7vulnerability
+chocotweak.weapon.walker.desc3=§7Blocking renders abyss fog under enemies
+chocotweak.weapon.walker.desc4=§7Fog-covered enemies slowed §c60%§7 for §e5 sec
+
+# Element Enhancements
+chocotweak.config.elementenhance=Element Enhancement Settings
+chocotweak.config.elementenhance.enabled=Enable Element Enhancements
+chocotweak.config.elementenhance.fire_burn_base=Fire Base Damage Bonus
+chocotweak.config.elementenhance.fire_burn_per_level=Fire Bonus Per Level
+chocotweak.config.elementenhance.blast_stun_chance=Blast Stun Chance
+chocotweak.config.elementenhance.blast_stun_duration=Blast Stun Duration
+chocotweak.config.elementenhance.water_slow_amount=Water Slow Amount
+chocotweak.config.elementenhance.water_drown_damage=Water Drowning Damage
+chocotweak.config.elementenhance.darkness_wither_bonus=Darkness Wither Damage Bonus
+chocotweak.config.elementenhance.light_undead_base=Light Undead Damage Base Multiplier
+chocotweak.config.elementenhance.light_undead_per_level=Light Undead Damage Per Level
+chocotweak.config.elementenhance.light_range_per_level=Light Range Increase Per Level
+chocotweak.config.elementenhance.magic_stacks_per_level=Magic Vulnerability Max Stacks Per Level
+chocotweak.config.elementenhance.magic_bonus_per_stack=Magic Vulnerability Damage Bonus Per Stack
+
+# Potions
+effect.chocotweak.magic_vulnerability=Arcane Vulnerability
+potion.effect.chocotweak.magic_vulnerability=Potion of Arcane Vulnerability
+chocotweak.config.elementenhance.physical_base=Physical Damage Base Multiplier
+chocotweak.config.elementenhance.physical_per_level=Physical Damage Per Level Multiplier
+
+# Keybinds
+key.chocotweak.swap_spell=Swap Spell
+
+# Awakenings
+enchantment.highSpeedChant.name=High-Speed Divine Words
+enchantment.highSpeedChant.desc=Continuous casting while holding right-click, duration increases with level
+
+enchantment.spellAmplification.name=Spell Amplification
+enchantment.spellAmplification.desc=Increases spell damage (Lv5: 10x)
+
+enchantment.instantCast.name=Instant Cast
+enchantment.instantCast.desc=Reduces casting time and cooldown (Lv5: -95%)
+
+enchantment.manaSurge.name=Mana Surge
+enchantment.manaSurge.desc=Reduces spell cost (Lv5: -95%)
+
+enchantment.longRange.name=Long-Range Chanting
+enchantment.longRange.desc=Increases spell range (Lv5: 6x)
+
+enchantment.echoingVoice.name=Echoing Voice
+enchantment.echoingVoice.desc=Chance to recast spell for free (Lv5: 80%)
+
+# Potion Capacity Awakening
+enchantment.potionCapacity.name=Potion Capacity
+enchantment.potionCapacity.desc=Increases weapon potion slots (Lv1: 2, Lv2: 3, Lv3: 3+25% effect)
+
+enchantment.potionInfusion.name=Potion Infusion
+enchantment.potionInfusion.desc=Consume inventory potion to infuse weapon (5 XP cost)
+
+# Potion Infusion GUI
+gui.chocotweak.potion_infusion=Potion Infusion
+gui.chocotweak.infuse=Infuse
+gui.chocotweak.xp_cost=Cost: %d XP levels
+gui.chocotweak.potion_slots=Potion Slots: %d/%d

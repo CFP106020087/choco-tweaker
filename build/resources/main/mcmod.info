@@ -1,0 +1,16 @@
+[
+{
+  "modid": "chocotweak",
+  "name": "Choco Tweak",
+  "description": "Chocolate Quest extension mod for modded pet taming support (Ice and Fire, Lycanites Mobs, etc.)",
+  "version": "1.12.2-1.0.0",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [""],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["chocolatequest"]
+}
+]

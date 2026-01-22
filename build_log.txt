@@ -1,0 +1,117 @@
+To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/4.10.3/userguide/gradle_daemon.html.
+Daemon will be stopped at the end of the build stopping after processing
+
+> Configure project :
+This mapping 'stable_39' was designed for MC 1.12! Use at your own peril.
+WARNING: You are using an unsupported version of ForgeGradle.
+Please consider upgrading to ForgeGradle 5 and helping in the efforts to get old versions working on the modern toolchain.
+See https://gist.github.com/TheCurle/fe7ad3ede188cbdd15c235cc75d52d4a for more info on contributing.
+#################################################
+         ForgeGradle 2.3.4-gfc67182        
+  https://github.com/MinecraftForge/ForgeGradle  
+#################################################
+                 Powered by MCP                  
+             http://modcoderpack.com             
+     by: Searge, ProfMobius, R4wk, ZeuX          
+     Fesh0r, IngisKahn, bspkrs, LexManos         
+#################################################
+
+> Task :deobfCompileDummyTask
+> Task :deobfProvidedDummyTask
+> Task :sourceApiJava UP-TO-DATE
+> Task :compileApiJava NO-SOURCE
+> Task :processApiResources NO-SOURCE
+> Task :apiClasses UP-TO-DATE
+> Task :sourceMainJava UP-TO-DATE
+
+> Task :compileJava FAILED
+Potential refmap conflict. Duplicate refmap name chocotweak.mixins.refmap.json specified for sourceSet main, already defined for sourceSet main
+Note: SpongePowered MIXIN Annotation Processor Version=0.8.7
+Note: Supported obfuscation types: ObfuscationServiceMCP supports [searge,notch]
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinBlockDungeonChestTileEntity.java:27: warning: Mixin target com.chocolate.chocolateQuest.block.BlockDungeonChestTileEntity is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.block.BlockDungeonChestTileEntity", remap = false)
+^
+Note: Loading searge mappings from C:\Users\jason\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_stable\39\1.12.2\srgs\mcp-srg.srg
+Note: Loading notch mappings from C:\Users\jason\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_stable\39\1.12.2\srgs\mcp-notch.srg
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinDialogActionList.java:16: warning: Mixin target com.chocolate.chocolateQuest.quest.DialogActionList is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.quest.DialogActionList", remap = false)
+^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinDialogActionSpawnMonster.java:25: warning: Mixin target com.chocolate.chocolateQuest.quest.DialogActionSpawnMonster is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.quest.DialogActionSpawnMonster", remap = false)
+^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinEntityHumanBaseXP.java:15: warning: Mixin target com.chocolate.chocolateQuest.entity.EntityHumanBase is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.entity.EntityHumanBase", remap = false)
+^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinEntityHumanMob.java:14: warning: Mixin target com.chocolate.chocolateQuest.entity.mob.EntityHumanMob is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.entity.mob.EntityHumanMob", remap = false)
+^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinEnumEnchantType.java:11: warning: Mixin target com.chocolate.chocolateQuest.misc.EnumEnchantType is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.misc.EnumEnchantType", remap = false)
+^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinGuiAwakement.java:17: warning: Mixin target com.chocolate.chocolateQuest.gui.guinpc.GuiAwakement is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.gui.guinpc.GuiAwakement", remap = false)
+^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinGuiButtonDisplayString.java:16: warning: Mixin target com.chocolate.chocolateQuest.gui.GuiButtonDisplayString is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.gui.GuiButtonDisplayString", remap = false)
+^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinGuiLinked.java:10: warning: Mixin target com.chocolate.chocolateQuest.gui.guinpc.GuiLinked is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.gui.guinpc.GuiLinked", remap = false)
+^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinGuiNPC.java:17: warning: Mixin target com.chocolate.chocolateQuest.gui.guinpc.GuiNPC is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.gui.guinpc.GuiNPC", remap = false)
+^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinItemSwordTurtle.java:17: warning: Mixin target com.chocolate.chocolateQuest.items.swords.ItemSwordTurtle is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.items.swords.ItemSwordTurtle", remap = false)
+^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinTerrainManager.java:13: warning: Mixin target com.chocolate.chocolateQuest.quest.worldManager.TerrainManager is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.quest.worldManager.TerrainManager", remap = false)
+^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinWorldGeneratorNew.java:15: warning: Mixin target com.chocolate.chocolateQuest.WorldGeneratorNew is public and should be specified in value
+@Mixin(targets = "com.chocolate.chocolateQuest.WorldGeneratorNew", remap = false)
+^
+Note: Writing refmap to C:\mywork\ChocoTweak\build\tmp\compileJava\compileJava-refmap.json
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinEntityHumanBaseXP.java:18: warning: Cannot find target for @Shadow field in com.chocolate.chocolateQuest.entity.EntityHumanBase
+    @Shadow
+    ^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\mixin\MixinGuiNPC.java:21: warning: Cannot find target for @Shadow field in com.chocolate.chocolateQuest.gui.guinpc.GuiNPC
+        @Shadow
+        ^
+Note: Writing refmap to C:\mywork\ChocoTweak\build\tmp\compileJava\compileJava-refmap.json
+Note: Writing searge output SRGs to C:\mywork\ChocoTweak\build\tmp\compileJava\mcp-srg.srg
+Note: Writing notch output SRGs to C:\mywork\ChocoTweak\build\tmp\compileJava\mcp-notch.srg
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\compat\BaublesCompat.java:3: error: package baubles.api does not exist
+import baubles.api.BaubleType;
+                  ^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\compat\BaublesCompat.java:4: error: package baubles.api does not exist
+import baubles.api.BaublesApi;
+                  ^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\compat\BaublesCompat.java:5: error: package baubles.api does not exist
+import baubles.api.IBauble;
+                  ^
+C:\mywork\ChocoTweak\build\sources\main\java\com\chocotweak\compat\BaublesCompat.java:6: error: package baubles.api.cap does not exist
+import baubles.api.cap.IBaublesItemHandler;
+                      ^
+Note: Writing refmap to C:\mywork\ChocoTweak\build\tmp\compileJava\compileJava-refmap.json
+Note: Writing refmap to C:\mywork\ChocoTweak\build\tmp\compileJava\compileJava-refmap.json
+Note: Writing searge output SRGs to C:\mywork\ChocoTweak\build\tmp\compileJava\mcp-srg.srg
+Note: Writing notch output SRGs to C:\mywork\ChocoTweak\build\tmp\compileJava\mcp-notch.srg
+4 errors
+15 warnings
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.3/userguide/command_line_interface.html#sec:command_line_warnings
+5 actionable tasks: 3 executed, 2 up-to-date
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 3s

@@ -1,0 +1,16 @@
+{
+    "required": false,
+    "package": "com.chocotweak.mixin",
+    "refmap": "chocotweak.early.mixins.refmap.json",
+    "compatibilityLevel": "JAVA_8",
+    "target": "@env(DEFAULT)",
+    "minVersion": "0.8",
+    "mixins": [],
+    "client": [
+        "MixinPlayerControllerAttack",
+        "MixinLayerArmorBase"
+    ],
+    "injectors": {
+        "maxShiftBy": 10
+    }
+}
