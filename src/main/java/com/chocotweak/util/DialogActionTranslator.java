@@ -18,6 +18,30 @@ public class DialogActionTranslator {
     private static volatile Map<String, String> translatedToOriginal = null;
     private static volatile boolean mapBuildAttempted = false;
 
+    // 防止递归调用的标记
+    private static final ThreadLocal<java.util.Set<String>> processingNames = ThreadLocal.withInitial(java.util.HashSet::new);
+
+    /**
+     * 标记正在处理的名称（防止递归）
+     */
+    public static void markProcessing(String name) {
+        processingNames.get().add(name);
+    }
+
+    /**
+     * 取消标记
+     */
+    public static void unmarkProcessing(String name) {
+        processingNames.get().remove(name);
+    }
+
+    /**
+     * 检查是否正在处理
+     */
+    public static boolean isProcessing(String name) {
+        return processingNames.get().contains(name);
+    }
+
     static {
         // CQ 原版动作
         NAME_TO_KEY.put("Open shop", "chocotweak.dialog.open_shop");
