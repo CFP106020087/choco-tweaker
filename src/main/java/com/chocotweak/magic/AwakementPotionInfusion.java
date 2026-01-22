@@ -127,7 +127,7 @@ public class AwakementPotionInfusion extends Awakements {
 
         // 获取效果增强倍率
         float bonus = AwakementPotionCapacity.getPotionBonus(
-                Awakements.getEnchantLevel(weapon, com.chocotweak.mixin.MixinAwakementsRegister.potionCapacity));
+                Awakements.getEnchantLevel(weapon, com.chocotweak.core.AwakementsInitializer.potionCapacity));
 
         // 添加药水效果到武器
         addPotionEffectsToWeapon(weapon, effects, bonus);

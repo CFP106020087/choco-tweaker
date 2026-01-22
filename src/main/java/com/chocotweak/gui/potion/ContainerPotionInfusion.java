@@ -3,7 +3,7 @@ package com.chocotweak.gui.potion;
 import com.chocolate.chocolateQuest.items.swords.ItemCQBlade;
 import com.chocolate.chocolateQuest.magic.Awakements;
 import com.chocotweak.magic.AwakementPotionCapacity;
-import com.chocotweak.mixin.MixinAwakementsRegister;
+import com.chocotweak.core.AwakementsInitializer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -186,8 +186,8 @@ public class ContainerPotionInfusion extends Container {
 
         // 获取药水增幅倍率
         float bonus = 1.0f;
-        if (MixinAwakementsRegister.potionCapacity != null) {
-            int level = Awakements.getEnchantLevel(weapon, MixinAwakementsRegister.potionCapacity);
+        if (AwakementsInitializer.potionCapacity != null) {
+            int level = Awakements.getEnchantLevel(weapon, AwakementsInitializer.potionCapacity);
             bonus = AwakementPotionCapacity.getPotionBonus(level);
         }
 

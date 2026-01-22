@@ -1,6 +1,7 @@
 package com.chocotweak.mixin;
 
 import com.chocolate.chocolateQuest.magic.Awakements;
+import com.chocotweak.core.AwakementsInitializer;
 import com.chocotweak.magic.*;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
@@ -25,8 +26,8 @@ public class MixinSpellAwakeningEffects {
      */
     @Inject(method = "getDamage", at = @At("RETURN"), cancellable = true)
     private void applySpellAmplification(ItemStack itemStack, CallbackInfoReturnable<Float> cir) {
-        if (MixinAwakementsRegister.spellAmplification != null) {
-            int level = Awakements.getEnchantLevel(itemStack, MixinAwakementsRegister.spellAmplification);
+        if (AwakementsInitializer.spellAmplification != null) {
+            int level = Awakements.getEnchantLevel(itemStack, AwakementsInitializer.spellAmplification);
             if (level > 0) {
                 float multiplier = AwakementSpellAmplification.getDamageMultiplier(level);
                 cir.setReturnValue(cir.getReturnValue() * multiplier);
@@ -40,8 +41,8 @@ public class MixinSpellAwakeningEffects {
      */
     @Inject(method = "getCost", at = @At("RETURN"), cancellable = true)
     private void applyManaSurge(ItemStack itemstack, CallbackInfoReturnable<Float> cir) {
-        if (MixinAwakementsRegister.manaSurge != null) {
-            int level = Awakements.getEnchantLevel(itemstack, MixinAwakementsRegister.manaSurge);
+        if (AwakementsInitializer.manaSurge != null) {
+            int level = Awakements.getEnchantLevel(itemstack, AwakementsInitializer.manaSurge);
             if (level > 0) {
                 float multiplier = AwakementManaSurge.getCostMultiplier(level);
                 cir.setReturnValue(cir.getReturnValue() * multiplier);
@@ -55,8 +56,8 @@ public class MixinSpellAwakeningEffects {
      */
     @Inject(method = "getRange", at = @At("RETURN"), cancellable = true)
     private void applyLongRange(ItemStack itemstack, CallbackInfoReturnable<Integer> cir) {
-        if (MixinAwakementsRegister.longRange != null) {
-            int level = Awakements.getEnchantLevel(itemstack, MixinAwakementsRegister.longRange);
+        if (AwakementsInitializer.longRange != null) {
+            int level = Awakements.getEnchantLevel(itemstack, AwakementsInitializer.longRange);
             if (level > 0) {
                 float multiplier = AwakementLongRange.getRangeMultiplier(level);
                 cir.setReturnValue((int) (cir.getReturnValue() * multiplier));
