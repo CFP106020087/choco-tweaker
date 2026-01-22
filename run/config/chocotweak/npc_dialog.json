@@ -1,0 +1,33 @@
+{
+  "creatures": [
+    {
+      "entityId": "minecraft:wolf",
+      "displayName": "Wolf",
+      "costItems": [
+        {
+          "itemId": "minecraft:emerald",
+          "count": 5,
+          "metadata": 0
+        }
+      ]
+    }
+  ],
+  "enchantments": [
+    {
+      "enchantmentId": "chocotweak:soul_harvest",
+      "level": 1,
+      "costItems": [
+        {
+          "itemId": "minecraft:emerald",
+          "count": 10,
+          "metadata": 0
+        },
+        {
+          "itemId": "minecraft:book",
+          "count": 1,
+          "metadata": 0
+        }
+      ]
+    }
+  ]
+}

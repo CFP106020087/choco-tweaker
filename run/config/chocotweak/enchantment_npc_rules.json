@@ -1,0 +1,59 @@
+{
+    "rules": [
+        {
+            "enchantment": "chocotweak:dragon_slayer",
+            "allowedNpcTypes": [
+                "orc",
+                "pirate",
+                "abysswalker"
+            ],
+            "description": "屠龙者 - 只有兽人、海盗、深渊行者提供"
+        },
+        {
+            "enchantment": "chocotweak:vampiric",
+            "allowedNpcTypes": [
+                "orc",
+                "abysswalker",
+                "specter"
+            ],
+            "description": "吸血 - 兽人、深渊行者、幽灵提供"
+        },
+        {
+            "enchantment": "chocotweak:soul_harvest",
+            "allowedNpcTypes": [
+                "witch",
+                "mage",
+                "necromancer",
+                "specter"
+            ],
+            "description": "灵魂收割 - 女巫、法师、死灵法师、幽灵提供"
+        },
+        {
+            "enchantment": "chocotweak:beast_tamer",
+            "allowedNpcTypes": [
+                "*"
+            ],
+            "description": "驯兽师 - 所有NPC都可提供 (* 表示全部)"
+        },
+        {
+            "enchantment": "chocotweak:permafrost",
+            "allowedNpcTypes": [
+                "mage",
+                "witch"
+            ],
+            "description": "冰霜行者 - 法师、女巫提供"
+        },
+        {
+            "enchantment": "chocotweak:intimidation",
+            "allowedNpcTypes": [
+                "orc",
+                "pirate",
+                "abysswalker",
+                "minotaur"
+            ],
+            "description": "威压 - 兽人、海盗、深渊行者、牛头人提供"
+        }
+    ],
+    "defaultBehavior": "show_all",
+    "_comment": "defaultBehavior: 'show_all' = 未配置的附魔所有NPC都能卖, 'hide_all' = 未配置的附魔没有NPC能卖"
+}

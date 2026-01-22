@@ -32,9 +32,8 @@ public class ChocoTweakMixinPlugin implements IFMLLoadingPlugin {
 
     @Override
     public String[] getASMTransformerClass() {
-        return new String[] {
-                "com.chocotweak.core.AwakementsTransformer"
-        };
+        // ASM已移除，改用Mixin实现
+        return new String[0];
     }
 
     @Override
