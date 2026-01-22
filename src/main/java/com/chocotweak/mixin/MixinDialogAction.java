@@ -2,27 +2,60 @@ package com.chocotweak.mixin;
 
 import com.chocotweak.util.DialogActionTranslator;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.Overwrite;
-import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Pseudo;
+import org.spongepowered.asm.mixin.Unique;
+
+import java.lang.reflect.Field;
 
 /**
  * Mixin to fix getIDByName to handle translated names safely
  * 安全地修复 getIDByName 以处理翻译后的名称
+ *
+ * 注意: actions 字段类型是 DialogActionList[]，使用反射访问避免类型问题
  */
 @Pseudo
 @Mixin(targets = "com.chocolate.chocolateQuest.quest.DialogAction", remap = false)
 public class MixinDialogAction {
 
-    @Shadow
-    public static Object[] actions; // 使用 Object[] 避免直接引用 DialogActionList
+    @Unique
+    private static Field chocotweak$actionsField;
+
+    @Unique
+    private static boolean chocotweak$fieldInitialized = false;
 
     /**
-     * 通过反射获取 name 字段
+     * 使用反射获取 actions 字段
      */
-    private static String getActionName(Object action) {
+    @Unique
+    private static Object[] chocotweak$getActions() {
+        if (!chocotweak$fieldInitialized) {
+            chocotweak$fieldInitialized = true;
+            try {
+                Class<?> dialogActionClass = Class.forName("com.chocolate.chocolateQuest.quest.DialogAction");
+                chocotweak$actionsField = dialogActionClass.getField("actions");
+                chocotweak$actionsField.setAccessible(true);
+            } catch (Exception e) {
+                System.err.println("[ChocoTweak] Failed to get actions field: " + e.getMessage());
+            }
+        }
+        if (chocotweak$actionsField != null) {
+            try {
+                return (Object[]) chocotweak$actionsField.get(null);
+            } catch (Exception e) {
+                return null;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * 通过反射获取 DialogActionList 的 name 字段
+     */
+    @Unique
+    private static String chocotweak$getActionName(Object action) {
         try {
-            java.lang.reflect.Field nameField = action.getClass().getField("name");
+            Field nameField = action.getClass().getField("name");
             return (String) nameField.get(action);
         } catch (Exception e) {
             return null;
@@ -32,13 +65,18 @@ public class MixinDialogAction {
     /**
      * 重写 getIDByName 方法 - 安全版本
      * 不调用 toString() 避免循环触发 mixin
-     * 
+     *
      * @author ChocoTweak
      * @reason Fix action lookup for translated names
      */
     @Overwrite
     public static int getIDByName(String name) {
-        if (name == null || actions == null) {
+        if (name == null) {
+            return 0;
+        }
+
+        Object[] actions = chocotweak$getActions();
+        if (actions == null) {
             return 0;
         }
 
@@ -49,7 +87,7 @@ public class MixinDialogAction {
                     continue;
 
                 // 使用反射获取 name 字段
-                String actionName = getActionName(actions[i]);
+                String actionName = chocotweak$getActionName(actions[i]);
                 if (name.equals(actionName)) {
                     return i;
                 }
@@ -62,7 +100,7 @@ public class MixinDialogAction {
                     if (actions[i] == null)
                         continue;
 
-                    String actionName = getActionName(actions[i]);
+                    String actionName = chocotweak$getActionName(actions[i]);
                     if (originalName.equals(actionName)) {
                         return i;
                     }

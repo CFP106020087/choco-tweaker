@@ -13,6 +13,7 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -23,11 +24,11 @@ import java.util.Random;
 
 /**
  * 匕首特殊效果 Mixin
- * 
+ *
  * 所有匕首：
  * - 背刺 (120度) 伤害 3 倍
  * - 各有不同的暴击倍率和特殊效果
- * 
+ *
  * 铁匕首: 1/5 概率 2x 伤害
  * 钻石匕首: 1/5 概率 4x 伤害
  * 锈匕首: 1/5 概率 6x 伤害 + 剑盾效果(晕眩+打落盔甲)
@@ -39,37 +40,42 @@ import java.util.Random;
 @Mixin(targets = "com.chocolate.chocolateQuest.items.swords.ItemBaseDagger", remap = false)
 public class MixinDaggerCritical {
 
-    private static final Random RANDOM = new Random();
-    private static final double CRIT_CHANCE = 0.2; // 1/5 = 20%
-    private static final double WOUND_CHANCE = 0.35; // 35% 挫伤概率
-    private static final double BACKSTAB_ANGLE = 120.0; // 背刺角度
-    private static final float BACKSTAB_MULTIPLIER = 3.0f; // 背刺伤害倍率
+    @Unique
+    private static final Random chocotweak$RANDOM = new Random();
+    @Unique
+    private static final double chocotweak$CRIT_CHANCE = 0.2; // 1/5 = 20%
+    @Unique
+    private static final double chocotweak$WOUND_CHANCE = 0.35; // 35% 挫伤概率
+    @Unique
+    private static final double chocotweak$BACKSTAB_ANGLE = 120.0; // 背刺角度
+    @Unique
+    private static final float chocotweak$BACKSTAB_MULTIPLIER = 3.0f; // 背刺伤害倍率
 
     @Inject(method = "hitEntity", at = @At("HEAD"))
-    private void onHitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker,
+    private void chocotweak$onHitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker,
             CallbackInfoReturnable<Boolean> cir) {
 
         Item item = stack.getItem();
 
         // 计算是否背刺 (120度)
-        boolean isBackstab = isBackstab(attacker, target);
+        boolean isBackstab = chocotweak$isBackstab(attacker, target);
 
         // 计算是否暴击 (1/5 概率)
-        boolean isCrit = RANDOM.nextDouble() < CRIT_CHANCE;
+        boolean isCrit = chocotweak$RANDOM.nextDouble() < chocotweak$CRIT_CHANCE;
 
-        float critMultiplier = getCritMultiplier(item);
+        float critMultiplier = chocotweak$getCritMultiplier(item);
         float totalMultiplier = 1.0f;
 
         // 背刺 3 倍
         if (isBackstab) {
-            totalMultiplier *= BACKSTAB_MULTIPLIER;
-            spawnBackstabParticles(target);
+            totalMultiplier *= chocotweak$BACKSTAB_MULTIPLIER;
+            chocotweak$spawnBackstabParticles(target);
         }
 
         // 暴击倍率
         if (isCrit && critMultiplier > 1.0f) {
             totalMultiplier *= critMultiplier;
-            spawnCritParticles(target);
+            chocotweak$spawnCritParticles(target);
         }
 
         // 应用额外伤害（通过直接攻击）
@@ -92,22 +98,23 @@ public class MixinDaggerCritical {
         }
 
         // 锈匕首：每次攻击有35%概率施加挫伤（无上限）
-        if (isItem(item, "chocolatequest:rusteddagger") && !target.world.isRemote) {
-            if (RANDOM.nextDouble() < WOUND_CHANCE) {
-                applyWoundEffect(target);
+        if (chocotweak$isItem(item, "chocolatequest:rusteddagger") && !target.world.isRemote) {
+            if (chocotweak$RANDOM.nextDouble() < chocotweak$WOUND_CHANCE) {
+                chocotweak$applyWoundEffect(target);
             }
         }
 
         // 暴击特殊效果
         if (isCrit && !target.world.isRemote) {
-            applySpecialEffect(item, target, attacker);
+            chocotweak$applySpecialEffect(item, target, attacker);
         }
     }
 
     /**
      * 检查是否为背刺（攻击者在目标背后 120 度内）
      */
-    private boolean isBackstab(EntityLivingBase attacker, EntityLivingBase target) {
+    @Unique
+    private boolean chocotweak$isBackstab(EntityLivingBase attacker, EntityLivingBase target) {
         double angle = attacker.rotationYaw - target.rotationYaw;
 
         // 归一化角度到 0-360
@@ -120,10 +127,11 @@ public class MixinDaggerCritical {
         angle = Math.abs(angle - 180.0);
 
         // 120 度背刺范围 = 左右各 60 度
-        return angle > (180.0 - BACKSTAB_ANGLE / 2);
+        return angle > (180.0 - chocotweak$BACKSTAB_ANGLE / 2);
     }
 
-    private static boolean isItem(Item item, String registryName) {
+    @Unique
+    private static boolean chocotweak$isItem(Item item, String registryName) {
         ResourceLocation loc = item.getRegistryName();
         return loc != null && loc.toString().equals(registryName);
     }
@@ -131,18 +139,19 @@ public class MixinDaggerCritical {
     /**
      * 获取各匕首的暴击倍率
      */
-    private float getCritMultiplier(Item item) {
-        if (isItem(item, "chocolatequest:irondagger"))
+    @Unique
+    private float chocotweak$getCritMultiplier(Item item) {
+        if (chocotweak$isItem(item, "chocolatequest:irondagger"))
             return 2.0f;
-        if (isItem(item, "chocolatequest:diamonddagger"))
+        if (chocotweak$isItem(item, "chocolatequest:diamonddagger"))
             return 4.0f;
-        if (isItem(item, "chocolatequest:rusteddagger"))
+        if (chocotweak$isItem(item, "chocolatequest:rusteddagger"))
             return 6.0f;
-        if (isItem(item, "chocolatequest:tricksterdagger"))
+        if (chocotweak$isItem(item, "chocolatequest:tricksterdagger"))
             return 6.0f;
-        if (isItem(item, "chocolatequest:ninjadagger"))
+        if (chocotweak$isItem(item, "chocolatequest:ninjadagger"))
             return 10.0f;
-        if (isItem(item, "chocolatequest:monkingdagger"))
+        if (chocotweak$isItem(item, "chocolatequest:monkingdagger"))
             return 6.0f;
         return 1.0f;
     }
@@ -150,11 +159,12 @@ public class MixinDaggerCritical {
     /**
      * 应用匕首特殊效果（暴击时触发）
      */
-    private void applySpecialEffect(Item item, EntityLivingBase target, EntityLivingBase attacker) {
+    @Unique
+    private void chocotweak$applySpecialEffect(Item item, EntityLivingBase target, EntityLivingBase attacker) {
         // 锈匕首的挫伤已移到每次攻击触发，这里不再处理
 
         // 猴王匕首：晕眩
-        if (isItem(item, "chocolatequest:monkingdagger")) {
+        if (chocotweak$isItem(item, "chocolatequest:monkingdagger")) {
             if (PotionRegistry.STUN != null) {
                 target.addPotionEffect(new PotionEffect(PotionRegistry.STUN, 60, 0)); // 3秒
             }
@@ -166,7 +176,8 @@ public class MixinDaggerCritical {
     /**
      * 施加挫伤效果（无上限叠加）
      */
-    private void applyWoundEffect(EntityLivingBase target) {
+    @Unique
+    private void chocotweak$applyWoundEffect(EntityLivingBase target) {
         if (PotionRegistry.WOUND != null) {
             int currentLevel = 0;
             if (target.isPotionActive(PotionRegistry.WOUND)) {
@@ -181,7 +192,8 @@ public class MixinDaggerCritical {
     /**
      * 随机打落目标的一件盔甲
      */
-    private void dropRandomArmor(EntityLivingBase target) {
+    @Unique
+    private void chocotweak$dropRandomArmor(EntityLivingBase target) {
         EntityEquipmentSlot[] armorSlots = {
                 EntityEquipmentSlot.HEAD,
                 EntityEquipmentSlot.CHEST,
@@ -198,7 +210,7 @@ public class MixinDaggerCritical {
         }
 
         if (!wornArmor.isEmpty()) {
-            EntityEquipmentSlot slotToDrop = wornArmor.get(RANDOM.nextInt(wornArmor.size()));
+            EntityEquipmentSlot slotToDrop = wornArmor.get(chocotweak$RANDOM.nextInt(wornArmor.size()));
             ItemStack armorToDrop = target.getItemStackFromSlot(slotToDrop).copy();
 
             target.setItemStackToSlot(slotToDrop, ItemStack.EMPTY);
@@ -207,37 +219,37 @@ public class MixinDaggerCritical {
                     target.posX, target.posY + target.height, target.posZ,
                     armorToDrop);
             entityItem.setPickupDelay(10);
-            entityItem.motionX = (RANDOM.nextDouble() - 0.5) * 0.3;
-            entityItem.motionY = 0.2 + RANDOM.nextDouble() * 0.2;
-            entityItem.motionZ = (RANDOM.nextDouble() - 0.5) * 0.3;
+            entityItem.motionX = (chocotweak$RANDOM.nextDouble() - 0.5) * 0.3;
+            entityItem.motionY = 0.2 + chocotweak$RANDOM.nextDouble() * 0.2;
+            entityItem.motionZ = (chocotweak$RANDOM.nextDouble() - 0.5) * 0.3;
 
             target.world.spawnEntity(entityItem);
         }
     }
 
-    private void spawnBackstabParticles(EntityLivingBase target) {
+    @Unique
+    private void chocotweak$spawnBackstabParticles(EntityLivingBase target) {
         if (target.world.isRemote) {
             for (int i = 0; i < 8; i++) {
                 target.world.spawnParticle(EnumParticleTypes.CRIT_MAGIC,
-                        target.posX + (RANDOM.nextDouble() - 0.5) * target.width,
-                        target.posY + target.height * 0.5 + RANDOM.nextDouble() * target.height * 0.5,
-                        target.posZ + (RANDOM.nextDouble() - 0.5) * target.width,
+                        target.posX + (chocotweak$RANDOM.nextDouble() - 0.5) * target.width,
+                        target.posY + target.height * 0.5 + chocotweak$RANDOM.nextDouble() * target.height * 0.5,
+                        target.posZ + (chocotweak$RANDOM.nextDouble() - 0.5) * target.width,
                         0, 0.1, 0);
             }
         }
     }
 
-    private void spawnCritParticles(EntityLivingBase target) {
+    @Unique
+    private void chocotweak$spawnCritParticles(EntityLivingBase target) {
         if (target.world.isRemote) {
             for (int i = 0; i < 10; i++) {
                 target.world.spawnParticle(EnumParticleTypes.CRIT,
-                        target.posX + (RANDOM.nextDouble() - 0.5) * target.width,
-                        target.posY + target.height * 0.5 + RANDOM.nextDouble() * target.height * 0.5,
-                        target.posZ + (RANDOM.nextDouble() - 0.5) * target.width,
-                        (RANDOM.nextDouble() - 0.5) * 0.5, 0.2, (RANDOM.nextDouble() - 0.5) * 0.5);
+                        target.posX + (chocotweak$RANDOM.nextDouble() - 0.5) * target.width,
+                        target.posY + target.height * 0.5 + chocotweak$RANDOM.nextDouble() * target.height * 0.5,
+                        target.posZ + (chocotweak$RANDOM.nextDouble() - 0.5) * target.width,
+                        (chocotweak$RANDOM.nextDouble() - 0.5) * 0.5, 0.2, (chocotweak$RANDOM.nextDouble() - 0.5) * 0.5);
             }
         }
     }
 }
-
-

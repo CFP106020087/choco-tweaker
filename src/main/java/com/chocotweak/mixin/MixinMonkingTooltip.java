@@ -8,6 +8,7 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -21,7 +22,8 @@ import java.util.List;
 @Mixin(targets = "com.chocolate.chocolateQuest.items.swords.ItemCQBlade", remap = false)
 public class MixinMonkingTooltip {
 
-    private static boolean isItem(Item item, String registryName) {
+    @Unique
+    private static boolean chocotweak$isItem(Item item, String registryName) {
         ResourceLocation loc = item.getRegistryName();
         return loc != null && loc.toString().equals(registryName);
     }
@@ -32,7 +34,7 @@ public class MixinMonkingTooltip {
         Item item = stack.getItem();
 
         // 猴王剑盾 - 巨力
-        if (isItem(item, "chocolatequest:swordshiedmonking")) {
+        if (chocotweak$isItem(item, "chocolatequest:swordshiedmonking")) {
             tooltip.add("");
             tooltip.add(TextFormatting.GOLD + "" + TextFormatting.BOLD + "巨力");
             tooltip.add(TextFormatting.GRAY + "可边格挡边攻击");
@@ -41,7 +43,7 @@ public class MixinMonkingTooltip {
         }
 
         // 猴王剑 - 巨力
-        else if (isItem(item, "chocolatequest:swordmonking")) {
+        else if (chocotweak$isItem(item, "chocolatequest:swordmonking")) {
             tooltip.add("");
             tooltip.add(TextFormatting.GOLD + "" + TextFormatting.BOLD + "巨力");
             tooltip.add(TextFormatting.GRAY + "范围攻击(5格)");
@@ -50,7 +52,7 @@ public class MixinMonkingTooltip {
         }
 
         // 钩剑 - 飞爪
-        else if (isItem(item, "chocolatequest:hooksword")) {
+        else if (chocotweak$isItem(item, "chocolatequest:hooksword")) {
             tooltip.add("");
             tooltip.add(TextFormatting.AQUA + "" + TextFormatting.BOLD + "飞爪");
             tooltip.add(TextFormatting.GRAY + "右键发射钩爪");

@@ -15,6 +15,7 @@ import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -104,44 +105,45 @@ public abstract class MixinWeaponStats {
         }
     }
 
-    private static boolean isItem(Item item, String registryName) {
+    @Unique
+    private static boolean chocotweak$isItem(Item item, String registryName) {
         ResourceLocation loc = item.getRegistryName();
         return loc != null && loc.toString().equals(registryName);
     }
 
     private static Double getCustomAttackSpeed(Item item) {
         // === 行者之剑 - 高攻速 ===
-        if (isItem(item, "chocolatequest:endsword"))
+        if (chocotweak$isItem(item, "chocolatequest:endsword"))
             return -2.0;
         // === 龟盾 - 极慢攻速 ===
-        if (isItem(item, "chocolatequest:swordturtle"))
+        if (chocotweak$isItem(item, "chocolatequest:swordturtle"))
             return -3.2;
         // === 蜘蛛剑 - 快攻速 ===
-        if (isItem(item, "chocolatequest:swordspider"))
+        if (chocotweak$isItem(item, "chocolatequest:swordspider"))
             return -2.2;
         // === 阳光剑 ===
-        if (isItem(item, "chocolatequest:swordsunlight"))
+        if (chocotweak$isItem(item, "chocolatequest:swordsunlight"))
             return -2.6;
         // === 月光剑 ===
-        if (isItem(item, "chocolatequest:moonsword"))
+        if (chocotweak$isItem(item, "chocolatequest:moonsword"))
             return -2.6;
         // === 锈剑 ===
-        if (isItem(item, "chocolatequest:rustedswordandshied"))
+        if (chocotweak$isItem(item, "chocolatequest:rustedswordandshied"))
             return -2.6;
         // === 铁剑盾 ===
-        if (isItem(item, "chocolatequest:ironswordandshield"))
+        if (chocotweak$isItem(item, "chocolatequest:ironswordandshield"))
             return -2.6;
         // === 钻石剑盾 ===
-        if (isItem(item, "chocolatequest:diamondswordandshield"))
+        if (chocotweak$isItem(item, "chocolatequest:diamondswordandshield"))
             return -2.6;
         // === 猴王剑盾 - 极慢攻速 ===
-        if (isItem(item, "chocolatequest:swordshiedmonking"))
+        if (chocotweak$isItem(item, "chocolatequest:swordshiedmonking"))
             return -3.5;
         // === 猴王大剑 ===
-        if (isItem(item, "chocolatequest:swordmonking"))
+        if (chocotweak$isItem(item, "chocolatequest:swordmonking"))
             return -3.2;
         // === 钩剑 ===
-        if (isItem(item, "chocolatequest:hooksword"))
+        if (chocotweak$isItem(item, "chocolatequest:hooksword"))
             return -2.4;
 
         return null;
@@ -152,10 +154,10 @@ public abstract class MixinWeaponStats {
      */
     private static Float getCustomDamage(Item item) {
         // === 猴王剑盾 - 30伤害 ===
-        if (isItem(item, "chocolatequest:swordshiedmonking"))
+        if (chocotweak$isItem(item, "chocolatequest:swordshiedmonking"))
             return 30.0F;
         // === 猴王大剑 - 35伤害 ===
-        if (isItem(item, "chocolatequest:swordmonking"))
+        if (chocotweak$isItem(item, "chocolatequest:swordmonking"))
             return 35.0F;
 
         return null;

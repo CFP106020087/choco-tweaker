@@ -6,7 +6,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Coerce;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
@@ -16,12 +18,14 @@ import java.util.UUID;
 
 /**
  * Mixin to extend DialogActionSpawnMonster with modded pet taming support.
- * 
+ *
  * This injects AFTER the vanilla EntityTameable check but BEFORE
  * world.spawnEntity(),
  * allowing us to tame modded entities (Ice and Fire dragons, Lycanites Mobs,
  * etc.)
  * using reflection.
+ *
+ * 使用 @Coerce 处理 EntityHumanNPC 参数类型
  */
 @Pseudo
 @Mixin(targets = "com.chocolate.chocolateQuest.quest.DialogActionSpawnMonster", remap = false)
@@ -31,37 +35,34 @@ public abstract class MixinDialogActionSpawnMonster {
      * Temporary storage for the player who triggered the spawn.
      * Set by the inject at HEAD, used by inject before spawnEntity.
      */
-    private static ThreadLocal<EntityPlayer> pendingPlayer = new ThreadLocal<>();
+    @Unique
+    private static ThreadLocal<EntityPlayer> chocotweak$pendingPlayer = new ThreadLocal<>();
 
     /**
      * Capture the player at the start of execute()
+     * 使用 @Coerce 将 EntityHumanNPC 强制转换为 Object
      */
     @Inject(method = "execute", at = @At("HEAD"))
-    private void capturePlayer(EntityPlayer player, Object npc, CallbackInfo ci) {
-        pendingPlayer.set(player);
+    private void chocotweak$capturePlayer(EntityPlayer player, @Coerce Object npc, CallbackInfo ci) {
+        chocotweak$pendingPlayer.set(player);
     }
 
     /**
      * Clear the player after execute() completes
      */
     @Inject(method = "execute", at = @At("RETURN"))
-    private void clearPlayer(EntityPlayer player, Object npc, CallbackInfo ci) {
-        pendingPlayer.remove();
+    private void chocotweak$clearPlayer(EntityPlayer player, @Coerce Object npc, CallbackInfo ci) {
+        chocotweak$pendingPlayer.remove();
     }
 
     /**
      * Inject before world.spawnEntity() to tame modded entities.
-     * 
+     *
      * We hook into the INVOKE of World.spawnEntity and try to tame the entity
      * if it matches any of our configured taming rules.
      */
-    @Inject(method = "execute", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;spawnEntity(Lnet/minecraft/entity/Entity;)Z"), locals = LocalCapture.CAPTURE_FAILHARD, require = 0 // Don't
-                                                                                                                                                                                                   // crash
-                                                                                                                                                                                                   // if
-                                                                                                                                                                                                   // injection
-                                                                                                                                                                                                   // fails
-    )
-    private void onBeforeSpawnEntity(EntityPlayer player, Object npc, CallbackInfo ci,
+    @Inject(method = "execute", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;spawnEntity(Lnet/minecraft/entity/Entity;)Z"), locals = LocalCapture.CAPTURE_FAILHARD, require = 0)
+    private void chocotweak$onBeforeSpawnEntity(EntityPlayer player, @Coerce Object npc, CallbackInfo ci,
             Object tag, Object entitytag, Object coords, Entity entity) {
 
         if (entity == null)
@@ -75,7 +76,7 @@ public abstract class MixinDialogActionSpawnMonster {
                     entity.getClass().getSimpleName());
 
             try {
-                applyTaming(entity, player, rule);
+                chocotweak$applyTaming(entity, player, rule);
                 ChocoTweak.LOGGER.info("Successfully tamed {} for player {}",
                         entity.getClass().getSimpleName(), player.getName());
             } catch (Exception e) {
@@ -88,7 +89,8 @@ public abstract class MixinDialogActionSpawnMonster {
     /**
      * Apply taming using reflection based on the rule configuration.
      */
-    private void applyTaming(Entity entity, EntityPlayer player, TamingConfig.TamingRule rule)
+    @Unique
+    private void chocotweak$applyTaming(Entity entity, EntityPlayer player, TamingConfig.TamingRule rule)
             throws Exception {
 
         Class<?> entityClass = entity.getClass();
@@ -96,7 +98,7 @@ public abstract class MixinDialogActionSpawnMonster {
         // Call tame method (usually setTamed(true))
         if (rule.tameMethod != null && !rule.tameMethod.isEmpty()) {
             try {
-                Method tameMethod = findMethod(entityClass, rule.tameMethod, boolean.class);
+                Method tameMethod = chocotweak$findMethod(entityClass, rule.tameMethod, boolean.class);
                 if (tameMethod != null) {
                     tameMethod.setAccessible(true);
                     tameMethod.invoke(entity, true);
@@ -111,14 +113,14 @@ public abstract class MixinDialogActionSpawnMonster {
         if (rule.ownerMethod != null && !rule.ownerMethod.isEmpty()) {
             try {
                 if ("UUID".equals(rule.ownerType)) {
-                    Method ownerMethod = findMethod(entityClass, rule.ownerMethod, UUID.class);
+                    Method ownerMethod = chocotweak$findMethod(entityClass, rule.ownerMethod, UUID.class);
                     if (ownerMethod != null) {
                         ownerMethod.setAccessible(true);
                         ownerMethod.invoke(entity, player.getUniqueID());
                         ChocoTweak.LOGGER.debug("Called {}(UUID)", rule.ownerMethod);
                     }
                 } else if ("EntityPlayer".equals(rule.ownerType)) {
-                    Method ownerMethod = findMethod(entityClass, rule.ownerMethod, EntityPlayer.class);
+                    Method ownerMethod = chocotweak$findMethod(entityClass, rule.ownerMethod, EntityPlayer.class);
                     if (ownerMethod != null) {
                         ownerMethod.setAccessible(true);
                         ownerMethod.invoke(entity, player);
@@ -133,7 +135,7 @@ public abstract class MixinDialogActionSpawnMonster {
         // Call post-tame method if configured
         if (rule.postTameMethod != null && !rule.postTameMethod.isEmpty()) {
             try {
-                Method postMethod = findMethod(entityClass, rule.postTameMethod);
+                Method postMethod = chocotweak$findMethod(entityClass, rule.postTameMethod);
                 if (postMethod != null) {
                     postMethod.setAccessible(true);
                     postMethod.invoke(entity);
@@ -148,7 +150,8 @@ public abstract class MixinDialogActionSpawnMonster {
     /**
      * Find a method in the class hierarchy, checking superclasses.
      */
-    private Method findMethod(Class<?> clazz, String name, Class<?>... paramTypes)
+    @Unique
+    private Method chocotweak$findMethod(Class<?> clazz, String name, Class<?>... paramTypes)
             throws NoSuchMethodException {
         Class<?> current = clazz;
         while (current != null && current != Object.class) {
@@ -161,5 +164,3 @@ public abstract class MixinDialogActionSpawnMonster {
         throw new NoSuchMethodException(name);
     }
 }
-
-
