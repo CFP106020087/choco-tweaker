@@ -7,8 +7,10 @@
     "minVersion": "0.8",
     "mixins": [
         "MixinArmorTooltip",
+        "MixinAwakementsRegister",
         "MixinBagCapacity",
         "MixinBlockDungeonChestTileEntity",
+        "MixinContainerAwakement",
         "MixinDaggerCritical",
         "MixinDaggerTooltip",
         "MixinDialogAction",
@@ -35,6 +37,7 @@
     ],
     "client": [
         "MixinGuiAwakement",
+        "MixinGuiAwakementAction",
         "MixinGuiButtonDisplayString",
         "MixinGuiLinked",
         "MixinGuiNPC",

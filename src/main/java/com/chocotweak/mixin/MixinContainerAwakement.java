@@ -1,6 +1,7 @@
 package com.chocotweak.mixin;
 
 import com.chocolate.chocolateQuest.magic.Awakements;
+import com.chocotweak.core.ContainerAwakementHelper;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,18 +17,15 @@ import java.util.Map;
 
 /**
  * 修复ContainerAwakement中的觉醒ID查找问题
- * 
+ *
  * 原版CQ的问题：在觉醒模式下GUI传入null的Enchantment，
  * 导致getEnchantmentId返回-1，触发ArrayIndexOutOfBoundsException
- * 
+ *
  * 此Mixin完全重写enchantItem方法，正确处理觉醒模式
  */
 @Pseudo
 @Mixin(targets = "com.chocolate.chocolateQuest.gui.guinpc.ContainerAwakement", remap = false)
 public abstract class MixinContainerAwakement {
-
-    /** 静态holder，由MixinGuiAwakementAction在点击按钮时设置 */
-    public static int pendingAwakementId = -1;
 
     @Shadow
     public boolean mode;
@@ -109,9 +107,9 @@ public abstract class MixinContainerAwakement {
         } else {
             // ========== 觉醒模式 (修复后的逻辑) ==========
 
-            // 获取觉醒ID（从pendingAwakementId或enchantment）
-            int awakementId = pendingAwakementId;
-            pendingAwakementId = -1; // 重置
+            // 获取觉醒ID（从ContainerAwakementHelper或enchantment）
+            int awakementId = ContainerAwakementHelper.pendingAwakementId;
+            ContainerAwakementHelper.pendingAwakementId = -1; // 重置
 
             if (awakementId < 0 && enchantment != null) {
                 // 如果没有设置pendingId，尝试从enchantment获取
