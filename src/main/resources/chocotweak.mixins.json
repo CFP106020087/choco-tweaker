@@ -13,7 +13,6 @@
         "MixinContainerAwakement",
         "MixinDaggerCritical",
         "MixinDaggerTooltip",
-        "MixinDialogActionSpawnMonster",
         "MixinEntityHumanBaseXP",
         "MixinEntityHumanMob",
         "MixinEnumEnchantType",
