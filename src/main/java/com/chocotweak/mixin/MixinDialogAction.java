@@ -4,7 +4,6 @@ import com.chocotweak.util.DialogActionTranslator;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Pseudo;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 
 import java.lang.reflect.Field;
@@ -12,35 +11,62 @@ import java.lang.reflect.Field;
 /**
  * Mixin to fix getIDByName to handle translated names safely
  * 安全地修复 getIDByName 以处理翻译后的名称
+ *
+ * 使用纯反射访问 actions 字段，避免 @Shadow 类型不匹配问题
  */
 @Pseudo
 @Mixin(targets = "com.chocolate.chocolateQuest.quest.DialogAction", remap = false)
 public class MixinDialogAction {
 
-    @Shadow
-    public static Object[] actions;
+    @Unique
+    private static Field chocotweak$actionsField;
 
     @Unique
     private static Field chocotweak$nameField;
 
     @Unique
-    private static boolean chocotweak$nameFieldInit = false;
+    private static volatile boolean chocotweak$initialized = false;
+
+    @Unique
+    private static void chocotweak$ensureInit(Class<?> selfClass) {
+        if (!chocotweak$initialized) {
+            synchronized (MixinDialogAction.class) {
+                if (!chocotweak$initialized) {
+                    try {
+                        chocotweak$actionsField = selfClass.getField("actions");
+                    } catch (Exception ignored) {}
+                    chocotweak$initialized = true;
+                }
+            }
+        }
+    }
+
+    @Unique
+    private static Object[] chocotweak$getActions(Class<?> selfClass) {
+        chocotweak$ensureInit(selfClass);
+        if (chocotweak$actionsField != null) {
+            try {
+                return (Object[]) chocotweak$actionsField.get(null);
+            } catch (Exception ignored) {}
+        }
+        return null;
+    }
 
     @Unique
     private static String chocotweak$getActionName(Object action) {
         if (action == null) return null;
-        if (!chocotweak$nameFieldInit) {
-            chocotweak$nameFieldInit = true;
+        if (chocotweak$nameField == null) {
             try {
                 chocotweak$nameField = action.getClass().getField("name");
-            } catch (Exception ignored) {}
+            } catch (Exception ignored) {
+                return null;
+            }
         }
-        if (chocotweak$nameField != null) {
-            try {
-                return (String) chocotweak$nameField.get(action);
-            } catch (Exception ignored) {}
+        try {
+            return (String) chocotweak$nameField.get(action);
+        } catch (Exception ignored) {
+            return null;
         }
-        return null;
     }
 
     /**
@@ -51,11 +77,20 @@ public class MixinDialogAction {
      */
     @Overwrite
     public static int getIDByName(String name) {
-        if (name == null || actions == null) {
+        if (name == null) {
             return 0;
         }
 
         try {
+            // 获取当前类（被mixin合并后的DialogAction类）
+            Class<?> selfClass = Class.forName("com.chocolate.chocolateQuest.quest.DialogAction", false,
+                    Thread.currentThread().getContextClassLoader());
+
+            Object[] actions = chocotweak$getActions(selfClass);
+            if (actions == null) {
+                return 0;
+            }
+
             // 1. 先直接匹配原始名称（快速路径）
             for (int i = 0; i < actions.length; i++) {
                 String actionName = chocotweak$getActionName(actions[i]);
