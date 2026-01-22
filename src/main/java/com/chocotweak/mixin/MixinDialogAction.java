@@ -1,11 +1,13 @@
 package com.chocotweak.mixin;
 
-import com.chocolate.chocolateQuest.quest.DialogActionList;
 import com.chocotweak.util.DialogActionTranslator;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
+
+import java.lang.reflect.Field;
 
 /**
  * Mixin to fix getIDByName to handle translated names safely
@@ -16,7 +18,30 @@ import org.spongepowered.asm.mixin.Shadow;
 public class MixinDialogAction {
 
     @Shadow
-    public static DialogActionList[] actions;
+    public static Object[] actions;
+
+    @Unique
+    private static Field chocotweak$nameField;
+
+    @Unique
+    private static boolean chocotweak$nameFieldInit = false;
+
+    @Unique
+    private static String chocotweak$getActionName(Object action) {
+        if (action == null) return null;
+        if (!chocotweak$nameFieldInit) {
+            chocotweak$nameFieldInit = true;
+            try {
+                chocotweak$nameField = action.getClass().getField("name");
+            } catch (Exception ignored) {}
+        }
+        if (chocotweak$nameField != null) {
+            try {
+                return (String) chocotweak$nameField.get(action);
+            } catch (Exception ignored) {}
+        }
+        return null;
+    }
 
     /**
      * 重写 getIDByName 方法 - 安全版本
@@ -33,10 +58,8 @@ public class MixinDialogAction {
         try {
             // 1. 先直接匹配原始名称（快速路径）
             for (int i = 0; i < actions.length; i++) {
-                if (actions[i] == null)
-                    continue;
-
-                if (name.equals(actions[i].name)) {
+                String actionName = chocotweak$getActionName(actions[i]);
+                if (name.equals(actionName)) {
                     return i;
                 }
             }
@@ -45,10 +68,8 @@ public class MixinDialogAction {
             String originalName = DialogActionTranslator.getOriginalName(name);
             if (originalName != null && !originalName.equals(name)) {
                 for (int i = 0; i < actions.length; i++) {
-                    if (actions[i] == null)
-                        continue;
-
-                    if (originalName.equals(actions[i].name)) {
+                    String actionName = chocotweak$getActionName(actions[i]);
+                    if (originalName.equals(actionName)) {
                         return i;
                     }
                 }
