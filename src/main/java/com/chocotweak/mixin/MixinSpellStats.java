@@ -35,7 +35,7 @@ public class MixinSpellStats {
      */
     @Inject(method = "getDamage", at = @At("RETURN"), cancellable = true)
     private void doubleDamage(ItemStack itemStack, CallbackInfoReturnable<Float> cir) {
-        cir.setReturnValue(cir.getReturnValue() * 2.0f);
+        cir.setReturnValue(cir.getReturnValue() * 10.0f);
     }
 }
 

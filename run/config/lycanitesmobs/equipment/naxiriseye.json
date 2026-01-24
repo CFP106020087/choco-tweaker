@@ -1,0 +1,135 @@
+{
+  "itemName": "naxiriseye",
+  "loadDefault": true,
+  "slotType": "jewel",
+  "dropMobId": "lycanitesmobs:beholder",
+  "dropChance": 0.2,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "arcane"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "potioncore:dispel",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:observed",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "arcanelaserstorm",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "arcanelaserstorm",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "arcanelaserstorm",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "arcanelaserstorm",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 18
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "arcanelaserstorm",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 24
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "arcanelaserstorm",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 30
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "arcanelaserstorm",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 36
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "arcanelaserstorm",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 42
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "arcanelaserstorm",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 4,
+      "count": 1,
+      "bonusDamage": 48
+    }
+  ]
+}

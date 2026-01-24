@@ -1,0 +1,139 @@
+{
+  "itemName": "entarm",
+  "loadDefault": true,
+  "slotType": "base",
+  "dropMobId": "lycanitesmobs:ent",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "arbour"
+  ],
+  "features": [
+    {
+      "featureType": "slot",
+      "slotType": "head"
+    },
+    {
+      "featureType": "slot",
+      "slotType": "pommel"
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 1,
+      "levelMax": 3,
+      "damageAmount": 1,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 6,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 1,
+      "levelMax": 1,
+      "effectType": "lycanitesmobs:leech",
+      "effectTarget": "self",
+      "effectDuration": 80,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "lycanitesmobs:leech",
+      "effectTarget": "self",
+      "effectDuration": 120,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "lycanitesmobs:leech",
+      "effectTarget": "self",
+      "effectDuration": 160,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "lycanitesmobs:leech",
+      "effectTarget": "self",
+      "effectDuration": 200,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "lycanitesmobs:leech",
+      "effectTarget": "self",
+      "effectDuration": 240,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "lycanitesmobs:leech",
+      "effectTarget": "self",
+      "effectDuration": 280,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "lycanitesmobs:leech",
+      "effectTarget": "self",
+      "effectDuration": 320,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "lycanitesmobs:leech",
+      "effectTarget": "self",
+      "effectDuration": 360,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:leech",
+      "effectTarget": "self",
+      "effectDuration": 400,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:rejuvenation",
+      "effectTarget": "self",
+      "effectDuration": 400,
+      "effectStrength": 5
+    }
+  ]
+}

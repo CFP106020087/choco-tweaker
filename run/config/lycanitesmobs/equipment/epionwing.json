@@ -1,0 +1,264 @@
+{
+  "itemName": "epionwing",
+  "loadDefault": true,
+  "slotType": "axe",
+  "dropMobId": "lycanitesmobs:epion",
+  "dropChance": 0.2,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "void"
+  ],
+  "features": [
+    {
+      "featureType": "harvest",
+      "levelMax": 2,
+      "harvestType": "axe",
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 3,
+      "levelMax": 4,
+      "harvestType": "axe",
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 5,
+      "levelMax": 6,
+      "harvestType": "axe",
+      "harvestShape": "block",
+      "harvestRange": [
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 7,
+      "levelMax": 8,
+      "harvestType": "axe",
+      "harvestShape": "block",
+      "harvestRange": [
+        3,
+        3,
+        8
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 9,
+      "harvestType": "axe",
+      "harvestShape": "block",
+      "harvestRange": [
+        4,
+        4,
+        12
+      ]
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 6,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 9,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 12,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 15,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 18,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 21,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 24,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 27,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:bleed",
+      "effectTarget": "target",
+      "effectDuration": 1200,
+      "effectStrength": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "bloodleech",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "bloodleech",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 3
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "bloodleech",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "bloodleech",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 9
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "bloodleech",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "bloodleech",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 15
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "bloodleech",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 18
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "bloodleech",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 21
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "bloodleech",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 24
+    }
+  ]
+}

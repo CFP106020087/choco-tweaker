@@ -1,0 +1,164 @@
+{
+  "itemName": "arixbrain",
+  "loadDefault": true,
+  "slotType": "jewel",
+  "dropMobId": "lycanitesmobs:arix",
+  "dropChance": 0.05,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "frost",
+    "water"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "switchbow:freeze",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "icefireball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 30,
+      "count": 1,
+      "bonusDamage": 2
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "icefireball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "icefireball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "icefireball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 16
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "icefireball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 6,
+      "count": 1,
+      "bonusDamage": 22
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "icefireball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 6,
+      "count": 1,
+      "bonusDamage": 30
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "icefireball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 4,
+      "count": 1,
+      "bonusDamage": 40
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "icefireball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 4,
+      "count": 1,
+      "bonusDamage": 50
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "icefireball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1,
+      "bonusDamage": 60
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "icefireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 20,
+      "count": 7,
+      "bonusDamage": 32,
+      "ringRange": 60
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "icefireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 20,
+      "count": 11,
+      "bonusDamage": 40,
+      "ringRange": 60
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "icefireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 20,
+      "count": 15,
+      "bonusDamage": 48,
+      "ringRange": 60
+    }
+  ]
+}

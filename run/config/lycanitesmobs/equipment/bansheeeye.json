@@ -1,0 +1,237 @@
+{
+  "itemName": "bansheeeye",
+  "loadDefault": true,
+  "slotType": "head",
+  "dropMobId": "lycanitesmobs:banshee",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "phase"
+  ],
+  "features": [
+    {
+      "featureType": "slot",
+      "slotType": "blade"
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 2,
+      "damageAmount": 1,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 4,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 6,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 8,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "lycanitesmobs:fear",
+      "effectTarget": "target",
+      "effectDuration": 40,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "lycanitesmobs:fear",
+      "effectTarget": "target",
+      "effectDuration": 60,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "lycanitesmobs:fear",
+      "effectTarget": "target",
+      "effectDuration": 80,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "lycanitesmobs:fear",
+      "effectTarget": "target",
+      "effectDuration": 100,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "lycanitesmobs:fear",
+      "effectTarget": "target",
+      "effectDuration": 120,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "lycanitesmobs:fear",
+      "effectTarget": "target",
+      "effectDuration": 140,
+      "effectStrength": 6
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "lycanitesmobs:fear",
+      "effectTarget": "target",
+      "effectDuration": 160,
+      "effectStrength": 7
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "lycanitesmobs:fear",
+      "effectTarget": "target",
+      "effectDuration": 180,
+      "effectStrength": 8
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:fear",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 10
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "srparasites:fear",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:phase",
+      "effectTarget": "self",
+      "effectDuration": 200,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 2,
+      "levelMax": 2,
+      "summonMobId": "lycanitesmobs.banshee",
+      "summonChance": 0.05,
+      "summonDuration": 10,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 4,
+      "levelMax": 4,
+      "summonMobId": "lycanitesmobs.banshee",
+      "summonChance": 0.15,
+      "summonDuration": 15,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 5,
+      "levelMax": 5,
+      "summonMobId": "lycanitesmobs.banshee",
+      "summonChance": 0.2,
+      "summonDuration": 20,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 6,
+      "levelMax": 6,
+      "summonMobId": "lycanitesmobs.banshee",
+      "summonChance": 0.25,
+      "summonDuration": 20,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 7,
+      "levelMax": 7,
+      "summonMobId": "lycanitesmobs.banshee",
+      "summonChance": 0.3,
+      "summonDuration": 25,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 8,
+      "levelMax": 8,
+      "summonMobId": "lycanitesmobs.banshee",
+      "summonChance": 0.35,
+      "summonDuration": 25,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 9,
+      "summonMobId": "lycanitesmobs.banshee",
+      "summonChance": 0.4,
+      "summonDuration": 30,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    }
+  ]
+}

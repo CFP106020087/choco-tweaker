@@ -1,0 +1,184 @@
+{
+  "itemName": "sutiramustinger",
+  "loadDefault": true,
+  "slotType": "pommel",
+  "dropMobId": "lycanitesmobs:sutiramu",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "arcane",
+    "quake"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMin": 1,
+      "levelMax": 2,
+      "damageAmount": 1,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 4,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 6,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 8,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "hoe",
+      "harvestSpeed": 6,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        1
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "shears",
+      "harvestSpeed": 6,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        1
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 1,
+      "levelMax": 2,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 40,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 4,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 80,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 6,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 120,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 8,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 160,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 1,
+      "levelMax": 2,
+      "effectType": "minecraft:weakness",
+      "effectTarget": "target",
+      "effectDuration": 40,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 4,
+      "effectType": "minecraft:weakness",
+      "effectTarget": "target",
+      "effectDuration": 80,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 6,
+      "effectType": "minecraft:weakness",
+      "effectTarget": "target",
+      "effectDuration": 120,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 8,
+      "effectType": "minecraft:weakness",
+      "effectTarget": "target",
+      "effectDuration": 160,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:weakness",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:necroticpoison",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 3
+    }
+  ]
+}

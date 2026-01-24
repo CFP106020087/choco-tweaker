@@ -1,0 +1,335 @@
+{
+  "itemName": "bruchaquill",
+  "loadDefault": true,
+  "slotType": "pike",
+  "dropMobId": "lycanitesmobs:quillbeast",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "fae"
+  ],
+  "features": [
+    {
+      "featureType": "harvest",
+      "levelMax": 2,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 3,
+      "levelMax": 4,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 5,
+      "levelMax": 6,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        2,
+        6
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 7,
+      "levelMax": 8,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        2,
+        4,
+        9
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 9,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 0.7,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 0.65,
+      "damageRange": 1.5,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 7,
+      "damageKnockback": 0,
+      "damageCooldown": 0.6,
+      "damageRange": 2,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 10,
+      "damageKnockback": 0,
+      "damageCooldown": 0.55,
+      "damageRange": 2.5,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 13,
+      "damageKnockback": 0,
+      "damageCooldown": 0.5,
+      "damageRange": 3,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 16,
+      "damageKnockback": 0,
+      "damageCooldown": 0.45,
+      "damageRange": 3.5,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 19,
+      "damageKnockback": 0,
+      "damageCooldown": 0.4,
+      "damageRange": 4,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 22,
+      "damageKnockback": 0,
+      "damageCooldown": 0.35,
+      "damageRange": 4.5,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 25,
+      "damageKnockback": 0,
+      "damageCooldown": 0.3,
+      "damageRange": 5,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "potioncore:broken_armor",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "quill",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 16,
+      "count": 10,
+      "bonusDamage": 6,
+      "ringRange": 90
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "quill",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 12,
+      "count": 12,
+      "bonusDamage": 8,
+      "ringRange": 90
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "quill",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 12,
+      "count": 14,
+      "bonusDamage": 10,
+      "ringRange": 90
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "quill",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 10,
+      "count": 16,
+      "bonusDamage": 12,
+      "ringRange": 90
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "quill",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 10,
+      "count": 18,
+      "bonusDamage": 14,
+      "ringRange": 90
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "quill",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 8,
+      "count": 20,
+      "bonusDamage": 16,
+      "ringRange": 90
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "quill",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "quill",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 3
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "quill",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "quill",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 9
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "quill",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 6,
+      "count": 1,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "quill",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 6,
+      "count": 1,
+      "bonusDamage": 15
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "quill",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 4,
+      "count": 1,
+      "bonusDamage": 18
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "quill",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 4,
+      "count": 1,
+      "bonusDamage": 21
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "quill",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1,
+      "bonusDamage": 24
+    }
+  ]
+}

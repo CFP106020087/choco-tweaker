@@ -1,0 +1,27 @@
+{
+  "itemName": "ironhilt",
+  "loadDefault": true,
+  "slotType": "head",
+  "dropMobId": "",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 1,
+  "features": [
+    {
+      "featureType": "slot",
+      "slotType": "blade"
+    },
+    {
+      "featureType": "slot",
+      "slotType": "jewel"
+    },
+    {
+      "featureType": "damage",
+      "damageAmount": 2,
+      "damageKnockback": 0.5,
+      "damageCooldown": 0.75,
+      "damageRange": 1,
+      "damageSweep": 45
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "itemName": "wendigoantler",
+  "loadDefault": true,
+  "slotType": "base",
+  "dropMobId": "lycanitesmobs:wendigo",
+  "dropChance": 0.2,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "frost",
+    "nether"
+  ],
+  "features": [
+    {
+      "featureType": "slot",
+      "slotType": "head"
+    },
+    {
+      "featureType": "slot",
+      "slotType": "pommel"
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 1,
+      "levelMax": 2,
+      "damageAmount": 1,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 4,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 6,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 8,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 80,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 120,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 160,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 240,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 280,
+      "effectStrength": 6
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 320,
+      "effectStrength": 7
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 360,
+      "effectStrength": 8
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 400,
+      "effectStrength": 10
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "switchbow:freeze",
+      "effectTarget": "target",
+      "effectDuration": 100,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "simpledifficulty:cold_resist",
+      "effectTarget": "self",
+      "effectDuration": 24000,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "tundra",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "tundra",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 18
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "tundra",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 24
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "tundra",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 30
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "tundra",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 36
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "tundra",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 42
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "tundra",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 48
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "tundra",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 54
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "tundra",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 60
+    }
+  ]
+}

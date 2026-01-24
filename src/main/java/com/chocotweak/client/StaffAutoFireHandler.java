@@ -73,8 +73,53 @@ public class StaffAutoFireHandler {
 
         // 检查高速神言觉醒等级
         int awakementLevel = 0;
+
+        // 首先尝试使用 Awakements.getEnchantLevel
         if (AwakementsInitializer.highSpeedChant != null) {
-            awakementLevel = Awakements.getEnchantLevel(mainHand, AwakementsInitializer.highSpeedChant);
+            awakementLevel = Awakements.getEnchantLevel(mainHand, (Awakements) AwakementsInitializer.highSpeedChant);
+        }
+
+        // 如果直接查找失败，尝试遍历所有觉醒并按名称匹配
+        if (awakementLevel <= 0 && mainHand.hasTagCompound() && mainHand.getTagCompound().hasKey("awk")) {
+            net.minecraft.nbt.NBTTagCompound awkTag = mainHand.getTagCompound().getCompoundTag("awk");
+
+            // DEBUG: 打印 NBT 内容
+            if (fireCooldown == 0 && !wasCasting) {
+                System.out.println("[DEBUG] awk NBT keys: " + awkTag.getKeySet());
+                // 打印每个觉醒的名称
+                for (String key : awkTag.getKeySet()) {
+                    short lvl = awkTag.getShort(key);
+                    int id = Integer.parseInt(key);
+                    String name = "unknown";
+                    for (Awakements aw : Awakements.awekements) {
+                        if (aw != null && aw.id == id) {
+                            name = aw.getName();
+                            break;
+                        }
+                    }
+                    System.out.println("[DEBUG] Awakement ID " + id + " (" + name + ") = Lv" + lvl);
+                }
+            }
+
+            // 遍历所有觉醒查找 highSpeedChant
+            for (Awakements aw : Awakements.awekements) {
+                if (aw != null && "highSpeedChant".equals(aw.getName())) {
+                    short lvl = awkTag.getShort(aw.id + "");
+                    if (lvl > 0) {
+                        awakementLevel = lvl;
+                        if (fireCooldown == 0 && !wasCasting) {
+                            System.out.println("[DEBUG] Found highSpeedChant by name, ID=" + aw.id + ", level=" + lvl);
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+
+        // DEBUG: 打印觉醒等级
+        if (fireCooldown == 0 && !wasCasting && AwakementsInitializer.highSpeedChant != null) {
+            System.out.println("[DEBUG] highSpeedChant ID: " + ((Awakements) AwakementsInitializer.highSpeedChant).id
+                    + ", awakementLevel: " + awakementLevel);
         }
 
         // 无觉醒则不触发连续施法

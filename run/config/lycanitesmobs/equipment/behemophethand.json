@@ -1,0 +1,180 @@
+{
+  "itemName": "behemophethand",
+  "loadDefault": true,
+  "slotType": "head",
+  "dropMobId": "lycanitesmobs:behemoth",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "nether"
+  ],
+  "features": [
+    {
+      "featureType": "slot",
+      "slotType": "jewel"
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 1,
+      "levelMax": 2,
+      "damageAmount": 1,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 4,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 6,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 8,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:decay",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:recklessness",
+      "effectTarget": "self",
+      "effectDuration": 600,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "hellfireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 2
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "hellfireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "hellfireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "hellfireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 16
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "hellfireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 22
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "hellfireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 30
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "hellfireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 40
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "hellfireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 50
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "hellfireball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 60
+    }
+  ]
+}

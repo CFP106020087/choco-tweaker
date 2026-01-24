@@ -1,0 +1,285 @@
+{
+  "itemName": "geonachfist",
+  "loadDefault": true,
+  "slotType": "axe",
+  "dropMobId": "lycanitesmobs:geonach",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "earth"
+  ],
+  "features": [
+    {
+      "featureType": "harvest",
+      "levelMax": 1,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 6,
+      "harvestShape": "block",
+      "harvestRange": [
+        0,
+        0,
+        0
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 2,
+      "levelMax": 2,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 6,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        2,
+        0
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 3,
+      "levelMax": 3,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 7,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        2,
+        2
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 4,
+      "levelMax": 4,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 7,
+      "harvestShape": "block",
+      "harvestRange": [
+        2,
+        4,
+        2
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 5,
+      "levelMax": 5,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 8,
+      "harvestShape": "block",
+      "harvestRange": [
+        2,
+        4,
+        4
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 6,
+      "levelMax": 6,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 8,
+      "harvestShape": "block",
+      "harvestRange": [
+        3,
+        6,
+        4
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 7,
+      "levelMax": 7,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 9,
+      "harvestShape": "block",
+      "harvestRange": [
+        3,
+        6,
+        6
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 8,
+      "levelMax": 8,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 9,
+      "harvestShape": "block",
+      "harvestRange": [
+        4,
+        8,
+        6
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "pickaxe",
+      "levelMin": 9,
+      "harvestSpeed": 10,
+      "harvestShape": "block",
+      "harvestRange": [
+        4,
+        8,
+        8
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 6,
+      "damageKnockback": 2,
+      "damageCooldown": 2,
+      "damageRange": 1,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 9,
+      "damageKnockback": 3,
+      "damageCooldown": 2,
+      "damageRange": 1.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 12,
+      "damageKnockback": 4,
+      "damageCooldown": 2,
+      "damageRange": 2,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 15,
+      "damageKnockback": 5,
+      "damageCooldown": 2,
+      "damageRange": 2.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 18,
+      "damageKnockback": 6,
+      "damageCooldown": 2,
+      "damageRange": 3,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 21,
+      "damageKnockback": 7,
+      "damageCooldown": 2,
+      "damageRange": 3.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 24,
+      "damageKnockback": 8,
+      "damageCooldown": 2,
+      "damageRange": 4,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 27,
+      "damageKnockback": 9,
+      "damageCooldown": 2,
+      "damageRange": 4.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 30,
+      "damageKnockback": 10,
+      "damageCooldown": 2,
+      "damageRange": 5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 2,
+      "effectType": "lycanitesmobs:weight",
+      "effectTarget": "target",
+      "effectDuration": 80,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 4,
+      "effectType": "lycanitesmobs:weight",
+      "effectTarget": "target",
+      "effectDuration": 160,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 6,
+      "effectType": "lycanitesmobs:weight",
+      "effectTarget": "target",
+      "effectDuration": 240,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 8,
+      "effectType": "lycanitesmobs:weight",
+      "effectTarget": "target",
+      "effectDuration": 320,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:weight",
+      "effectTarget": "target",
+      "effectDuration": 400,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:weakness",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 10
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 10
+    }
+  ]
+}

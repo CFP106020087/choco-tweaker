@@ -1,0 +1,135 @@
+{
+  "itemName": "eyewigeye",
+  "loadDefault": true,
+  "slotType": "jewel",
+  "dropMobId": "lycanitesmobs:eyewig",
+  "dropChance": 0.2,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "poison"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:plague",
+      "effectTarget": "target",
+      "effectDuration": 1200,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:fouldisease",
+      "effectTarget": "target",
+      "effectDuration": 1200,
+      "effectStrength": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "poisonray",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "poisonray",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 2
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "poisonray",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "poisonray",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "poisonray",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 8
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "poisonray",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "poisonray",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "poisonray",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 14
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "poisonray",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 4,
+      "count": 1,
+      "bonusDamage": 16
+    }
+  ]
+}

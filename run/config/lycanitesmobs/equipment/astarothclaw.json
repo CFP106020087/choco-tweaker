@@ -1,0 +1,250 @@
+{
+  "itemName": "astarothclaw",
+  "loadDefault": true,
+  "slotType": "head",
+  "dropMobId": "lycanitesmobs:astaroth",
+  "dropChance": 0.2,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "nether",
+    "void"
+  ],
+  "features": [
+    {
+      "featureType": "slot",
+      "slotType": "pike"
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 2,
+      "damageAmount": 1,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 4,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 6,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 8,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "minecraft:wither",
+      "effectTarget": "target",
+      "effectDuration": 80,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "minecraft:wither",
+      "effectTarget": "target",
+      "effectDuration": 120,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "minecraft:wither",
+      "effectTarget": "target",
+      "effectDuration": 160,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "minecraft:wither",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "minecraft:wither",
+      "effectTarget": "target",
+      "effectDuration": 240,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "minecraft:wither",
+      "effectTarget": "target",
+      "effectDuration": 280,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "minecraft:wither",
+      "effectTarget": "target",
+      "effectDuration": 320,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "minecraft:wither",
+      "effectTarget": "target",
+      "effectDuration": 360,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:wither",
+      "effectTarget": "target",
+      "effectDuration": 400,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "mod_lavacow:infested",
+      "effectTarget": "target",
+      "effectDuration": 400,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "devilstar",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "devilstar",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1,
+      "bonusDamage": 2
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "devilstar",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1,
+      "bonusDamage": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "devilstar",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1,
+      "bonusDamage": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "devilstar",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1,
+      "bonusDamage": 8
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "devilstar",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1,
+      "bonusDamage": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "devilstar",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "devilstar",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1,
+      "bonusDamage": 14
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "devilstar",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1,
+      "bonusDamage": 16
+    }
+  ]
+}

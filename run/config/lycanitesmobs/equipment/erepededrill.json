@@ -1,0 +1,422 @@
+{
+  "itemName": "erepededrill",
+  "loadDefault": true,
+  "slotType": "pike",
+  "dropMobId": "lycanitesmobs:erepede",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "arcane"
+  ],
+  "features": [
+    {
+      "featureType": "harvest",
+      "levelMax": 2,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 6,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        2,
+        2
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 3,
+      "levelMax": 4,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 7,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        2,
+        4
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 5,
+      "levelMax": 6,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 7,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        3,
+        8
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 7,
+      "levelMax": 8,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 7,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        3,
+        16
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "pickaxe",
+      "levelMin": 9,
+      "harvestSpeed": 8,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        4,
+        24
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMax": 2,
+      "harvestType": "shovel",
+      "harvestSpeed": 6,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        2,
+        2
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 3,
+      "levelMax": 4,
+      "harvestType": "shovel",
+      "harvestSpeed": 7,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        2,
+        4
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 5,
+      "levelMax": 6,
+      "harvestType": "shovel",
+      "harvestSpeed": 7,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        3,
+        8
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 7,
+      "levelMax": 8,
+      "harvestType": "shovel",
+      "harvestSpeed": 7,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        3,
+        16
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "shovel",
+      "levelMin": 9,
+      "harvestSpeed": 8,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        4,
+        24
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 8,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 12,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 16,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 2,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 20,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 2,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 24,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 2,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 28,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 3,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 32,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 3,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 36,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 3,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 40,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 4,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "lycanitesmobs:aphagia",
+      "effectTarget": "target",
+      "effectDuration": 120,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "lycanitesmobs:aphagia",
+      "effectTarget": "target",
+      "effectDuration": 180,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "lycanitesmobs:aphagia",
+      "effectTarget": "target",
+      "effectDuration": 240,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "lycanitesmobs:aphagia",
+      "effectTarget": "target",
+      "effectDuration": 300,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "lycanitesmobs:aphagia",
+      "effectTarget": "target",
+      "effectDuration": 360,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "lycanitesmobs:aphagia",
+      "effectTarget": "target",
+      "effectDuration": 420,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "lycanitesmobs:aphagia",
+      "effectTarget": "target",
+      "effectDuration": 480,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "lycanitesmobs:aphagia",
+      "effectTarget": "target",
+      "effectDuration": 540,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:aphagia",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:mining_fatigue",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "mudshot",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "mudshot",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 8
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "mudshot",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "mudshot",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 16
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "mudshot",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 20
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "mudshot",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 24
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "mudshot",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 28
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "mudshot",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 32
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "mudshot",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 36
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "itemName": "wildkinarm",
+  "loadDefault": true,
+  "slotType": "pike",
+  "dropMobId": "lycanitesmobs:wildkin",
+  "dropChance": 0.2,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "earth"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 6,
+      "damageKnockback": 0,
+      "damageCooldown": 0.9,
+      "damageRange": 1,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 9,
+      "damageKnockback": 0,
+      "damageCooldown": 0.85,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 12,
+      "damageKnockback": 0,
+      "damageCooldown": 0.8,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 15,
+      "damageKnockback": 0,
+      "damageCooldown": 0.75,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 18,
+      "damageKnockback": 0,
+      "damageCooldown": 0.7,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 21,
+      "damageKnockback": 0,
+      "damageCooldown": 0.65,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 24,
+      "damageKnockback": 0,
+      "damageCooldown": 0.6,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 27,
+      "damageKnockback": 0,
+      "damageCooldown": 0.55,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 30,
+      "damageKnockback": 0,
+      "damageCooldown": 0.5,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "tombstone:reach",
+      "effectTarget": "self",
+      "effectDuration": 400,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:mugged",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 5
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 15
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 20
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 25
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 30
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 35
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 40
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "blizzard",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "blizzard",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10,
+      "bonusDamage": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "blizzard",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10,
+      "bonusDamage": 8
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "blizzard",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "blizzard",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10,
+      "bonusDamage": 16
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "blizzard",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10,
+      "bonusDamage": 20
+    }
+  ]
+}

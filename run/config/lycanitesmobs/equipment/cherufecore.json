@@ -1,0 +1,215 @@
+{
+  "itemName": "cherufecore",
+  "loadDefault": true,
+  "slotType": "jewel",
+  "dropMobId": "lycanitesmobs:lobber",
+  "dropChance": 0.05,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "lava"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1.8,
+      "damageRange": 1,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 6,
+      "damageKnockback": 0,
+      "damageCooldown": 1.8,
+      "damageRange": 1,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 8,
+      "damageKnockback": 0,
+      "damageCooldown": 1.8,
+      "damageRange": 1.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 10,
+      "damageKnockback": 0,
+      "damageCooldown": 1.8,
+      "damageRange": 1.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 12,
+      "damageKnockback": 0,
+      "damageCooldown": 1.8,
+      "damageRange": 2,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 14,
+      "damageKnockback": 0,
+      "damageCooldown": 1.8,
+      "damageRange": 2,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 16,
+      "damageKnockback": 0,
+      "damageCooldown": 1.8,
+      "damageRange": 2.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 18,
+      "damageKnockback": 0,
+      "damageCooldown": 1.8,
+      "damageRange": 2.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 20,
+      "damageKnockback": 0,
+      "damageCooldown": 1.8,
+      "damageRange": 3,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "simpledifficulty:heat_resist",
+      "effectTarget": "self",
+      "effectDuration": 24000,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "potioncore:burst",
+      "effectTarget": "self",
+      "effectDuration": 1,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "magma",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 200,
+      "count": 1,
+      "bonusDamage": 8
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "magma",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 200,
+      "count": 1,
+      "bonusDamage": 20
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "magma",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 160,
+      "count": 1,
+      "bonusDamage": 36
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "magma",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 160,
+      "count": 1,
+      "bonusDamage": 56
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "magma",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 120,
+      "count": 1,
+      "bonusDamage": 80
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "magma",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 120,
+      "count": 1,
+      "bonusDamage": 110
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "magma",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 100,
+      "count": 1,
+      "bonusDamage": 142
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "magma",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 100,
+      "count": 1,
+      "bonusDamage": 180
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "magma",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 80,
+      "count": 1,
+      "bonusDamage": 240
+    }
+  ]
+}

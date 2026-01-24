@@ -1,0 +1,331 @@
+{
+  "itemName": "clinkscythe",
+  "loadDefault": true,
+  "slotType": "axe",
+  "dropMobId": "lycanitesmobs:clink",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "earth",
+    "arcane"
+  ],
+  "features": [
+    {
+      "featureType": "harvest",
+      "harvestType": "hoe",
+      "harvestSpeed": 6,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        1
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "shears",
+      "harvestSpeed": 6,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        1
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMax": 1,
+      "harvestType": "shovel",
+      "harvestSpeed": 6,
+      "harvestShape": "block",
+      "harvestRange": [
+        2,
+        1,
+        1
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 2,
+      "levelMax": 2,
+      "harvestType": "shovel",
+      "harvestSpeed": 6,
+      "harvestShape": "block",
+      "harvestRange": [
+        3,
+        1,
+        2
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 3,
+      "levelMax": 3,
+      "harvestType": "shovel",
+      "harvestSpeed": 7,
+      "harvestShape": "block",
+      "harvestRange": [
+        6,
+        1,
+        4
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 4,
+      "levelMax": 4,
+      "harvestType": "shovel",
+      "harvestSpeed": 7,
+      "harvestShape": "block",
+      "harvestRange": [
+        9,
+        1,
+        6
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 5,
+      "levelMax": 5,
+      "harvestType": "shovel",
+      "harvestSpeed": 8,
+      "harvestShape": "block",
+      "harvestRange": [
+        12,
+        1,
+        8
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 6,
+      "levelMax": 6,
+      "harvestType": "shovel",
+      "harvestSpeed": 8,
+      "harvestShape": "block",
+      "harvestRange": [
+        15,
+        1,
+        10
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 7,
+      "levelMax": 7,
+      "harvestType": "shovel",
+      "harvestSpeed": 9,
+      "harvestShape": "block",
+      "harvestRange": [
+        18,
+        1,
+        12
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 8,
+      "levelMax": 8,
+      "harvestType": "shovel",
+      "harvestSpeed": 9,
+      "harvestShape": "block",
+      "harvestRange": [
+        21,
+        1,
+        14
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 9,
+      "harvestType": "shovel",
+      "harvestSpeed": 10,
+      "harvestShape": "block",
+      "harvestRange": [
+        24,
+        1,
+        16
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 2,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 2.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 6,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 3,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 8,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 3.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 10,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 4,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 12,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 4.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 14,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 16,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 5.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 18,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 7,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "effect",
+      "effectType": "lycanitesmobs:aphagia",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "potioncore:broken_armor",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "throwingscythe",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "throwingscythe",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 8
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "throwingscythe",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "throwingscythe",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 16
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "throwingscythe",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 20
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "throwingscythe",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 24
+    }
+  ]
+}

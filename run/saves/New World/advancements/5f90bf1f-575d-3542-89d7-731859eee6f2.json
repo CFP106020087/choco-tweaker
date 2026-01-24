@@ -1,0 +1,21 @@
+{
+  "minecraft:recipes/combat/arrow": {
+    "criteria": {
+      "has_feather": "2026-01-24 09:53:44 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-01-24 09:55:45 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "taiga": "2026-01-22 21:16:20 +0800",
+      "river": "2026-01-24 09:56:56 +0800"
+    },
+    "done": false
+  }
+}

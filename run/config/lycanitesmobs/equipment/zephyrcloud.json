@@ -1,0 +1,215 @@
+{
+  "itemName": "zephyrcloud",
+  "loadDefault": true,
+  "slotType": "pommel",
+  "dropMobId": "lycanitesmobs:djinn",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "air"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMin": 1,
+      "levelMax": 2,
+      "damageAmount": 1,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 4,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 6,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 8,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "minecraft:levitation",
+      "effectTarget": "target",
+      "effectDuration": 40,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "minecraft:levitation",
+      "effectTarget": "target",
+      "effectDuration": 60,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "minecraft:levitation",
+      "effectTarget": "target",
+      "effectDuration": 80,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "minecraft:levitation",
+      "effectTarget": "target",
+      "effectDuration": 100,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "minecraft:levitation",
+      "effectTarget": "target",
+      "effectDuration": 120,
+      "effectStrength": 6
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "minecraft:levitation",
+      "effectTarget": "target",
+      "effectDuration": 140,
+      "effectStrength": 7
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "minecraft:levitation",
+      "effectTarget": "target",
+      "effectDuration": 160,
+      "effectStrength": 8
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "minecraft:levitation",
+      "effectTarget": "target",
+      "effectDuration": 180,
+      "effectStrength": 9
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:levitation",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 10
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "potioncore:launch",
+      "effectTarget": "target",
+      "effectDuration": 1,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 4,
+      "levelMax": 4,
+      "summonMobId": "lycanitesmobs.djinn",
+      "summonChance": 0.05,
+      "summonDuration": 15,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 5,
+      "levelMax": 5,
+      "summonMobId": "lycanitesmobs.djinn",
+      "summonChance": 0.1,
+      "summonDuration": 20,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 6,
+      "levelMax": 6,
+      "summonMobId": "lycanitesmobs.djinn",
+      "summonChance": 0.15,
+      "summonDuration": 20,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 7,
+      "levelMax": 7,
+      "summonMobId": "lycanitesmobs.djinn",
+      "summonChance": 0.2,
+      "summonDuration": 25,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 8,
+      "levelMax": 8,
+      "summonMobId": "lycanitesmobs.djinn",
+      "summonChance": 0.25,
+      "summonDuration": 25,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 9,
+      "summonMobId": "lycanitesmobs.djinn",
+      "summonChance": 0.3,
+      "summonDuration": 30,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    }
+  ]
+}

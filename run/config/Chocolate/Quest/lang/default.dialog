@@ -1,527 +1,549 @@
-@name:witchBone
-@prompt:Can I help you?
-Sure, I am looking for 16 [minecraft:bone]
+@name:mercenaryPay
+@prompt:拿走??石
+（@name 凝??你）
 #####
-@name:test
-@prompt:Special chars[minecraft:emerald]
-My name is @name
-Your name is @sp
-This [minecraft:diamond] is a diamond
-This [minecraft:stone] is a stone block
-#####
-@name:stare
-@prompt:stare
+@name:
+@prompt:
 (@name stares at you)
-.... .... ....
-#####
-@name:setReunionPoint
-@prompt:Set reunion point here
-Ok sir, well met here if I get lost.
-#####
-@name:give1emerald
-@prompt:Give 1 [minecraft:emerald]
-Thanks!
-#####
-@name:huntedMonsterArena
-@prompt:Arena completed!
-Congratulations!
-Now you can play in the next level.
-#####
-@name:needARest
-@prompt:I need to rest
-You can sleep in the rooms upstairs.
-It's for free as long as you can guard us agains the
-hordes of the night.
-We accept donations if you have some emeralds.
-to spare
-#####
-@name:inqGiantHunt
-@prompt:Any monster tonight?
-An incredible giant zombie was spotted west.
-Take care if you aproach there.
-#####
-@name:witchDoingHere
-@prompt:What are you doing here?
-We got away from the civilization to experiment with
-black magic and potentially dangerous potions.
-As you can see we managed to crete and control skeletons.
-#####
-@name:waitHere
-@prompt:Wait here
-I won't move from here
-#####
-@name:orcLostSword
-@prompt:Do you need something?
-Mah spear[chocolateQuest:spearDiamond], can't remember where did I put it.
-Tha boss says I can't patrol without it, few he knows
-about orrks
-#####
-@name:takeIt
-@prompt:Take it
-Thanks!
-#####
-@name:inqSpecterHunt
-@prompt:inqSpecterHunt
-A group of specters has been seen tonight south,
-go explore the area and if you get rid of them I will 
-reward you
-#####
-@name:helloArena
-@prompt:helloArena
-Hello, welcome to the arena.
-Do you want to participate?
-#####
-@name:imYourMaster
-@prompt:I am your master
-(@name stares at you)
-MAASTERRR...
-#####
-@name:mercenaryGood
-@prompt:What are you doing here?
-I'm looking for a team, are you recruiting people?
-I can help you in your travels for just 48 [minecraft:emerald]
-#####
-@name:give20emerald
-@prompt:Give 20 [minecraft:emerald]
-That's awesome, thanks a lot!
-
-Take some potions!
-#####
-@name:inqZombieHunt
-@prompt:Any undead tonight?
-There is a group of zombies east.
-#####
-@name:helloMarket
-@prompt:helloMarket
-Hello wanderer, welcome to the Market.
-Try to have fun and don't cause any trouble.
-#####
-@name:recieveSkelly
-@prompt:Take your materials
-You will find your Skellybest at the entrance
-#####
-@name:mercenaryCheap
-@prompt:What are you doing here?
-I'm looking for a team, are you recruiting people?
-I can help you in your travels for just 10 [minecraft:emerald]
-#####
-@name:leadMeThere
-@prompt:Lead me there
-Ok, follow me.
-#####
-@name:loreInquisition
-@prompt:Tell me about the Inquisition
-The Inquisition was founded around 1000 years ago by king Otbrael's sisters 
-Amada and Namu, in the name of Diurna, goddess of light.
-Or  mission is to fight against the night forces and  discover the cause of 
-their spawn.
-#####
-@name:huntedMonster
-@prompt:Aleady hunted it!
-Nice! You are succesfully following the path of tha warrior
-and helping our village, I'll be pleased to craft ya some 
-equipement if you collected enough materials.
-#####
-@name:wolfTrained
-@prompt:I want a trained one 20x[minecraft:emerald]
-Your wolf is in the doghouse
-#####
-@name:comeToSeeMeAtNight
-@prompt:Anything to do?
-Come to visit me at night if you want to fight some undeads.
-#####
-@name:horseNormal
-@prompt:Give me a horse 24[minecraft:emerald]
-Here ya have yur horse.
-Don't drive drunk!
-#####
-@name:helloMinerals
-@prompt:helloMinerals
-Hello adventurer, I'm looking for the finest minerals.
-If you have some I can give you emeralds.
-#####
-@name:helloWorld
-@prompt:hello
-Hello adventurer!
-Do you need something?
-#####
-@name:inqMonsterHunted
-@prompt:Job is done!
-Thanks!
-Take some emeralds for the efforts.
-#####
-@name:helloInquisition
-@prompt:helloInquisition
-Hello adventurer!
-May the sun be with you.
-#####
-@name:horseTrader
-@prompt:What are you doing here?
-This is a horse brreeder, I can sell the best mounts
-if ya are interested bring some emeralds.
-#####
-@name:helloWolfTrader
-@prompt:helloWolfTrader
-Hello wanderer. Do ya need some help in your quest?
-I train tha best wolves in this arrea.
-#####
-@name:questGrogGive
-@prompt:Give grog bottle
-(@name stares at you)
-#####
-@name:give64emerald
-@prompt:Give 64 [minecraft:emerald]
-That's awesome, thanks for the donations!
-Do you know who is Chocolatin?
-He coded the entire Chocolate Quest mod
-doesn't he deserve a donation too?
-#####
-@name:questWizard1finish
-@prompt:I got rid of them
-Hope this time they learned the lesson!
-Take some emeralds for the effort
-#####
-@name:inqGiantHunted
-@prompt:The giant is dead
-Really? Did you kill it?
-That's an amazing achievement.
-Take some emeralds as reward.
-#####
-@name:bipbip
-@prompt:bipbip
-Bip..bip.bip....bip..bip....bip
-#####
-@name:helloGuardStare
-@prompt:helloGuardStare
-(Guard stares at you)
-...
-#####
-@name:horseGood
-@prompt:I want your best 32[minecraft:emerald]
-Enjoy your travel!
-#####
-@name:inventory
-@prompt:Open inventory
-This text is not displayed!
-#####
-@name:amondHammer
-@prompt:I think that's yours
-Ohh! Can't belive that... Is... My... HAMMER!!!!
-I will give your weapons special upgrades if you give
-it to me.
-#####
-@name:arenaInProgress
-@prompt:Arena in progress
-Come to speak with me once you complete the arena battle
-#####
-@name:upgradeItems
-@prompt:Upgrade my equipement
-(@name stares at you)
-#####
-@name:enchant
-@prompt:Enchant
-#####
-@name:loreTritons
-@prompt:Tell me about Tritons
-Tritons have dominated the oceans even before creatures appeared on the surface,
-they are witty and shy creatures, and it's rare to see them around the surface.
-The first time they were seen was during the "Fire wars", they tried to calm goblins 
-but could do nothing, it is rumoured that some of them established around lakes and 
-rivers but there is no proof. The second time they were seen on the surface was during 
-the "Abyss Walkers" invasion, they had a great knowledge of magic and provided a great 
-support to the other races on the surface, but after the invasion ended they reclaimed 
-some territories which started some conflicts. These days Tritons live in their ocean 
-cities under the menace of pirates. 
-#####
-@name:blacksmithGreeting
-@prompt:blacksmithGreeting
-I have the best weapons and armors for sale.
-Take a look if you are interested.
-#####
-@name:wantAWolf
-@prompt:I want a wolf
-I have 3 differrent types of wolfes.
-A normal wolf 8x[minecraft:emerald]
-A specially trrained wolf, with more resistance 20x[minecraft:emerald]
-And a beast, specially trained to hunt prreys 40[minecraft:emerald]
-#####
-@name:helloInn
-@prompt:helloInn
-Hello adventurer, do you want to drink something?
-maybe take a nap?
-You came to the correct place!
-#####
-@name:wolfBeast
-@prompt:Give me a beast! 40x[minecraft:emerald]
-Your beast is in the doghouse
-#####
-@name:giveSkellyBoss
-@prompt:I want a better Skely
-If you bring me 16 bones[minecraft:bone], 1 rotten flesh[minecraft:rotten_flesh] and 64 emeralds[minecraft:emerald]
-I'll give an speciall skelly, wich will wear any armor and
-use any weapon you give him.
-#####
-@name:wizardQuest1_1
-@prompt:What is it?
-Another group of mercenaries is wandering North here.
-Try to get rid of them and I will offer you to join us.
-#####
-@name:orcLostPantsGive
-@prompt:Give leggins [chocolateQuest:inquisitionPants]
-Thanks friend, I'll tell it to tha boss, he may sell ya
-some equipement.
-#####
-@name:questWizard0finish
-@prompt:They won't come back!
-So you smashed them? Thanks, I hope they don't come
-around here soon.
-Take some emeralds for the effort
-#####
-@name:orcChiefQuest
-@prompt:Anything to do?
-We found a giant monsterr menacing our village.
-If ya want go hunt him take theirr skins here and I 
-can craft ya orrk special armor! 
-#####
-@name:Last battle completed
-@prompt:Monster hunted!
-Congratulations, you just completed the arena!
-#####
-@name:merchantGreeting
-@prompt:merchantGreeting
-Welcome to the market traveler.
-Can I offer you something?
-#####
-@name:loreOrc
-@prompt:Tell me about Orcs
-Goblins and Dwarves were the first known species that inhabited the surface, 
-but one day goblins went crazy and started fires all around. 
-That caused conflicts with dwarves and started the "Fire wars", until orcs 
-appeared to calm them. Time after the "Fire wars" ended some creatures on the 
-surface started mutating to oversized creatures. 
-Many orcs and goblins had their houses destroyed by those creatures and 
-they adapted to a new lifestyle. Now Orcs and Goblins are nomads, experts on 
-monsters hunting.
-#####
-@name:receiveItem
-@prompt:Something for me?
-Thanks for your donations!
-#####
-@name:questWizard0start
-@prompt:So, what should I do?
-Ohh! that's what you say, but how can I trust you?
-There is a group of Inquisition scouters around here
-they have been scouting our village for some time.
-If you can keep them out here I will trust you.
-Last time I saw them they were camping EAST.
-#####
-@name:loreOrcWarriorPath
-@prompt:What are you doing here?
-We are followers of tha warriorr path, we are expert
-hunterrs and blacksmiths.
-If ya want to follow tha warriorr path yar have to treat
-ya body as a temple and yar mind as ya spiritual guide,
-and once yar body and yar mind become one ya
-need to push yar limits against giants monterrs.
-#####
-@name:questEnchantment
-@prompt:Do you need something?
-I've been studiyin some arcane magic lately, I've
-learned to enchant some equipement, but I'm missing
-an enchanting table.[minecraft:enchanting_table]
-If you can bring me one, I will be very thankful.
-#####
-@name:witchTakeBone
-@prompt:Here are your 16 [minecraft:bone]
-Thanks, take an emerald as reward.
-#####
-@name:prisonerSave
-@prompt:prisonerSave
-Thanks for taking me here.
-I will be eternally grateful.
-If you bring me some equipement I can help you in
-your adventures.
-#####
-@name:questGrog
-@prompt:I need some help!
-I would go with you but it's so cold out there.
-But if you invite me to a Grog bottle we can go
-hunt some monsters.
-#####
-@name:joinWitches
-@prompt:I would like to be one of you
-(If you join a faction other factions may become hostile)
-#####
-@name:questEnchantmentGive
-@prompt:Give [minecraft:enchanting_table]
-Thanks a lot, now I can enchant all kind of things,
-come to meet me again if you need some enchantments
-#####
-@name:horseBad
-@prompt:Give me a donkey 16[minecraft:emerald]
-Here is your donkey
-#####
-@name:witchRottenFlesh
-@prompt:Can I help you?
-Sure, I am looking for 16 [minecraft:rotten_flesh]
-#####
-@name:helloCartographer
-@prompt:helloCartographer
-Hello adventurer, we are mapping the area.
-If you want to help pick a map and explore the
-surroundings!
-#####
-@name:trade
-@prompt:Trade
-Let's trade
-#####
-@name:youShallNotPassWitch
-@prompt:...
-You shall not pass
-(Reputation required: 10)
 #####
 @name:questInquisitionInvade
-@prompt:What are you doing here?
-We spotted a witches village, we need reinforcement to
-conquer it.
-If you can help us we, can handle the skeletons on
-the bottom, and you can sneak in the base and defeat 
-the wizard leading them,
+@prompt:你?在?里做什么？
+我???了一?女巫村庄，我?需要增援?
+征服它。
+如果你能?助我?，我?可以?理底?的骷?，
+而你可以?入基地????他?的巫?。
 #####
-@name:prisoner
-@prompt:You are free
-Thanks for rescuing me!
-I'm sorry I have nothing to pay you.
-Can you take me to an inn?
+@name:speakToBoss
+@prompt:与老大交?
+去和老大??，我?正在?察???域。
+#####
+@name:give64emerald
+@prompt:?予64?[minecraft:emerald]
+太棒了，感?你的捐?！
+你知道Chocolatin是??？
+他??了整?巧克力任?模?，
+他不值得?得一些捐??？
+#####
+@name:loreOrc
+@prompt:告?我?于?人的事
+地精和矮人是已知的最早居住在地表的物种，
+但有一天地精??了，到?放火。
+?引?了与矮人的?突，?始了"火焰??"，
+直到?人出??平息他?。"火焰??"?束后，
+地表上的一些生物?始?异成巨型生物。
+?多?人和地精的家?被?些生物摧?，
+他?适?了新的生活方式。?在?人和地精是游牧民，
+是怪物狩?的?家。
+#####
+@name:receiveItem
+@prompt:有?西?我?？
+感?你的捐?！
+#####
+@name:questEnchantmentGive
+@prompt:?予[minecraft:enchanting_table]
+非常感?，?在我可以附魔各种?西，
+如果你需要附魔，再?找我
+#####
+@name:questWizard1finish
+@prompt:我已?解?了他?
+希望?次他?能?住教?！
+拿?些??石作?你努力的?酬
+#####
+@name:aaaaaaaa
+@prompt:aaaaaaaa
+(@name stares at you)
+#####
+@name:give10emeralds
+@prompt:?予10?[minecraft:emerald]
+??！
+#####
+@name:huntedMonsterArena
+@prompt:?技?完成！
+恭喜！
+你?在可以?入下一?了。
+#####
+@name:give20emerald
+@prompt:?予20?[minecraft:emerald]
+太棒了，非常感?！
+
+拿些?水吧！
+#####
+@name:upgradeItems
+@prompt:升?我的??
+（@name 凝??你）
+#####
+@name:asasas
+@prompt:asasas
+(@name stares at you)
+#####
+@name:Last battle completed
+@prompt:怪物已被??！
+恭喜，你??完成了?技?！
+#####
+@name:loreDwarves
+@prompt:告?我?于矮人的事
+矮人曾?生活在森林里，他?是??的工程?，?造了?大的建筑，
+最著名的是?不可摧的堡?，一座由?一支柱支?的巨大天空堡?，
+用一种古老的、?硬但?便的石?建造，?有人知道他??哪里?采的。
+在"火焰??"期?，矮人在山?和洞穴中建立了家?，
+躲避地精的攻?。多年?，地表上唯一能看到矮人的地方
+就是?不可摧的堡?，至今他?如何保持??仍是??。
+在洞穴中，他???了?物和火?，并研究了制造傀儡和火器的技?。
+如今，矮人在地下?有巨大的帝?，?注于?易，
+有??派遣傀儡保?人?村庄。
+#####
+@name:orcChiefShelob
+@prompt:在哪里可以找到它？
+是一只巨型蜘蛛，你?在南?大?200米?找到它。
+小心它的毒刺，不惜一切代价躲避它?。
+如果你有?程武器，?去?斗，蜘蛛?有太多投射物保?。
+它??向你?射毒液，所以如果可以的??一桶牛奶去?斗。
+?有一件事，如果你被它的网?住，?行可以??。
+#####
+@name:arenaBattle0
+@prompt:?技???
+??一?比?
+#####
+@name:arenaBattle1
+@prompt:?技?普通
+??一?比?
+#####
+@name:arenaBattle2
+@prompt:?技?困?
+??一?比?
+#####
+@name:helloMarket
+@prompt:市??候
+你好旅行者，?迎?到市?。
+好好享受，不要惹麻?。
+#####
+@name:witchTakeBone
+@prompt:?是你要的16?[minecraft:bone]
+??，拿一???石作???。
+#####
+@name:wolfNormal
+@prompt:我要一只普通狼 8x[minecraft:emerald]
+你的狼在狗?里
+#####
+@name:give1emerald
+@prompt:?予1?[minecraft:emerald]
+太好了，非常感?！
+#####
+@name:QAA
+@prompt:QAA
+(@name stares at you)
+#####
+@name:orcLostPants
+@prompt:你的?腿在哪里？
+几天前一?骷?偷走了我心?的?腿[chocolateQuest:inquisitionPants]。
+老大?我种田直到我能?新的。
+?得花我一?子的??，
+如果你能?我??新的，我?非常感激。
+#####
+@name:inqGiantHunt
+@prompt:今晚有什么怪物?？
+西???了一只令人?以置信的巨型僵尸。
+如果你要去那里，?小心。
+#####
+@name:mercenaryCheap
+@prompt:你在?里做什么？
+我在找一??伍，你?招人?？
+我可以?助你的旅途，只需10?[minecraft:emerald]
+#####
+@name:questWizard0finish
+@prompt:他?不?再?了！
+所以你打?了他?？??，希望他?
+不?很快再??里。
+拿?些??石作?你努力的?酬
+#####
+@name:recieveSkelly
+@prompt:拿走你的材料
+你的骷??物在入口?等你
+#####
+@name:bipbip
+@prompt:??
+?..?.?....?..?....?
+#####
+@name:orcLostSword
+@prompt:你需要什么?？
+我的?矛[chocolateQuest:spearDiamond]，不?得放哪里了。
+老大??有武器就不能巡?，
+他可不了解?人
+#####
+@name:witchDoingHere
+@prompt:你?在?里干什么？
+我?离?文明社??研究黑魔法
+和具有?在危?的?水。
+如你所?，我?成功?造并控制了骷?。
+#####
+@name:wolfBeast
+@prompt:?我一只野?！ 40x[minecraft:emerald]
+你的野?在狗?里
+#####
+@name:loreTritons
+@prompt:告?我?于海族的事
+海族在地表生物出?之前就?治?海洋，
+他?是机智而害羞的生物，很少在地表出?。
+第一次看到他?是在"火焰??"期?，他???安?地精，
+但?能?力。据?有些人定居在湖泊和河流附近，
+但?有?据。第二次在地表看到他?是在"深?行者"入侵期?，
+他??有丰富的魔法知?，?地表的其他种族提供了巨大的支持，
+但入侵?束后，他?要求收回一些?土，引?了一些?突。
+如今，海族生活在他?的海洋城市中，受到海?的威?。
+#####
+@name:inqSkeletonHunt
+@prompt:我想打碎亡?！
+如果你往北走，你???一群??精良的骷?，
+??把他?的骨?打成碎片！
+如果你??做，我??你??。
+#####
+@name:takeIt
+@prompt:拿去吧
+??！
+#####
+@name:comeToSeeMeAtNight
+@prompt:有什么事可做?？
+如果你想和亡??斗，晚上?找我。
+#####
+@name:orcChiefTurtle
+@prompt:在哪里可以找到它？
+是一只巨?，你?在??大?200米?找到它。
+要打?巨?，你必?打它的?。如果?露出?，
+巨???入极速再生模式。
+你也可以打它的腿?增加掉落物的?量。
+小心?被它的旋?弄?！
+#####
+@name:imYourMaster
+@prompt:我是你的主人
+（@name 凝??你）
+主...人...
+#####
+@name:aaaaaa
+@prompt:aaaaaa
+(@name stares at you)
+#####
+@name:witchBone
+@prompt:有什么需要?忙的?？
+?然，我正在?找16?[minecraft:bone]
+#####
+@name:aaaa
+@prompt:aaaa
+(@name stares at you)
+#####
+@name:helloOrc
+@prompt:?人?候
+你好旅行者！
+我??人?迎你?到我?的村庄！
+#####
+@name:amondHammer
+@prompt:我想?是你的
+哦！真不敢相信... ?是... 我的... ?子！！！！
+如果你把它?我，我可以?你的武器特殊升?。
+#####
+@name:leadMeThere
+@prompt:?我去那里
+好的，跟我?。
+#####
+@name:joinWitches
+@prompt:我想成?你?的一?
+（如果你加入一???，其他??可能??得??）
+#####
+@name:blacksmithGreeting
+@prompt:?匠?候
+我有最好的武器和盔甲出售。
+如果你有?趣，看看吧。
+#####
+@name:enchant
+@prompt:附魔
+#####
+@name:helloInn
+@prompt:旅店?候
+你好冒?者，想喝?什么?？
+也?睡?午?？
+你??地方了！
 #####
 @name:youShallNotPass
 @prompt:...
-You shall not pass
+你不能通?
 #####
-@name:orcLostPants
-@prompt:Where are your leggins?
-A skelethon stole my belov'd leggins[chocolateQuest:inquisitionPants] days ago.
-Tha boss told me to farrm until I could pay new ones.
-It will take me an eternity, i'll be thankfull if ya bring
-me new ones.
+@name:helloArena
+@prompt:?技??候
+你好，?迎?到?技?。
+你想?加比??？
+#####
+@name:inqZombieHunt
+@prompt:今晚有亡??？
+??有一群僵尸。
 #####
 @name:wizardQuest0
-@prompt:What are you doing here?
-Who are you?
-How dare you come here?
-If you want to gain my approval you have to prove me
-you are evil
+@prompt:你在?里做什么？
+你是?？
+你怎么敢??里？
+如果你想?得我的?可，你必??明你是邪?的
 #####
-@name:witchTakeFlesh
-@prompt:Take 16 [minecraft:rotten_flesh]
-Thanks, take an emerald as reward.
+@name:horseNormal
+@prompt:?我一匹? 24[minecraft:emerald]
+?是你的?。
+?酒后??！
 #####
-@name:helloOrc
-@prompt:helloOrc
-Helloh wanderer!
-We Orrks welcome ya to our village!
+@name:helloInquisition
+@prompt:?判??候
+你好冒?者！
+愿?光与你同在。
 #####
 @name:wizardQuest1
-@prompt:You trust me now?
-Ohh, yes I do, if you are interested I can sell you
-some skeletons to help you in your adventures.
+@prompt:你?在信任我了?？
+哦，是的，如果你有?趣，我可以??你
+一些骷???助你的冒?。
 
-Also I need another favour...
+另外，我?需要另一??忙...
 #####
-@name:wolfNormal
-@prompt:I want a normal wolf 8x[minecraft:emerald]
-Your wolf is in the doghouse
+@name:helloCartographer
+@prompt:制???候
+你好冒?者，我?正在?制??地?的地?。
+如果你想?忙，拿一?地?去探索周?吧！
 #####
-@name:arenaBattle0
-@prompt:Arena easy
-Select a match
+@name:wantAWolf
+@prompt:我想要一只狼
+我有3种不同?型的狼。
+普通狼 8x[minecraft:emerald]
+特???的狼，有更高的抗性 20x[minecraft:emerald]
+?有野?，?????狩??物 40[minecraft:emerald]
 #####
-@name:inqHuntQuest
-@prompt:Something to do?
-Nights are very dangerous here, there are allways
-undeads around.
-#####
-@name:followMe
-@prompt:Follow me
-I will be behind you
-#####
-@name:arenaBattle1
-@prompt:Arena normal
-Select a match
-#####
-@name:arenaBattle2
-@prompt:Arena hard
-Select a match
-#####
-@name:give10emeralds
-@prompt:Give 10 [minecraft:emerald]
-Thanks!
-#####
-@name:speakToBoss
-@prompt:speakToBoss
-Speak to the boss, we are scouting the area.
-#####
-@name:loreDwarves
-@prompt:Tell me about dwarves
-Dwarves used to live on forests, they were expert engineers and created great 
-constructions, the most notable one was the impregnable fortress, an immense 
-fortress in the sky sustained by a single pillar, created with an ancient stone 
-hard but lightweight, no one knows where they extracted it. 
-Dwarves established their homes on mountains and caves during the "Fire wars", 
-hiding from goblins attack, during years the only place on the surface where 
-dwarves could be seen was in the impregnable fortress and still today it's a 
-mystery how they kept it supplied. In the caves they discovered minerals and 
-gunpowder and they researched the technology to craft golems and fire weapons. 
-These days dwarves have immense empires hidden underground and are dedicated to 
-trades and sometimes they send golems to protect human villages. 
-#####
-@name:mercenaryPay
-@prompt:Take the emeralds
-(@name stares at you)
-#####
-@name:inqSkeletonHunt
-@prompt:I want to smash undeads!
-If you go north you will find a group of well armored.
-skeletons, try smashing their bones to pieces!
-I'll reward you if you do so.
+@name:waitHere
+@prompt:在?里等?
+我不?离??里的
 #####
 @name:mercenaryMid
-@prompt:What are you doing here?
-I'm looking for a team, are you recruiting people?
-I can help you in your travels for just 32 [minecraft:emerald]
+@prompt:你在?里做什么？
+我在找一??伍，你?招人?？
+我可以?助你的旅途，只需32?[minecraft:emerald]
+#####
+@name:witchTakeFlesh
+@prompt:拿走16?[minecraft:rotten_flesh]
+??，拿一???石作???。
+#####
+@name:test
+@prompt:特殊字符[minecraft:emerald]
+我的名字是 @name
+你的名字是 @sp
+??[minecraft:diamond]是?石
+??[minecraft:stone]是石?方?
+#####
+@name:aaaaa
+@prompt:aaaaa
+(@name stares at you)
+#####
+@name:questWizard0start
+@prompt:那么，我??做什么？
+哦！你是?么?的，但我怎么能相信你呢？
+有一群?判?的?察兵在?附近，
+他?已??察我?村庄一段??了。
+如果你能?他?离??里，我就?信任你。
+我上次看到他??，他?在??扎?。
+#####
+@name:needARest
+@prompt:我需要休息
+你可以在?上的房?里睡?。
+只要你能?我?抵御夜?的怪物群，
+住宿就是免?的。
+如果你有多余的??石，我?接受捐?。
+#####
+@name:loreInquisition
+@prompt:告?我?于?判?的事
+?判?大?在1000年前由Otbrael?王的姐妹
+Amada和Namu以光明女神Diurna的名??立。
+我?的使命是?抗黑暗?力并??它??生的原因。
+#####
+@name:helloMinerals
+@prompt:?物?候
+你好冒?者，我在?找最好的?物。
+如果你有的?，我可以?你??石。
+#####
+@name:wolfTrained
+@prompt:我要一只???的 20x[minecraft:emerald]
+你的狼在狗?里
+#####
+@name:questGrog
+@prompt:我需要?助！
+我?和你一起去，但外面太冷了。
+但如果你?我喝一瓶格?格酒，
+我?就可以去??一些怪物。
+#####
+@name:horseBad
+@prompt:?我一?? 16[minecraft:emerald]
+?是你的?
+#####
+@name:inqSpecterHunt
+@prompt:幽?狩?
+今晚南???了一群幽?，
+去探索那??域，如果你能消?它?，
+我??你??
 #####
 @name:upgradeEquipement
-@prompt:Upgrade my equipement
+@prompt:升?我的??
+（@name 凝??你）
+#####
+@name:AAAAA
+@prompt:AAAAA
 (@name stares at you)
 #####
-@name:itemUpgrade
-@prompt:Upgrade my items
-(@name stares at you)
+@name:inqGiantHunted
+@prompt:巨人已被??
+真的?？你?了它？
+?是一?了不起的成就。
+拿?些??石作???。
+#####
+@name:merchantGreeting
+@prompt:商人?候
+?迎?到市?，旅行者。
+我能?你提供什么？
+#####
+@name:witchRottenFlesh
+@prompt:有什么需要?忙的?？
+?然，我正在?找16?[minecraft:rotten_flesh]
+#####
+@name:mercenaryGood
+@prompt:你在?里做什么？
+我在找一??伍，你?招人?？
+我可以?助你的旅途，只需48?[minecraft:emerald]
+#####
+@name:helloWorld
+@prompt:你好
+你好冒?者！
+需要什么?助?？
+#####
+@name:inqHuntQuest
+@prompt:有什么事可做?？
+?里的夜晚非常危?，
+?是有亡?出?。
+#####
+@name:questGrogGive
+@prompt:?格?格酒瓶
+（@name 凝??你）
+#####
+@name:arenaInProgress
+@prompt:?技??行中
+完成?技??斗后再?找我
+#####
+@name:questEnchantment
+@prompt:你需要什么?？
+我最近一直在研究??魔法，
+我??了?一些??附魔，但我缺少一?
+附魔台。[minecraft:enchanting_table]
+如果你能?我?一?，我?非常感激。
+#####
+@name:giveSkellyBoss
+@prompt:我想要一?更好的骷?
+如果你?我16?骨?[minecraft:bone]、1?腐肉[minecraft:rotten_flesh]和64???石[minecraft:emerald]，
+我??你一?特殊的骷?，
+它?穿上你?的任何盔甲，使用你?的任何武器。
+#####
+@name:prisoner
+@prompt:你自由了
+感?你救了我！
+抱歉我?什么?西可以?答你。
+你能?我去一?旅店?？
+#####
+@name:horseTrader
+@prompt:你在?里做什么？
+?是一???，如果你有?趣，
+我可以??你最好的坐?，?些??石?。
+#####
+@name:inventory
+@prompt:打?物品?
+?段文字不??示！
+#####
+@name:helloGuardStare
+@prompt:守?凝?
+（守?凝??你）
+...
+#####
+@name:orcChiefQuest
+@prompt:有什么事可做?？
+我???一只巨型怪物威??我?的村庄。
+如果你想去??它，把它?的皮?到?里，
+我可以?你打造?人特殊盔甲！
+#####
+@name:prisonerSave
+@prompt:囚犯?救
+感?你把我?到?里。
+我?永?感激你。
+如果你?我一些??，我可以?助你的冒?。
+#####
+@name:huntedMonster
+@prompt:已???了！
+干得好！你正在成功地走上?士之路，
+并?助我?的村庄。如果你收集了足?的材料，
+我很?意?你打造一些??。
+#####
+@name:followMe
+@prompt:跟我?
+我?跟在你身后
 #####
 @name:orcChiefBull
-@prompt:Where can I find it?
-It's a giant bull, you will find it around 200 meters north
+@prompt:在哪里可以找到它？
+是一?巨型公牛，你?在北?大?200米?找到它
 #####
-@name:orcChiefTurtle
-@prompt:Where can I find it?
-It's a giant turtle, you will find it around 200 meters east.
-To beat the turtle you have to smack it on the head. If the head is
-visible the turtle will enter in a extreme regeneration mode.
-You can also hit it on the legs to increase the ammount of droped items.
-Try not to get dizzy with its spin!
+@name:youShallNotPassWitch
+@prompt:...
+你不能通?
+（需要?望：10）
 #####
-@name:orcChiefShelob
-@prompt:Where can I find it?
-It's a giant spider, you will find it around 200 meters south
-Be careful with her stings, dodge them at all costs, if you have a long
-range weapon bring it to the battle, the spider does not hach much projectile projection.
-She will also launch poison at you, so if you can take a milk bucket to the battle.
-One more thing, if you are cached by her web, sneak to get rid of it.
+@name:stare
+@prompt:凝?
+（@name 凝??你）
+.... .... ....
+#####
+@name:loreOrcWarriorPath
+@prompt:你?在?里做什么？
+我?是?士之道的追?者，
+我?是??的?人和?匠。
+如果你想追??士之道，
+你必?把你的身体?作神殿，把你的心??作精神向?，
+一旦你的身体和心?合二?一，
+你就需要?抗巨型怪物?突破你的极限。
+#####
+@name:helloWolfTrader
+@prompt:狼商人?候
+你好旅行者。需要一些?助?完成你的任??？
+我???一?最好的狼。
+#####
+@name:horseGood
+@prompt:?我你最好的 32[minecraft:emerald]
+祝你旅途愉快！
 #####
 @name:orcChiefSlime
-@prompt:Where can I find it?
-It's a slimy frrog, be careful it's verry aggresive.
-You will find it 200 meters west.
-If you want my advice try to use area of effect weapons to get rrid of
-small slimes, otherwise they will heal the frrog.
-####
+@prompt:在哪里可以找到它？
+是一只黏糊糊的青蛙，小心，它非常有攻?性。
+你?在西?200米?找到它。
+如果你想听我的建?，??使用范?攻?武器?消?小史?姆，
+否?它??治愈青蛙。
+#####
+@name:itemUpgrade
+@prompt:升?我的物品
+（@name 凝??你）
+#####
+@name:trade
+@prompt:交易
+?我?交易吧
+#####
+@name:inqMonsterHunted
+@prompt:任?完成！
+??！
+拿?些??石作?你努力的?酬。
+#####
+@name:orcLostPantsGive
+@prompt:??腿 [chocolateQuest:inquisitionPants]
+??朋友，我?告?老大，他可能???你
+一些??。
+#####
+@name:wizardQuest1_1
+@prompt:是什么事？
+又有一群雇佣兵在北?游?。
+??消?他?，我?邀?你加入我?。
+#####
+@name:setReunionPoint
+@prompt:在?里?置集合?
+好的主人，如果我迷路了就在?里?合。
+#####

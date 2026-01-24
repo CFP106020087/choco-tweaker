@@ -1,0 +1,206 @@
+{
+  "itemName": "gammasphere",
+  "loadDefault": true,
+  "slotType": "jewel",
+  "dropMobId": "lycanitesmobs:wisp",
+  "dropChance": 0.2,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "light"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "potioncore:broken_magic_shield",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 8
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "potioncore:magic_focus",
+      "effectTarget": "self",
+      "effectDuration": 600,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "lightball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 16,
+      "count": 12,
+      "bonusDamage": 16,
+      "ringRange": 180
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "lightball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 12,
+      "count": 16,
+      "bonusDamage": 24,
+      "ringRange": 210
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "lightball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 12,
+      "count": 20,
+      "bonusDamage": 32,
+      "ringRange": 240
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "lightball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 10,
+      "count": 25,
+      "bonusDamage": 42,
+      "ringRange": 300
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "lightball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 10,
+      "count": 30,
+      "bonusDamage": 52,
+      "ringRange": 360
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "lightball",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 8,
+      "count": 36,
+      "bonusDamage": 64,
+      "ringRange": 360
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "lightball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "lightball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 5
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "lightball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "lightball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 20
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "lightball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 28
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "lightball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 40
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "lightball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 52
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "lightball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 65
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "lightball",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 4,
+      "count": 1,
+      "bonusDamage": 80
+    }
+  ]
+}

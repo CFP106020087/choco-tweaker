@@ -1,0 +1,136 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  FermiumBooter (`FermiumBooter-1.2.0.jar)
+  ChocoTweakCore (chocotweak-1.12.2-1.0.0.jar)
+Contact their authors BEFORE contacting forge
+
+// My bad.
+
+Time: 1/22/26 6:01 PM
+Description: Updating screen events
+
+java.lang.NoClassDefFoundError: Could not initialize class com.chocolate.chocolateQuest.quest.DialogAction
+	at com.chocolate.chocolateQuest.gui.guinpc.GuiEditDialog.actionPerformed(GuiEditDialog.java:224)
+	at net.minecraft.client.gui.GuiScreen.mouseClicked(GuiScreen.java:494)
+	at com.chocolate.chocolateQuest.gui.guinpc.GuiLinked.mouseClicked(GuiLinked.java:113)
+	at com.chocolate.chocolateQuest.gui.guinpc.GuiEditDialog.mouseClicked(GuiEditDialog.java:379)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:611)
+	at com.chocolate.chocolateQuest.gui.guinpc.GuiLinked.handleMouseInput(GuiLinked.java:119)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:576)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1886)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1188)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:442)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at com.chocolate.chocolateQuest.gui.guinpc.GuiEditDialog.actionPerformed(GuiEditDialog.java:224)
+	at net.minecraft.client.gui.GuiScreen.mouseClicked(GuiScreen.java:494)
+	at com.chocolate.chocolateQuest.gui.guinpc.GuiLinked.mouseClicked(GuiLinked.java:113)
+	at com.chocolate.chocolateQuest.gui.guinpc.GuiEditDialog.mouseClicked(GuiEditDialog.java:379)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:611)
+	at com.chocolate.chocolateQuest.gui.guinpc.GuiLinked.handleMouseInput(GuiLinked.java:119)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:576)
+
+-- Affected screen --
+Details:
+	Screen name: com.chocolate.chocolateQuest.gui.guinpc.GuiEditDialog
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player750'/2394, l='MpServer', x=65.24, y=72.00, z=332.93]]
+	Chunk stats: MultiplayerChunkCache: 598, 598
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (76,64,244), Chunk: (at 12,4,4 in 4,15; contains blocks 64,0,240 to 79,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 4155 game time, 4155 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 112 total; [EntitySpider['蜘蛛'/6153, l='MpServer', x=27.50, y=38.00, z=314.50], EntityItem['item.item.painting'/4106, l='MpServer', x=5.04, y=62.00, z=337.72], EntityItem['item.item.painting'/4108, l='MpServer', x=5.70, y=62.00, z=347.93], EntityNecromancer[' Necromancer'/4109, l='MpServer', x=8.00, y=39.00, z=343.00], EntityItem['item.tile.sapling.spruce'/4113, l='MpServer', x=2.09, y=79.00, z=325.88], EntityItem['item.item.arrow'/4115, l='MpServer', x=31.97, y=47.00, z=320.65], EntitySpider['蜘蛛'/7202, l='MpServer', x=12.50, y=59.00, z=313.50], EntitySpider['蜘蛛'/7203, l='MpServer', x=14.30, y=65.10, z=321.09], EntityCreeper['爬行者'/6188, l='MpServer', x=21.50, y=59.00, z=344.50], EntityCreeper['爬行者'/5169, l='MpServer', x=20.07, y=53.00, z=309.57], EntityPig['猪'/55, l='MpServer', x=-9.50, y=100.00, z=375.50], EntityPig['猪'/56, l='MpServer', x=-10.50, y=100.00, z=374.50], EntityPig['猪'/58, l='MpServer', x=-13.60, y=98.00, z=373.50], EntityWolf['狼'/59, l='MpServer', x=17.50, y=79.00, z=271.50], EntityWolf['狼'/60, l='MpServer', x=17.50, y=79.00, z=271.50], EntityWolf['狼'/61, l='MpServer', x=18.48, y=77.00, z=269.57], EntityWolf['狼'/62, l='MpServer', x=18.50, y=80.00, z=269.50], EntitySquid['鱿鱼'/7237, l='MpServer', x=108.60, y=61.00, z=336.24], EntitySquid['鱿鱼'/7238, l='MpServer', x=104.94, y=62.46, z=336.13], EntitySquid['鱿鱼'/7239, l='MpServer', x=108.65, y=61.15, z=339.99], EntitySquid['鱿鱼'/7240, l='MpServer', x=106.60, y=60.00, z=342.60], EntityCreeper['爬行者'/7259, l='MpServer', x=-1.77, y=74.00, z=283.50], EntitySpider['蜘蛛'/7261, l='MpServer', x=-3.70, y=76.10, z=281.70], EntityWolf['狼'/101, l='MpServer', x=11.50, y=78.00, z=344.50], EntityWolf['狼'/102, l='MpServer', x=9.29, y=80.00, z=343.76], EntityWolf['狼'/103, l='MpServer', x=5.46, y=81.00, z=338.71], EntityWolf['狼'/104, l='MpServer', x=13.68, y=77.00, z=344.72], EntitySpider['蜘蛛'/7279, l='MpServer', x=1.70, y=50.10, z=328.87], EntitySpider['蜘蛛'/7280, l='MpServer', x=2.74, y=50.00, z=330.30], EntityZombie['僵尸'/7282, l='MpServer', x=3.50, y=49.00, z=324.50], EntityZombie['僵尸'/7283, l='MpServer', x=7.50, y=49.00, z=327.50], EntityWolf['狼'/125, l='MpServer', x=65.19, y=76.00, z=281.50], EntityWolf['狼'/126, l='MpServer', x=54.50, y=72.00, z=280.50], EntityWolf['狼'/127, l='MpServer', x=54.50, y=71.00, z=283.50], EntityWolf['狼'/128, l='MpServer', x=55.50, y=75.00, z=284.50], EntityWolf['狼'/137, l='MpServer', x=65.53, y=72.00, z=379.40], EntityWolf['狼'/138, l='MpServer', x=68.28, y=72.00, z=367.77], EntityWolf['狼'/139, l='MpServer', x=64.50, y=71.26, z=374.70], EntityWolf['狼'/140, l='MpServer', x=64.47, y=71.25, z=373.73], EntityWolf['狼'/141, l='MpServer', x=69.76, y=72.00, z=397.50], EntityWolf['狼'/142, l='MpServer', x=71.50, y=72.00, z=398.50], EntityWolf['狼'/143, l='MpServer', x=66.49, y=73.00, z=390.64], EntityWolf['狼'/144, l='MpServer', x=70.50, y=72.00, z=397.50], EntityBat['蝙蝠'/7314, l='MpServer', x=50.75, y=31.64, z=405.30], EntityWolf['狼'/153, l='MpServer', x=76.16, y=67.00, z=261.05], EntityWolf['狼'/154, l='MpServer', x=74.50, y=71.00, z=276.50], EntityWolf['狼'/155, l='MpServer', x=71.50, y=72.00, z=265.63], EntityCreeper['爬行者'/6299, l='MpServer', x=13.50, y=59.00, z=312.50], EntityWolf['狼'/156, l='MpServer', x=66.73, y=76.00, z=280.50], EntityCreeper['爬行者'/6303, l='MpServer', x=12.66, y=62.00, z=340.66], EntityChicken['鸡'/161, l='MpServer', x=96.60, y=69.00, z=276.54], EntitySkeleton['骷髅'/7329, l='MpServer', x=22.50, y=21.00, z=408.50], EntityChicken['鸡'/162, l='MpServer', x=91.50, y=63.00, z=269.50], EntityChicken['鸡'/164, l='MpServer', x=95.85, y=70.00, z=278.40], EntitySkeleton['骷髅'/6310, l='MpServer', x=27.21, y=59.00, z=330.64], EntitySkeleton['骷髅'/6311, l='MpServer', x=20.23, y=61.00, z=327.50], EntityWolf['狼'/173, l='MpServer', x=124.50, y=70.00, z=379.50], EntityWolf['狼'/174, l='MpServer', x=123.50, y=70.00, z=379.50], EntityWolf['狼'/175, l='MpServer', x=122.50, y=71.00, z=378.50], EntityWolf['狼'/176, l='MpServer', x=120.50, y=70.00, z=379.50], EntityBat['蝙蝠'/6342, l='MpServer', x=24.75, y=60.10, z=327.62], EntityBat['蝙蝠'/6343, l='MpServer', x=17.25, y=61.10, z=325.75], EntitySkeleton['骷髅'/5325, l='MpServer', x=33.28, y=48.00, z=331.49], EntityBat['蝙蝠'/7440, l='MpServer', x=-0.50, y=43.86, z=339.05], EntityZombie['僵尸'/7450, l='MpServer', x=-4.50, y=62.00, z=294.50], EntityZombie['僵尸'/7451, l='MpServer', x=-7.49, y=64.00, z=289.80], EntityZombie['僵尸'/7452, l='MpServer', x=-4.50, y=62.00, z=292.50], EntityZombie['僵尸'/7453, l='MpServer', x=2.50, y=62.00, z=297.50], EntitySkeleton['骷髅'/6447, l='MpServer', x=56.50, y=64.00, z=386.50], EntityBat['蝙蝠'/7484, l='MpServer', x=-1.75, y=61.10, z=339.50], EntityBat['蝙蝠'/7487, l='MpServer', x=-3.69, y=60.05, z=336.25], EntityHumanNPC['NPC'/7531, l='MpServer', x=63.31, y=72.00, z=333.20], EntityCreeper['爬行者'/7542, l='MpServer', x=-11.50, y=49.00, z=327.50], EntityCreeper['爬行者'/7543, l='MpServer', x=-7.50, y=49.00, z=324.50], EntityCreeper['爬行者'/7544, l='MpServer', x=-9.50, y=49.00, z=324.50], EntitySpider['蜘蛛'/7545, l='MpServer', x=-7.50, y=49.00, z=325.50], EntityCreeper['爬行者'/6526, l='MpServer', x=54.50, y=35.00, z=373.50], EntityZombie['僵尸'/6538, l='MpServer', x=-9.29, y=38.00, z=338.47], EntityCreeper['爬行者'/6603, l='MpServer', x=24.50, y=59.00, z=349.50], EntityCreeper['爬行者'/6608, l='MpServer', x=14.35, y=49.00, z=321.16], EntityCreeper['爬行者'/6610, l='MpServer', x=10.50, y=48.88, z=312.50], EntityCreeper['爬行者'/5588, l='MpServer', x=22.50, y=59.00, z=346.50], EntityCreeper['爬行者'/6627, l='MpServer', x=134.50, y=17.00, z=314.50], EntitySpider['蜘蛛'/5622, l='MpServer', x=35.02, y=47.00, z=318.97], EntityZombie['僵尸'/6690, l='MpServer', x=1.83, y=48.88, z=316.94], EntityZombie['僵尸'/6691, l='MpServer', x=5.50, y=49.00, z=323.50], EntitySkeleton['骷髅'/5733, l='MpServer', x=38.31, y=19.00, z=255.49], EntityPlayerSP['Player750'/2394, l='MpServer', x=65.24, y=72.00, z=332.93], EntityBat['蝙蝠'/6781, l='MpServer', x=-0.25, y=56.10, z=331.61], EntityBat['蝙蝠'/6782, l='MpServer', x=-1.99, y=52.62, z=322.25], EntityBat['蝙蝠'/6785, l='MpServer', x=-1.56, y=50.99, z=341.94], EntitySpider['蜘蛛'/6842, l='MpServer', x=-1.50, y=49.00, z=343.50], EntityZombie['僵尸'/6844, l='MpServer', x=-2.50, y=49.00, z=340.50], EntityZombie['僵尸'/6845, l='MpServer', x=-0.78, y=49.00, z=337.50], EntityZombie['僵尸'/6880, l='MpServer', x=71.50, y=24.00, z=297.50], EntityPainting['画'/3796, l='MpServer', x=6.00, y=63.50, z=336.03], EntityPainting['画'/3804, l='MpServer', x=16.00, y=64.00, z=342.03], EntityPainting['画'/3812, l='MpServer', x=8.00, y=63.50, z=350.03], EntityBat['蝙蝠'/5909, l='MpServer', x=-0.25, y=60.10, z=316.53], EntityZombie['僵尸'/6942, l='MpServer', x=1.50, y=59.00, z=334.50], EntityZombie['僵尸'/6943, l='MpServer', x=4.45, y=59.00, z=328.79], EntityBat['蝙蝠'/6967, l='MpServer', x=3.56, y=49.03, z=328.72], EntityBat['蝙蝠'/6970, l='MpServer', x=-3.86, y=49.84, z=320.17], EntityZombie['僵尸'/5952, l='MpServer', x=2.50, y=49.00, z=324.50], EntitySpider['蜘蛛'/7014, l='MpServer', x=7.50, y=63.00, z=309.50], EntitySkeleton['骷髅'/7016, l='MpServer', x=8.50, y=63.00, z=307.50], EntityBat['蝙蝠'/7059, l='MpServer', x=-0.31, y=61.10, z=325.52], EntityCreeper['爬行者'/7119, l='MpServer', x=-7.50, y=59.00, z=337.50], EntityCreeper['爬行者'/7120, l='MpServer', x=-11.50, y=59.00, z=340.50], EntityCreeper['爬行者'/7121, l='MpServer', x=-10.50, y=59.00, z=340.50], EntityCreeper['爬行者'/7122, l='MpServer', x=-9.50, y=59.00, z=338.50], EntitySpider['蜘蛛'/6126, l='MpServer', x=43.30, y=26.10, z=331.30]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:461)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2889)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:463)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_472, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 435816144 bytes (415 MB) / 2394947584 bytes (2284 MB) up to 15176040448 bytes (14473 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 1, tcache: 1, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2847 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID             | Version      | Source                           | Signature |
+	|:------ |:-------------- |:------------ |:-------------------------------- |:--------- |
+	| LCHIJA | minecraft      | 1.12.2       | minecraft.jar                    | None      |
+	| LCHIJA | mcp            | 9.42         | minecraft.jar                    | None      |
+	| LCHIJA | FML            | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2847.jar | None      |
+	| LCHIJA | forge          | 14.23.5.2847 | forgeSrc-1.12.2-14.23.5.2847.jar | None      |
+	| LCHIJA | baubles        | 1.5.2        | Baubles-1.12-1.5.2.jar           | None      |
+	| LCHIJA | chocolatequest | 1.0          | chocolateQuest-1.12.2-1.2.0.jar  | None      |
+	| LCHIJA | chocotweak     | 1.0.0        | chocotweak-1.12.2-1.0.0.jar      | None      |
+
+	Loaded coremods (and transformers): 
+FermiumBooter (`FermiumBooter-1.2.0.jar)
+  
+ChocoTweakCore (chocotweak-1.12.2-1.0.0.jar)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 591.44' Renderer: 'NVIDIA GeForce RTX 5070/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce RTX 5070/PCIe/SSE2 GL version 4.6.0 NVIDIA 591.44, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 20x Intel(R) Core(TM) Ultra 7 265KF

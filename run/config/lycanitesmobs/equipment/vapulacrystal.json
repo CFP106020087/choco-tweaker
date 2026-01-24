@@ -1,0 +1,316 @@
+{
+  "itemName": "vapulacrystal",
+  "loadDefault": true,
+  "slotType": "axe",
+  "dropMobId": "lycanitesmobs:vapula",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "arcane"
+  ],
+  "features": [
+    {
+      "featureType": "harvest",
+      "levelMax": 1,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 6,
+      "harvestShape": "cross",
+      "harvestRange": [
+        3,
+        3,
+        3
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 2,
+      "levelMax": 2,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 6,
+      "harvestShape": "cross",
+      "harvestRange": [
+        4,
+        4,
+        4
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 3,
+      "levelMax": 3,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 7,
+      "harvestShape": "cross",
+      "harvestRange": [
+        5,
+        5,
+        5
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 4,
+      "levelMax": 4,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 7,
+      "harvestShape": "cross",
+      "harvestRange": [
+        6,
+        6,
+        6
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 5,
+      "levelMax": 5,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 8,
+      "harvestShape": "cross",
+      "harvestRange": [
+        7,
+        7,
+        7
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 6,
+      "levelMax": 6,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 8,
+      "harvestShape": "cross",
+      "harvestRange": [
+        8,
+        8,
+        8
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 7,
+      "levelMax": 7,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 9,
+      "harvestShape": "cross",
+      "harvestRange": [
+        9,
+        9,
+        9
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 8,
+      "levelMax": 8,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 9,
+      "harvestShape": "cross",
+      "harvestRange": [
+        10,
+        10,
+        10
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "pickaxe",
+      "levelMin": 9,
+      "harvestSpeed": 10,
+      "harvestShape": "cross",
+      "harvestRange": [
+        11,
+        11,
+        11
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 2,
+      "damageKnockback": 2,
+      "damageCooldown": 1.8,
+      "damageRange": 1,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 4,
+      "damageKnockback": 3,
+      "damageCooldown": 1.8,
+      "damageRange": 1.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 6,
+      "damageKnockback": 4,
+      "damageCooldown": 1.8,
+      "damageRange": 2,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 8,
+      "damageKnockback": 5,
+      "damageCooldown": 1.8,
+      "damageRange": 2.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 10,
+      "damageKnockback": 6,
+      "damageCooldown": 1.8,
+      "damageRange": 3,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 12,
+      "damageKnockback": 7,
+      "damageCooldown": 1.8,
+      "damageRange": 3.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 14,
+      "damageKnockback": 8,
+      "damageCooldown": 1.8,
+      "damageRange": 4,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 16,
+      "damageKnockback": 9,
+      "damageCooldown": 1.8,
+      "damageRange": 4.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 18,
+      "damageKnockback": 10,
+      "damageCooldown": 1.8,
+      "damageRange": 5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "effect",
+      "effectType": "lycanitesmobs:aphagia",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "potioncore:vulnerable",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "crystalshard",
+      "projectileTrigger": "hit",
+      "projectilePattern": "simple",
+      "count": 1,
+      "hitChance": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "crystalshard",
+      "projectileTrigger": "hit",
+      "projectilePattern": "simple",
+      "count": 1,
+      "hitChance": 1,
+      "bonusDamage": 5
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "crystalshard",
+      "projectileTrigger": "hit",
+      "projectilePattern": "simple",
+      "count": 1,
+      "hitChance": 1,
+      "bonusDamage": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "crystalshard",
+      "projectileTrigger": "hit",
+      "projectilePattern": "simple",
+      "count": 1,
+      "hitChance": 1,
+      "bonusDamage": 15
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "crystalshard",
+      "projectileTrigger": "hit",
+      "projectilePattern": "simple",
+      "count": 1,
+      "hitChance": 1,
+      "bonusDamage": 20
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "crystalshard",
+      "projectileTrigger": "hit",
+      "projectilePattern": "simple",
+      "count": 1,
+      "hitChance": 1,
+      "bonusDamage": 25
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "crystalshard",
+      "projectileTrigger": "hit",
+      "projectilePattern": "simple",
+      "count": 1,
+      "hitChance": 1,
+      "bonusDamage": 30
+    }
+  ]
+}

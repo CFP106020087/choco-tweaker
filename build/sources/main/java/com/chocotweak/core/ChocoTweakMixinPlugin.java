@@ -7,10 +7,12 @@ import java.util.Map;
 @IFMLLoadingPlugin.MCVersion("1.12.2")
 @IFMLLoadingPlugin.TransformerExclusions({ "com.chocotweak.core" })
 @IFMLLoadingPlugin.Name("ChocoTweakCore")
-@IFMLLoadingPlugin.SortingIndex(1005)
+@IFMLLoadingPlugin.SortingIndex(1) // 非常早的加载顺序
 public class ChocoTweakMixinPlugin implements IFMLLoadingPlugin {
 
     static {
+        System.out.println("[ChocoTweak] ChocoTweakMixinPlugin static init - registering ASM transformers first...");
+
         // FermiumBooter mixin 注册 - 使用 FermiumBooter 而非 MANIFEST TweakClass
         try {
             // Early mixin - 原版 Minecraft 类（如 PlayerControllerMP） - false = 早加载
@@ -32,8 +34,10 @@ public class ChocoTweakMixinPlugin implements IFMLLoadingPlugin {
 
     @Override
     public String[] getASMTransformerClass() {
-        // ASM已移除，改用Mixin实现
-        return new String[0];
+        System.out.println("[ChocoTweak] Registering ASM Transformers...");
+        return new String[] {
+                "com.chocotweak.core.AwakementsTransformer",
+        };
     }
 
     @Override

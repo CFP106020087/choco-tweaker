@@ -1,0 +1,114 @@
+{
+  "itemName": "lacedonhead",
+  "loadDefault": true,
+  "slotType": "pommel",
+  "dropMobId": "lycanitesmobs:lacedon",
+  "dropChance": 0.05,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "water"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMin": 1,
+      "levelMax": 2,
+      "damageAmount": 1,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 4,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 6,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 8,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 2,
+      "effectType": "lycanitesmobs:weight",
+      "effectTarget": "target",
+      "effectDuration": 100,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 4,
+      "effectType": "lycanitesmobs:weight",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 6,
+      "effectType": "lycanitesmobs:weight",
+      "effectTarget": "target",
+      "effectDuration": 300,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 8,
+      "effectType": "lycanitesmobs:weight",
+      "effectTarget": "target",
+      "effectDuration": 400,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:weight",
+      "effectTarget": "target",
+      "effectDuration": 500,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "potioncore:drown",
+      "effectTarget": "target",
+      "effectDuration": 2400,
+      "effectStrength": 1
+    }
+  ]
+}

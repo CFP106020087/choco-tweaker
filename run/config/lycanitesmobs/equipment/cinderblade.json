@@ -1,0 +1,389 @@
+{
+  "itemName": "cinderblade",
+  "loadDefault": true,
+  "slotType": "blade",
+  "dropMobId": "lycanitesmobs:cinder",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "fire"
+  ],
+  "features": [
+    {
+      "featureType": "harvest",
+      "levelMax": 2,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 3,
+      "levelMax": 4,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 5,
+      "levelMax": 6,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        2,
+        5,
+        2
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 7,
+      "levelMax": 8,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        3,
+        7,
+        3
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 9,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        4,
+        9,
+        4
+      ]
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 6,
+      "damageKnockback": 0,
+      "damageCooldown": 0.9,
+      "damageRange": 1,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 9,
+      "damageKnockback": 0,
+      "damageCooldown": 0.85,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 12,
+      "damageKnockback": 0,
+      "damageCooldown": 0.8,
+      "damageRange": 1.25,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 15,
+      "damageKnockback": 0,
+      "damageCooldown": 0.75,
+      "damageRange": 1.25,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 18,
+      "damageKnockback": 0,
+      "damageCooldown": 0.7,
+      "damageRange": 1.5,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 21,
+      "damageKnockback": 0,
+      "damageCooldown": 0.65,
+      "damageRange": 1.5,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 24,
+      "damageKnockback": 0,
+      "damageCooldown": 0.6,
+      "damageRange": 1.75,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 27,
+      "damageKnockback": 0,
+      "damageCooldown": 0.55,
+      "damageRange": 1.75,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 30,
+      "damageKnockback": 0,
+      "damageCooldown": 0.5,
+      "damageRange": 2,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "burning",
+      "effectTarget": "target",
+      "effectDuration": 40,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "burning",
+      "effectTarget": "target",
+      "effectDuration": 60,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "burning",
+      "effectTarget": "target",
+      "effectDuration": 80,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "burning",
+      "effectTarget": "target",
+      "effectDuration": 100,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "burning",
+      "effectTarget": "target",
+      "effectDuration": 120,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "burning",
+      "effectTarget": "target",
+      "effectDuration": 140,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "burning",
+      "effectTarget": "target",
+      "effectDuration": 160,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "burning",
+      "effectTarget": "target",
+      "effectDuration": 180,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "burning",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:heataura",
+      "effectTarget": "self",
+      "effectDuration": 1200,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "ember",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10,
+      "bonusDamage": 2
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "ember",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10,
+      "bonusDamage": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "ember",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10,
+      "bonusDamage": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "ember",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10,
+      "bonusDamage": 8
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "ember",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10,
+      "bonusDamage": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "ember",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "spread",
+      "cooldown": 2,
+      "count": 10,
+      "spreadX": 45,
+      "spreadY": 10,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 4,
+      "levelMax": 4,
+      "summonMobId": "lycanitesmobs.cinder",
+      "summonChance": 0.1,
+      "summonDuration": 15,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 5,
+      "levelMax": 5,
+      "summonMobId": "lycanitesmobs.cinder",
+      "summonChance": 0.15,
+      "summonDuration": 20,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 6,
+      "levelMax": 6,
+      "summonMobId": "lycanitesmobs.cinder",
+      "summonChance": 0.2,
+      "summonDuration": 20,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 7,
+      "levelMax": 7,
+      "summonMobId": "lycanitesmobs.cinder",
+      "summonChance": 0.25,
+      "summonDuration": 25,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 8,
+      "levelMax": 8,
+      "summonMobId": "lycanitesmobs.cinder",
+      "summonChance": 0.3,
+      "summonDuration": 25,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 9,
+      "summonMobId": "lycanitesmobs.cinder",
+      "summonChance": 0.4,
+      "summonDuration": 30,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    }
+  ]
+}

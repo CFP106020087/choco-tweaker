@@ -1,0 +1,7 @@
+{
+  "name": "timestop",
+  "entityClass": "com.lycanitesmobs.core.entity.TimestopEntity",
+  "loadDefault": true,
+  "enabled": true,
+  "dummy": true
+}

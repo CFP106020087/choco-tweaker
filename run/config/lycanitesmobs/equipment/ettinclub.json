@@ -1,0 +1,207 @@
+{
+  "itemName": "ettinclub",
+  "loadDefault": true,
+  "slotType": "pike",
+  "dropMobId": "lycanitesmobs:ettin",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "quake"
+  ],
+  "features": [
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 30,
+      "count": 1,
+      "bonusDamage": 2
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 16
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 22
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 4,
+      "count": 1,
+      "bonusDamage": 30
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 4,
+      "count": 1,
+      "bonusDamage": 40
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 2,
+      "count": 1,
+      "bonusDamage": 50
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 1,
+      "count": 1,
+      "bonusDamage": 60
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 10,
+      "damageKnockback": 2,
+      "damageCooldown": 3,
+      "damageRange": 1,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 14,
+      "damageKnockback": 2,
+      "damageCooldown": 3,
+      "damageRange": 1,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 20,
+      "damageKnockback": 2,
+      "damageCooldown": 3,
+      "damageRange": 1.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 28,
+      "damageKnockback": 2,
+      "damageCooldown": 3,
+      "damageRange": 1.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 38,
+      "damageKnockback": 2,
+      "damageCooldown": 3,
+      "damageRange": 2,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 50,
+      "damageKnockback": 2,
+      "damageCooldown": 3,
+      "damageRange": 2,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 64,
+      "damageKnockback": 2,
+      "damageCooldown": 3,
+      "damageRange": 2.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 80,
+      "damageKnockback": 2,
+      "damageCooldown": 3,
+      "damageRange": 2.5,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 100,
+      "damageKnockback": 2,
+      "damageCooldown": 3,
+      "damageRange": 3,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "mujmajnkraftsbettersurvival:stun",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 5
+    }
+  ]
+}

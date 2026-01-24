@@ -1,8 +1,5 @@
 package com.chocotweak.gui;
 
-import com.chocotweak.gui.potion.ContainerPotionInfusion;
-import com.chocotweak.gui.potion.GuiPotionInfusion;
-import com.chocotweak.gui.potion.InventoryPotionInfusion;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
@@ -15,7 +12,6 @@ import net.minecraftforge.fml.common.network.IGuiHandler;
 public class ChocoTweakGuiHandler implements IGuiHandler {
 
     public static final int GUI_BACKPACK = 100;
-    public static final int GUI_POTION_INFUSION = 101;
 
     @Override
     public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
@@ -24,8 +20,6 @@ public class ChocoTweakGuiHandler implements IGuiHandler {
             if (!backpack.isEmpty()) {
                 return new ContainerBackpack(player.inventory, backpack);
             }
-        } else if (id == GUI_POTION_INFUSION) {
-            return new ContainerPotionInfusion(player.inventory, new InventoryPotionInfusion(player));
         }
         return null;
     }
@@ -37,8 +31,6 @@ public class ChocoTweakGuiHandler implements IGuiHandler {
             if (!backpack.isEmpty()) {
                 return new GuiBackpack(player.inventory, backpack);
             }
-        } else if (id == GUI_POTION_INFUSION) {
-            return new GuiPotionInfusion(player.inventory, new InventoryPotionInfusion(player));
         }
         return null;
     }

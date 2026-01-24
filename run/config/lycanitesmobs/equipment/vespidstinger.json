@@ -1,0 +1,238 @@
+{
+  "itemName": "vespidstinger",
+  "loadDefault": true,
+  "slotType": "pommel",
+  "dropMobId": "lycanitesmobs:vespid",
+  "dropChance": 0.05,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "arbour",
+    "acid"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMin": 1,
+      "levelMax": 2,
+      "damageAmount": 1,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 4,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 6,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 8,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 80,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 120,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 160,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 240,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 280,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 320,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 360,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 400,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "lycanitesmobs:penetration",
+      "effectTarget": "target",
+      "effectDuration": 80,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "lycanitesmobs:penetration",
+      "effectTarget": "target",
+      "effectDuration": 120,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "lycanitesmobs:penetration",
+      "effectTarget": "target",
+      "effectDuration": 160,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "lycanitesmobs:penetration",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "lycanitesmobs:penetration",
+      "effectTarget": "target",
+      "effectDuration": 240,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "lycanitesmobs:penetration",
+      "effectTarget": "target",
+      "effectDuration": 280,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "lycanitesmobs:penetration",
+      "effectTarget": "target",
+      "effectDuration": 320,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "lycanitesmobs:penetration",
+      "effectTarget": "target",
+      "effectDuration": 360,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:penetration",
+      "effectTarget": "target",
+      "effectDuration": 400,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "iceandfire:acid",
+      "effectTarget": "target",
+      "effectDuration": 400,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "mod_lavacow:infested",
+      "effectTarget": "target",
+      "effectDuration": 400,
+      "effectStrength": 1
+    }
+  ]
+}

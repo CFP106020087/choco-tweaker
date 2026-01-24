@@ -98,6 +98,16 @@ public class ArmorTooltipHandler {
             tooltip.add(TextFormatting.GOLD + "[Baubles HEAD 槽位生效]");
         }
 
+        // ===== 深渊漫步者之王胸甲 =====
+        if (isItem(item, "chocolatequest:kingchestplate")) {
+            tooltip.add("");
+            tooltip.add(TextFormatting.DARK_PURPLE + "" + TextFormatting.BOLD + "深渊漫步者之王");
+            tooltip.add(TextFormatting.RED + "+100%伤害输出");
+            tooltip.add(TextFormatting.YELLOW + "承受+30%易伤");
+            tooltip.add(TextFormatting.LIGHT_PURPLE + "[+Walker剑] " + TextFormatting.AQUA + "飞行能力");
+            tooltip.add(TextFormatting.LIGHT_PURPLE + "[+Walker剑] " + TextFormatting.GRAY + "脚下黑色沙尘暴");
+        }
+
         // ===== 侦察器 (Baubles AMULET) =====
         if (isItem(item, "chocolatequest:scouter")) {
             tooltip.add("");

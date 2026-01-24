@@ -1,9 +1,12 @@
 package com.chocotweak.mixin;
 
+import com.chocolate.chocolateQuest.items.ItemStaffBase;
 import com.chocolate.chocolateQuest.magic.Awakements;
+import com.chocotweak.core.AwakementsInitializer;
 import com.chocotweak.magic.*;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -21,17 +24,33 @@ public class MixinSpellAwakeningEffects {
 
     /**
      * 咒文增幅 - 提升伤害
-     * getDamage(ItemStack itemStack) -> float
+     * 使用 @Overwrite 完全替换方法
+     * 
+     * 同时应用：
+     * - 法袍增伤 (x2 基础伤害) - 来自 MixinSpellStats
+     * - 咒文增幅觉醒 (额外伤害乘数)
+     * 
+     * @author ChocoTweak
+     * @reason 应用法袍增伤和咒文增幅觉醒效果
      */
-    @Inject(method = "getDamage", at = @At("RETURN"), cancellable = true)
-    private void applySpellAmplification(ItemStack itemStack, CallbackInfoReturnable<Float> cir) {
-        if (MixinAwakementsRegister.spellAmplification != null) {
-            int level = Awakements.getEnchantLevel(itemStack, MixinAwakementsRegister.spellAmplification);
+    @Overwrite
+    public float getDamage(ItemStack itemStack) {
+        // 原始伤害计算
+        float baseDamage = ItemStaffBase.getMagicDamage(itemStack);
+
+        // 应用法袍增伤 (x10) - 来自 MixinSpellStats
+        float damage = baseDamage * 10.0f;
+
+        // 应用咒文增幅觉醒
+        if (AwakementsInitializer.spellAmplification != null && itemStack != null) {
+            int level = Awakements.getEnchantLevel(itemStack, (Awakements) AwakementsInitializer.spellAmplification);
             if (level > 0) {
                 float multiplier = AwakementSpellAmplification.getDamageMultiplier(level);
-                cir.setReturnValue(cir.getReturnValue() * multiplier);
+                damage = damage * multiplier;
             }
         }
+
+        return damage;
     }
 
     /**
@@ -40,8 +59,8 @@ public class MixinSpellAwakeningEffects {
      */
     @Inject(method = "getCost", at = @At("RETURN"), cancellable = true)
     private void applyManaSurge(ItemStack itemstack, CallbackInfoReturnable<Float> cir) {
-        if (MixinAwakementsRegister.manaSurge != null) {
-            int level = Awakements.getEnchantLevel(itemstack, MixinAwakementsRegister.manaSurge);
+        if (AwakementsInitializer.manaSurge != null && itemstack != null) {
+            int level = Awakements.getEnchantLevel(itemstack, (Awakements) AwakementsInitializer.manaSurge);
             if (level > 0) {
                 float multiplier = AwakementManaSurge.getCostMultiplier(level);
                 cir.setReturnValue(cir.getReturnValue() * multiplier);
@@ -55,21 +74,12 @@ public class MixinSpellAwakeningEffects {
      */
     @Inject(method = "getRange", at = @At("RETURN"), cancellable = true)
     private void applyLongRange(ItemStack itemstack, CallbackInfoReturnable<Integer> cir) {
-        if (MixinAwakementsRegister.longRange != null) {
-            int level = Awakements.getEnchantLevel(itemstack, MixinAwakementsRegister.longRange);
+        if (AwakementsInitializer.longRange != null && itemstack != null) {
+            int level = Awakements.getEnchantLevel(itemstack, (Awakements) AwakementsInitializer.longRange);
             if (level > 0) {
                 float multiplier = AwakementLongRange.getRangeMultiplier(level);
                 cir.setReturnValue((int) (cir.getReturnValue() * multiplier));
             }
         }
     }
-
-    /**
-     * 瞬发咏唱 - 减少冷却
-     * getCoolDown() -> int (无ItemStack参数，需要在ItemStaffBase处理)
-     * getCastingTime() -> int (同上)
-     * 
-     * 注意：这两个方法没有ItemStack参数，无法直接获取觉醒等级
-     * 需要在 MixinItemStaffBase 中处理
-     */
 }

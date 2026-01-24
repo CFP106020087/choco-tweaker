@@ -43,12 +43,12 @@ public class AwakementHighSpeedChant extends Awakements {
             return false;
         }
 
-        // 检查玩家是否解锁（客户端检查）
-        EntityPlayer player = getClientPlayer();
-        if (player != null && !SpellAwakeningUnlockTracker.isUnlocked(player,
-                SpellAwakeningUnlockTracker.AWAKENING_HIGH_SPEED_CHANT)) {
-            return false;
-        }
+        // TODO: 解锁检查暂时禁用，待任务系统完成后启用
+        // EntityPlayer player = getClientPlayer();
+        // if (player != null && !SpellAwakeningUnlockTracker.isUnlocked(player,
+        // SpellAwakeningUnlockTracker.AWAKENING_HIGH_SPEED_CHANT)) {
+        // return false;
+        // }
 
         return true;
     }

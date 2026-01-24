@@ -1,0 +1,154 @@
+{
+  "itemName": "apollyonclaw",
+  "loadDefault": true,
+  "slotType": "head",
+  "dropMobId": "lycanitesmobs:archvile",
+  "dropChance": 0.05,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "nether"
+  ],
+  "features": [
+    {
+      "featureType": "slot",
+      "slotType": "pike"
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 1,
+      "levelMax": 2,
+      "damageAmount": 1,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 4,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 6,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 8,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "minecraft:strength",
+      "effectTarget": "self",
+      "effectDuration": 80,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "minecraft:strength",
+      "effectTarget": "self",
+      "effectDuration": 120,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "minecraft:strength",
+      "effectTarget": "self",
+      "effectDuration": 160,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "minecraft:strength",
+      "effectTarget": "self",
+      "effectDuration": 200,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "minecraft:strength",
+      "effectTarget": "self",
+      "effectDuration": 240,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "minecraft:strength",
+      "effectTarget": "self",
+      "effectDuration": 280,
+      "effectStrength": 6
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "minecraft:strength",
+      "effectTarget": "self",
+      "effectDuration": 320,
+      "effectStrength": 7
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "minecraft:strength",
+      "effectTarget": "self",
+      "effectDuration": 360,
+      "effectStrength": 8
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:strength",
+      "effectTarget": "self",
+      "effectDuration": 400,
+      "effectStrength": 10
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:decay",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 1
+    }
+  ]
+}

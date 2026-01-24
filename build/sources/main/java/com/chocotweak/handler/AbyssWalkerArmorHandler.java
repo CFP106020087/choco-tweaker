@@ -130,7 +130,7 @@ public class AbyssWalkerArmorHandler {
     }
 
     /**
-     * 渲染黑色沙尘暴粒子
+     * 渲染黑色沙尘暴粒子 - 使用 SpellStorm 同款的龙卷风粒子效果
      */
     @SideOnly(Side.CLIENT)
     private void spawnBlackStormParticles(EntityPlayer player) {
@@ -149,9 +149,10 @@ public class AbyssWalkerArmorHandler {
             double motionY = 0.1 + Math.random() * 0.2;
             double motionZ = Math.sin(angle + Math.PI / 2) * 0.1;
 
-            // 使用 dust_walker 粒子类型 (黑色沙尘)
-            EffectManager.spawnParticle(EffectManager.dust_walker,
-                    player.world, x, y, z, motionX, motionY, motionZ);
+            // 使用 element_tornado 粒子类型配合 dark 元素（黑色龙卷风效果）
+            EffectManager.spawnElementParticle(EffectManager.element_tornado,
+                    player.world, x, y, z, motionX, motionY, motionZ,
+                    com.chocolate.chocolateQuest.magic.Elements.darkness);
         }
     }
 }

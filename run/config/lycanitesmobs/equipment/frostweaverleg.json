@@ -1,0 +1,273 @@
+{
+  "itemName": "frostweaverleg",
+  "loadDefault": true,
+  "slotType": "blade",
+  "dropMobId": "lycanitesmobs:frostweaver",
+  "dropChance": 0.05,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "frost"
+  ],
+  "features": [
+    {
+      "featureType": "harvest",
+      "levelMax": 2,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 3,
+      "levelMax": 4,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 5,
+      "levelMax": 6,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 7,
+      "levelMax": 8,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        3,
+        6,
+        6
+      ]
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 9,
+      "harvestType": "sword",
+      "harvestShape": "block",
+      "harvestRange": [
+        4,
+        8,
+        8
+      ]
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 6,
+      "damageKnockback": 0,
+      "damageCooldown": 0.9,
+      "damageRange": 1,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 9,
+      "damageKnockback": 0,
+      "damageCooldown": 0.85,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 12,
+      "damageKnockback": 0,
+      "damageCooldown": 0.8,
+      "damageRange": 1.25,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 15,
+      "damageKnockback": 0,
+      "damageCooldown": 0.75,
+      "damageRange": 1.25,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 18,
+      "damageKnockback": 0,
+      "damageCooldown": 0.7,
+      "damageRange": 1.5,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 21,
+      "damageKnockback": 0,
+      "damageCooldown": 0.65,
+      "damageRange": 1.5,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 24,
+      "damageKnockback": 0,
+      "damageCooldown": 0.6,
+      "damageRange": 1.75,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 27,
+      "damageKnockback": 0,
+      "damageCooldown": 0.55,
+      "damageRange": 1.75,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 30,
+      "damageKnockback": 0,
+      "damageCooldown": 0.5,
+      "damageRange": 2,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "switchbow:freeze",
+      "effectTarget": "target",
+      "effectDuration": 100,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "potioncore:climb",
+      "effectTarget": "self",
+      "effectDuration": 1200,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 2
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 16
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 22
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 28
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 34
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 42
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 50
+    }
+  ]
+}

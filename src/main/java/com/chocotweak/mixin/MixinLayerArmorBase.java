@@ -3,6 +3,7 @@ package com.chocotweak.mixin;
 import baubles.api.BaublesApi;
 import baubles.api.cap.IBaublesItemHandler;
 import com.chocolate.chocolateQuest.ChocolateQuest;
+import com.chocotweak.bedrock.entity.IEasterEggCapable;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.RenderLivingBase;
@@ -23,6 +24,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 /**
  * Mixin 到 LayerArmorBase 以渲染 Baubles 槽位中的盔甲
+ * 也用于禁用 Easter Egg NPC 的盔甲渲染
  */
 @Mixin(LayerArmorBase.class)
 public abstract class MixinLayerArmorBase<T extends ModelBiped> {
@@ -36,6 +38,20 @@ public abstract class MixinLayerArmorBase<T extends ModelBiped> {
 
     @Shadow
     protected abstract T getModelFromSlot(EntityEquipmentSlot slotIn);
+
+    /**
+     * 跳过 Easter Egg NPC 的盔甲渲染
+     */
+    @Inject(method = "doRenderLayer", at = @At("HEAD"), cancellable = true)
+    private void chocotweak$skipArmorForEasterEgg(EntityLivingBase entity, float limbSwing, float limbSwingAmount,
+            float partialTicks, float ageInTicks, float netHeadYaw, float headPitch, float scale, CallbackInfo ci) {
+        if (entity instanceof IEasterEggCapable) {
+            IEasterEggCapable easterEgg = (IEasterEggCapable) entity;
+            if (easterEgg.isEasterEggNpc()) {
+                ci.cancel();
+            }
+        }
+    }
 
     /**
      * 在渲染盔甲层后，额外渲染 Baubles 槽位中的盔甲物品

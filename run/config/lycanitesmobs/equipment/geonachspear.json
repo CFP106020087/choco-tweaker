@@ -1,0 +1,221 @@
+{
+  "itemName": "geonachspear",
+  "loadDefault": true,
+  "slotType": "pike",
+  "dropMobId": "lycanitesmobs:geonach",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "earth"
+  ],
+  "features": [
+    {
+      "featureType": "harvest",
+      "levelMax": 2,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 6,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        4
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 3,
+      "levelMax": 4,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 7,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        8
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 5,
+      "levelMax": 6,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 8,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        16
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "levelMin": 7,
+      "levelMax": 8,
+      "harvestType": "pickaxe",
+      "harvestSpeed": 9,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        32
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "pickaxe",
+      "levelMin": 9,
+      "harvestSpeed": 10,
+      "harvestShape": "block",
+      "harvestRange": [
+        1,
+        1,
+        64
+      ],
+      "harvestRangeLevelMultiplier": 1
+    },
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 6,
+      "damageKnockback": 1,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 9,
+      "damageKnockback": 1,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 12,
+      "damageKnockback": 1,
+      "damageCooldown": 1,
+      "damageRange": 2,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 15,
+      "damageKnockback": 1,
+      "damageCooldown": 1,
+      "damageRange": 2,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 18,
+      "damageKnockback": 1,
+      "damageCooldown": 1,
+      "damageRange": 3,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 21,
+      "damageKnockback": 1,
+      "damageCooldown": 1,
+      "damageRange": 3,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 24,
+      "damageKnockback": 1,
+      "damageCooldown": 1,
+      "damageRange": 4,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 27,
+      "damageKnockback": 1,
+      "damageCooldown": 1,
+      "damageRange": 4,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 30,
+      "damageKnockback": 1,
+      "damageCooldown": 1,
+      "damageRange": 5,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 2,
+      "effectType": "minecraft:resistance",
+      "effectTarget": "self",
+      "effectDuration": 80,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 4,
+      "effectType": "minecraft:resistance",
+      "effectTarget": "self",
+      "effectDuration": 160,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 6,
+      "effectType": "minecraft:resistance",
+      "effectTarget": "self",
+      "effectDuration": 240,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 8,
+      "effectType": "minecraft:resistance",
+      "effectTarget": "self",
+      "effectDuration": 320,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:resistance",
+      "effectTarget": "self",
+      "effectDuration": 400,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:absorption",
+      "effectTarget": "self",
+      "effectDuration": 400,
+      "effectStrength": 1
+    }
+  ]
+}

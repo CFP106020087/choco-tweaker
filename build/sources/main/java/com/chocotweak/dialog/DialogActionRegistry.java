@@ -42,8 +42,8 @@ public class DialogActionRegistry {
             // 获取原数组长度
             int originalLength = Array.getLength(originalActions);
 
-            // 创建新数组 (长度+2)
-            Object newActions = Array.newInstance(dialogActionListClass, originalLength + 2);
+            // 创建新数组 (长度+5)
+            Object newActions = Array.newInstance(dialogActionListClass, originalLength + 5);
 
             // 复制原有元素
             for (int i = 0; i < originalLength; i++) {
@@ -62,11 +62,29 @@ public class DialogActionRegistry {
             Array.set(newActions, originalLength + 1, enchantItemAction);
             ChocoTweak.LOGGER.info("Added dialog action: Enchant item");
 
+            // 新增：生存模式装备编辑
+            Class<?> editEquipmentClass = Class.forName("com.chocotweak.quest.DialogActionEditEquipment");
+            Object editEquipmentAction = constructor.newInstance(editEquipmentClass, "Edit equipment (survival)");
+            Array.set(newActions, originalLength + 2, editEquipmentAction);
+            ChocoTweak.LOGGER.info("Added dialog action: Edit equipment (survival)");
+
+            // 新增：觉醒类型选择（STAFF/BLACKSMITH/ENCHANTER）
+            Object addAwakeningAction = constructor.newInstance(DialogActionAddAwakening.class,
+                    "Open awakening (type)");
+            Array.set(newActions, originalLength + 3, addAwakeningAction);
+            ChocoTweak.LOGGER.info("Added dialog action: Open awakening (type)");
+
+            // 新增：选择特定觉醒词条
+            Object selectAwakeningAction = constructor.newInstance(DialogActionSelectAwakening.class,
+                    "Select awakening affix");
+            Array.set(newActions, originalLength + 4, selectAwakeningAction);
+            ChocoTweak.LOGGER.info("Added dialog action: Select awakening affix");
+
             // 替换 actions 数组
             actionsField.set(null, newActions);
 
             ChocoTweak.LOGGER.info("Successfully injected {} custom dialog actions. Total: {}",
-                    2, Array.getLength(newActions));
+                    5, Array.getLength(newActions));
 
         } catch (ClassNotFoundException e) {
             ChocoTweak.LOGGER.warn("CQ DialogAction classes not found, skipping custom actions: {}", e.getMessage());

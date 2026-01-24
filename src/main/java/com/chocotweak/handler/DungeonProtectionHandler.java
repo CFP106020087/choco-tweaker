@@ -166,6 +166,11 @@ public class DungeonProtectionHandler {
         EntityPlayer player = event.player;
         UUID uuid = player.getUniqueID();
 
+        // 创造模式和观察者模式不受限制
+        if (player.isCreative() || player.isSpectator()) {
+            return;
+        }
+
         // 检测地牢并施加效果
         if (player.ticksExisted % 20 == 0) { // 每秒检测一次
             if (isNearDungeon(player)) {
@@ -193,14 +198,15 @@ public class DungeonProtectionHandler {
                 } else {
                     state.ticksSinceJump++;
 
-                    // 如果离开地面超过 15 tick 且仍在上升 → 异常行为（喷气背包）
-                    if (state.ticksSinceJump > 15 && player.motionY > 0.1) {
+                    // 如果离开地面超过 30 tick 且快速上升（5格以上）→ 异常行为（喷气背包）
+                    // motionY > 0.5 大约对应每tick移动0.5格，持续上升表示喷气背包
+                    if (state.ticksSinceJump > 30 && player.motionY > 0.5) {
                         teleportToGround(player);
                         state.ticksSinceJump = 0;
                     }
 
-                    // 检测爬墙：水平碰撞 + 上升 + 不在地面
-                    if (player.collidedHorizontally && player.motionY > 0.05) {
+                    // 检测爬墙：水平碰撞 + 快速上升（5格以上）+ 不在地面
+                    if (player.collidedHorizontally && player.motionY > 0.5) {
                         teleportToGround(player);
                         state.ticksSinceJump = 0;
                     }
@@ -271,7 +277,8 @@ public class DungeonProtectionHandler {
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public void onBlockBreak(BlockEvent.BreakEvent event) {
         EntityPlayer player = event.getPlayer();
-        if (player != null && PotionDungeonExplorer.hasEffect(player)) {
+        if (player != null && !player.isCreative() && !player.isSpectator()
+                && PotionDungeonExplorer.hasEffect(player)) {
             event.setCanceled(true);
         }
     }
@@ -282,7 +289,8 @@ public class DungeonProtectionHandler {
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public void onBlockPlace(BlockEvent.PlaceEvent event) {
         EntityPlayer player = event.getPlayer();
-        if (player != null && PotionDungeonExplorer.hasEffect(player)) {
+        if (player != null && !player.isCreative() && !player.isSpectator()
+                && PotionDungeonExplorer.hasEffect(player)) {
             event.setCanceled(true);
         }
     }
@@ -293,7 +301,8 @@ public class DungeonProtectionHandler {
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
         EntityPlayer player = event.getEntityPlayer();
-        if (player != null && PotionDungeonExplorer.hasEffect(player)) {
+        if (player != null && !player.isCreative() && !player.isSpectator()
+                && PotionDungeonExplorer.hasEffect(player)) {
             BlockPos pos = event.getPos();
             IBlockState state = player.world.getBlockState(pos);
 
@@ -339,7 +348,8 @@ public class DungeonProtectionHandler {
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public void onAttackEntity(net.minecraftforge.event.entity.player.AttackEntityEvent event) {
         EntityPlayer player = event.getEntityPlayer();
-        if (player != null && PotionDungeonExplorer.hasEffect(player)) {
+        if (player != null && !player.isCreative() && !player.isSpectator()
+                && PotionDungeonExplorer.hasEffect(player)) {
             // CarryOn 通过攻击事件判断是否可以捡起
             // 取消事件阻止 CarryOn 捡起实体
             event.setCanceled(true);

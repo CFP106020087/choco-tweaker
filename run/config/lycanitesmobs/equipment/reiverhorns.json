@@ -1,0 +1,254 @@
+{
+  "itemName": "reiverhorns",
+  "loadDefault": true,
+  "slotType": "pike",
+  "dropMobId": "lycanitesmobs:reiver",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "frost"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 8,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 3,
+      "damageAmount": 12,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 2,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 4,
+      "levelMax": 4,
+      "damageAmount": 16,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 2,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 5,
+      "damageAmount": 20,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 3,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 6,
+      "levelMax": 6,
+      "damageAmount": 24,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 3,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 7,
+      "damageAmount": 28,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 4,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 8,
+      "levelMax": 8,
+      "damageAmount": 32,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 4,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 36,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 5,
+      "damageSweep": 45
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 80,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 120,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 160,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 4
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 240,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 280,
+      "effectStrength": 6
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 320,
+      "effectStrength": 7
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 360,
+      "effectStrength": 8
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 400,
+      "effectStrength": 10
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:freezeaura",
+      "effectTarget": "self",
+      "effectDuration": 1200,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "frostbolt",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 2
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "frostbolt",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "frostbolt",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 10
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "frostbolt",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 16
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "frostbolt",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 22
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "frostbolt",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 30
+    }
+  ]
+}

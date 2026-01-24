@@ -45,7 +45,7 @@ public abstract class MixinStaffAwakeningEffects {
             return;
         }
 
-        int level = Awakements.getEnchantLevel(itemstack, AwakementsInitializer.instantCast);
+        int level = Awakements.getEnchantLevel(itemstack, (Awakements) AwakementsInitializer.instantCast);
         if (level <= 0) {
             return;
         }

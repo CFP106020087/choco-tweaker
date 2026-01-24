@@ -136,6 +136,20 @@ public abstract class MixinContainerAwakement {
             }
 
             lvl = Awakements.getEnchantLevel(is, targetAwakement);
+
+            // ========== 特殊处理：药水灌注觉醒 ==========
+            if (targetAwakement == com.chocotweak.core.AwakementsInitializer.potionInfusion) {
+                // 药水灌注使用特殊逻辑：从背包消耗药水
+                boolean success = com.chocotweak.magic.AwakementPotionInfusion.infusePotion(is, player);
+                if (success) {
+                    System.out.println("[ChocoTweak] Potion infusion successful!");
+                } else {
+                    System.out.println("[ChocoTweak] Potion infusion failed - check inventory for potions");
+                }
+                return; // 不执行标准的觉醒升级逻辑
+            }
+
+            // ========== 标准觉醒处理 ==========
             expRequired = getXPRequiredToEnchantItem() + getXPRequiredForEnchantment(null, lvl);
             expRequired -= getCatalystRebate(expRequired);
 

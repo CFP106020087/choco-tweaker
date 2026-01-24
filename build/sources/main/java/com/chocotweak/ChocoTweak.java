@@ -87,19 +87,40 @@ public class ChocoTweak {
             net.minecraftforge.common.MinecraftForge.EVENT_BUS
                     .register(new com.chocotweak.client.ArmorTooltipHandler());
             LOGGER.info("Choco Tweak armor tooltips registered");
+
+            // 注册按钮翻译处理器（替代 MixinGuiButtonDisplayString, MixinGuiNPC, MixinGuiLinked,
+            // MixinEnumEnchantType）
+            net.minecraftforge.common.MinecraftForge.EVENT_BUS
+                    .register(new com.chocotweak.client.ButtonTranslationHandler());
+            LOGGER.info("Choco Tweak button translation registered");
         }
 
         // 深渊漫步者之王胸甲效果
         net.minecraftforge.common.MinecraftForge.EVENT_BUS
                 .register(new com.chocotweak.handler.AbyssWalkerArmorHandler());
         LOGGER.info("Abyss Walker King Armor effects registered");
+
+        // 彩蛋 NPC 追踪同步（确保重新进入世界后正确渲染）
+        net.minecraftforge.common.MinecraftForge.EVENT_BUS
+                .register(new com.chocotweak.bedrock.handler.EasterEggTrackingHandler());
+        LOGGER.info("Easter Egg NPC tracking sync registered");
+
+        // 通用坐骑系统 - 防止骑手和坐骑互相攻击
+        net.minecraftforge.common.MinecraftForge.EVENT_BUS
+                .register(new com.chocotweak.mount.MountFriendlyFireHandler());
+        LOGGER.info("Universal mount system friendly fire protection registered");
+
+        // NPC 法术觉醒效果（高速神言、回响之音等）
+        net.minecraftforge.common.MinecraftForge.EVENT_BUS
+                .register(new com.chocotweak.handler.NpcSpellAwakeningHandler());
+        LOGGER.info("NPC spell awakening effects registered");
     }
 
     @EventHandler
     public void serverStarting(FMLServerStartingEvent event) {
         event.registerServerCommand(new CommandChocoTweak());
         event.registerServerCommand(new com.chocotweak.command.CommandSpellAwaken());
-        event.registerServerCommand(new com.chocotweak.command.CommandPotionInfuse());
+        event.registerServerCommand(new com.chocotweak.command.CommandSpawnEasterEgg());
         LOGGER.info("Choco Tweak commands registered");
     }
 }

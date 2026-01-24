@@ -1,16 +1,25 @@
 {
   "mappings": {
+    "com/chocotweak/mixin/MixinLayerHeldItem": {
+      "doRenderLayer": "Lnet/minecraft/client/renderer/entity/layers/LayerHeldItem;func_177141_a(Lnet/minecraft/entity/EntityLivingBase;FFFFFFF)V"
+    },
     "com/chocotweak/mixin/MixinLayerArmorBase": {
       "doRenderLayer": "Lnet/minecraft/client/renderer/entity/layers/LayerArmorBase;func_177141_a(Lnet/minecraft/entity/EntityLivingBase;FFFFFFF)V"
     }
   },
   "data": {
     "notch": {
+      "com/chocotweak/mixin/MixinLayerHeldItem": {
+        "doRenderLayer": "Lccc;a(Lvp;FFFFFFF)V"
+      },
       "com/chocotweak/mixin/MixinLayerArmorBase": {
         "doRenderLayer": "Lcbp;a(Lvp;FFFFFFF)V"
       }
     },
     "searge": {
+      "com/chocotweak/mixin/MixinLayerHeldItem": {
+        "doRenderLayer": "Lnet/minecraft/client/renderer/entity/layers/LayerHeldItem;func_177141_a(Lnet/minecraft/entity/EntityLivingBase;FFFFFFF)V"
+      },
       "com/chocotweak/mixin/MixinLayerArmorBase": {
         "doRenderLayer": "Lnet/minecraft/client/renderer/entity/layers/LayerArmorBase;func_177141_a(Lnet/minecraft/entity/EntityLivingBase;FFFFFFF)V"
       }

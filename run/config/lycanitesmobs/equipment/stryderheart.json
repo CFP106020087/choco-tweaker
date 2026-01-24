@@ -1,0 +1,207 @@
+{
+  "itemName": "stryderheart",
+  "loadDefault": true,
+  "slotType": "jewel",
+  "dropMobId": "lycanitesmobs:strider",
+  "dropChance": 0.2,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "water"
+  ],
+  "features": [
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:water_breathing",
+      "effectTarget": "self",
+      "effectDuration": 1200,
+      "effectStrength": 6
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "lycanitesmobs:swiftswimming",
+      "effectTarget": "self",
+      "effectDuration": 1200,
+      "effectStrength": 6
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 20,
+      "count": 6,
+      "bonusDamage": 14,
+      "ringRange": 75
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 16,
+      "count": 9,
+      "bonusDamage": 20,
+      "ringRange": 90
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 16,
+      "count": 12,
+      "bonusDamage": 26,
+      "ringRange": 105
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 12,
+      "count": 15,
+      "bonusDamage": 34,
+      "ringRange": 120
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 12,
+      "count": 18,
+      "bonusDamage": 42,
+      "ringRange": 135
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "primary",
+      "projectilePattern": "ring",
+      "cooldown": 10,
+      "count": 21,
+      "bonusDamage": 50,
+      "ringRange": 150
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 8
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "levelMax": 3,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 12
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 4,
+      "levelMax": 4,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 16,
+      "count": 1,
+      "bonusDamage": 18
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 5,
+      "levelMax": 5,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 24
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 6,
+      "levelMax": 6,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 12,
+      "count": 1,
+      "bonusDamage": 32
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 7,
+      "levelMax": 7,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 40
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 8,
+      "levelMax": 8,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 50
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 9,
+      "projectileName": "aquapulse",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 8,
+      "count": 1,
+      "bonusDamage": 60
+    }
+  ]
+}

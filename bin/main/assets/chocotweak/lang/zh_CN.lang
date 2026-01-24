@@ -375,3 +375,18 @@ gui.chocotweak.potion_infusion=药水灌注
 gui.chocotweak.infuse=灌注
 gui.chocotweak.xp_cost=消耗 %d 经验等级
 gui.chocotweak.potion_slots=药水槽: %d/%d
+
+# 对话动作参数名
+chocotweak.dialog.max_level=最大等级
+chocotweak.dialog.select_enchantment=选择附魔
+chocotweak.dialog.awakening_type=觉醒类型
+chocotweak.dialog.edit_equipment=编辑装备 (生存)
+chocotweak.dialog.open_awakening=打开觉醒 (类型)
+
+# 觉醒界面翻译
+gui.awakement.enchant=附魔
+gui.awakement.awaken=觉醒
+gui.awakement.potion_infusion=药水灌注
+gui.awakement.staff=法杖觉醒
+gui.awakement.blacksmith=锻造觉醒
+gui.awakement.enchanter=附魔觉醒

@@ -1,0 +1,21 @@
+{
+  "name": "shadow_cookie",
+  "loadDefault": true,
+  "group": "items",
+  "maxStackSize": 16,
+  "food": {
+    "hunger": 1,
+    "saturation": 1,
+    "alwaysEdible": true,
+    "fast": false,
+    "meat": true,
+    "effects": [
+      {
+        "effectId": "tombstone:ghostly_shape",
+        "duration": 600,
+        "amplifier": 1,
+        "chance": 1.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "itemName": "sprigganroot",
+  "loadDefault": true,
+  "slotType": "base",
+  "dropMobId": "lycanitesmobs:spriggan",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 9,
+  "elements": [
+    "arbour"
+  ],
+  "features": [
+    {
+      "featureType": "slot",
+      "slotType": "head"
+    },
+    {
+      "featureType": "slot",
+      "slotType": "pommel"
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 1,
+      "levelMax": 2,
+      "damageAmount": 1,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "levelMax": 4,
+      "damageAmount": 2,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 5,
+      "levelMax": 6,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 7,
+      "levelMax": 8,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 9,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 0
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "mod_lavacow:thorned",
+      "effectTarget": "self",
+      "effectDuration": 600,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "potioncore:recoil",
+      "effectTarget": "self",
+      "effectDuration": 600,
+      "effectStrength": 5
+    },
+    {
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 200,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 400,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 3,
+      "levelMax": 3,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 600,
+      "effectStrength": 1
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 4,
+      "levelMax": 4,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 800,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 5,
+      "levelMax": 5,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 1000,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 6,
+      "levelMax": 6,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 1200,
+      "effectStrength": 2
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 7,
+      "levelMax": 7,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 1400,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 8,
+      "levelMax": 8,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 1600,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "effect",
+      "levelMin": 9,
+      "effectType": "minecraft:poison",
+      "effectTarget": "target",
+      "effectDuration": 1800,
+      "effectStrength": 3
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 4,
+      "levelMax": 4,
+      "summonMobId": "lycanitesmobs.spriggan",
+      "summonChance": 0.05,
+      "summonDuration": 10,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 5,
+      "levelMax": 5,
+      "summonMobId": "lycanitesmobs.spriggan",
+      "summonChance": 0.1,
+      "summonDuration": 20,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 6,
+      "levelMax": 6,
+      "summonMobId": "lycanitesmobs.spriggan",
+      "summonChance": 0.1,
+      "summonDuration": 30,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 7,
+      "levelMax": 7,
+      "summonMobId": "lycanitesmobs.spriggan",
+      "summonChance": 0.15,
+      "summonDuration": 40,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 8,
+      "levelMax": 8,
+      "summonMobId": "lycanitesmobs.spriggan",
+      "summonChance": 0.15,
+      "summonDuration": 50,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    },
+    {
+      "featureType": "summon",
+      "levelMin": 9,
+      "summonMobId": "lycanitesmobs.spriggan",
+      "summonChance": 0.2,
+      "summonDuration": 60,
+      "summonCountMin": 1,
+      "summonCountMax": 1,
+      "sizeScale": 0.4
+    }
+  ]
+}

@@ -37,11 +37,18 @@ public class ChocoNetwork {
                 packetId++,
                 Side.SERVER);
 
-        // 客户端 -> 服务端：药水灌注
+        // 客户端 -> 服务端：彩蛋NPC设置同步
         INSTANCE.registerMessage(
-                        PacketPotionInfusion.Handler.class,
-                        PacketPotionInfusion.class,
+                        PacketEasterEggSync.Handler.class,
+                        PacketEasterEggSync.class,
                         packetId++,
                         Side.SERVER);
+
+        // 服务端 -> 客户端：彩蛋NPC状态同步（实体追踪时）
+        INSTANCE.registerMessage(
+                        PacketEasterEggSyncToClient.Handler.class,
+                        PacketEasterEggSyncToClient.class,
+                        packetId++,
+                        Side.CLIENT);
     }
 }

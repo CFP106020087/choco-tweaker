@@ -2,6 +2,7 @@ package com.chocotweak.mixin;
 
 import com.chocolate.chocolateQuest.magic.Awakements;
 import com.chocolate.chocolateQuest.magic.SpellBase;
+import com.chocotweak.core.AwakementsInitializer;
 import com.chocotweak.magic.AwakementInstantCast;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -40,11 +41,11 @@ public abstract class MixinStaffAwakeningEffects {
         }
 
         // 检查瞬发咏唱觉醒
-        if (MixinAwakementsRegister.instantCast == null) {
+        if (AwakementsInitializer.instantCast == null) {
             return;
         }
 
-        int level = Awakements.getEnchantLevel(itemstack, MixinAwakementsRegister.instantCast);
+        int level = Awakements.getEnchantLevel(itemstack, (Awakements) AwakementsInitializer.instantCast);
         if (level <= 0) {
             return;
         }

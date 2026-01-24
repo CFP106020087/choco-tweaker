@@ -68,7 +68,7 @@ public class AwakementPotionCapacity extends Awakements {
         if (weapon.isEmpty())
             return 0;
         int level = Awakements.getEnchantLevel(weapon,
-                com.chocotweak.mixin.MixinAwakementsRegister.potionCapacity);
+                (Awakements) com.chocotweak.core.AwakementsInitializer.potionCapacity);
         return getPotionSlots(level);
     }
 }

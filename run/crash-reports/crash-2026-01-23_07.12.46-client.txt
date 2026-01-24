@@ -1,0 +1,134 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  IceAndFirePlugin (Ice and Fire-2.1.7.jar)
+  ChocoTweakCore (chocotweak-1.12.2-1.0.0.jar)
+  FermiumBooter (`FermiumBooter-1.2.0.jar)
+Contact their authors BEFORE contacting forge
+
+// I bet Cylons wouldn't have this problem.
+
+Time: 1/23/26 7:12 AM
+Description: Initializing game
+
+java.lang.IllegalArgumentException: MALFORMED
+	at java.util.zip.ZipCoder.toString(ZipCoder.java:58)
+	at java.util.zip.ZipFile.getZipEntry(ZipFile.java:590)
+	at java.util.zip.ZipFile.access$900(ZipFile.java:61)
+	at java.util.zip.ZipFile$ZipEntryIterator.next(ZipFile.java:546)
+	at java.util.zip.ZipFile$ZipEntryIterator.nextElement(ZipFile.java:521)
+	at java.util.zip.ZipFile$ZipEntryIterator.nextElement(ZipFile.java:502)
+	at net.minecraft.client.resources.FileResourcePack.getResourceDomains(FileResourcePack.java:85)
+	at net.minecraft.client.resources.LegacyV2Adapter.getResourceDomains(LegacyV2Adapter.java:60)
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResourcePack(SimpleReloadableResourceManager.java:39)
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:115)
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:877)
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:247)
+	at net.minecraft.client.Minecraft.init(Minecraft.java:514)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:422)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at java.util.zip.ZipCoder.toString(ZipCoder.java:58)
+	at java.util.zip.ZipFile.getZipEntry(ZipFile.java:590)
+	at java.util.zip.ZipFile.access$900(ZipFile.java:61)
+	at java.util.zip.ZipFile$ZipEntryIterator.next(ZipFile.java:546)
+	at java.util.zip.ZipFile$ZipEntryIterator.nextElement(ZipFile.java:521)
+	at java.util.zip.ZipFile$ZipEntryIterator.nextElement(ZipFile.java:502)
+	at net.minecraft.client.resources.FileResourcePack.getResourceDomains(FileResourcePack.java:85)
+	at net.minecraft.client.resources.LegacyV2Adapter.getResourceDomains(LegacyV2Adapter.java:60)
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResourcePack(SimpleReloadableResourceManager.java:39)
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:115)
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:877)
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:247)
+	at net.minecraft.client.Minecraft.init(Minecraft.java:514)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.run(Minecraft.java:422)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_472, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 950057568 bytes (906 MB) / 1971322880 bytes (1880 MB) up to 15176040448 bytes (14473 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2847 10 mods loaded, 10 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID             | Version              | Source                            | Signature                                |
+	|:----- |:-------------- |:-------------------- |:--------------------------------- |:---------------------------------------- |
+	| LC    | minecraft      | 1.12.2               | minecraft.jar                     | None                                     |
+	| LC    | mcp            | 9.42                 | minecraft.jar                     | None                                     |
+	| LC    | FML            | 8.0.99.99            | forgeSrc-1.12.2-14.23.5.2847.jar  | None                                     |
+	| LC    | forge          | 14.23.5.2847         | forgeSrc-1.12.2-14.23.5.2847.jar  | None                                     |
+	| LC    | baubles        | 1.5.2                | Baubles-1.12-1.5.2.jar            | None                                     |
+	| LC    | chocolatequest | 1.0                  | chocolateQuest-1.12.2-1.2.0.jar   | None                                     |
+	| LC    | chocotweak     | 1.0.0                | chocotweak-1.12.2-1.0.0.jar       | None                                     |
+	| LC    | llibrary       | 1.7.20               | llibrary-1.7.20-1.12.2.jar        | b9f30a813bee3b9dd5652c460310cfcd54f6b7ec |
+	| LC    | iceandfire     | 2.1.7                | Ice and Fire-2.1.7.jar            | None                                     |
+	| LC    | lycanitesmobs  | 2.0.8.10 - MC 1.12.2 | lycanitesmobs-1.12.2-2.0.8.10.jar | None                                     |
+
+	Loaded coremods (and transformers): 
+llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+  net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+IceAndFirePlugin (Ice and Fire-2.1.7.jar)
+  
+ChocoTweakCore (chocotweak-1.12.2-1.0.0.jar)
+  
+FermiumBooter (`FermiumBooter-1.2.0.jar)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 591.44' Renderer: 'NVIDIA GeForce RTX 5070/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce RTX 5070/PCIe/SSE2 GL version 4.6.0 NVIDIA 591.44, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: ysm
+	Current Language: ~~ERROR~~ NullPointerException: null
+	Profiler Position: N/A (disabled)
+	CPU: 20x Intel(R) Core(TM) Ultra 7 265KF
