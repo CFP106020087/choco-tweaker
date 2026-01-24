@@ -48,7 +48,6 @@
         "MixinGuiAwakementAction",
         "MixinGuiEditNpc",
         "MixinGuiNPCReaction",
-        "MixinRenderBeam",
         "MixinRenderHumanEasterEgg",
         "MixinLayerHeldItem",
         "MixinLayerHeldItemHuman",
