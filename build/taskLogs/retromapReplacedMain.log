@@ -1,4 +1,4 @@
-Processing 186 files
+Processing 188 files
 Start Processing: com/chocotweak/ChocoTweak.java
 New Key: class net/minecraftforge/fml/common/Mod
 Import: com.chocotweak.config.TamingConfig
@@ -3506,13 +3506,13 @@ Rename method net/minecraft/pathfinding/PathNavigate/clearPath ()V[2757,2766]::c
 Rename method net/minecraft/entity/Entity/getRidingEntity ()Lnet/minecraft/entity/Entity;[3128,3143]::getRidingEntity->func_184187_bx
 Rename method net/minecraft/entity/Entity/getPassengers ()Ljava/util/List;[3314,3327]::getPassengers->func_184188_bt
 Rename method net/minecraft/entity/Entity/getRidingEntity ()Lnet/minecraft/entity/Entity;[3831,3846]::getRidingEntity->func_184187_bx
-Rename method net/minecraft/entity/Entity/getPassengers ()Ljava/util/List;[4401,4414]::getPassengers->func_184188_bt
-Rename method net/minecraft/entity/Entity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[7505,7515]::writeToNBT->func_189511_e
-Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[7546,7552]::hasKey->func_74764_b
-Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[7575,7581]::hasKey->func_74764_b
-Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[7630,7636]::hasKey->func_74764_b
-Rename method net/minecraft/nbt/NBTTagCompound/getBoolean (Ljava/lang/String;)Z[7658,7668]::getBoolean->func_74767_n
-Rename method net/minecraft/entity/passive/AbstractHorse/isTame ()Z[7895,7901]::isTame->func_110248_bS
+Rename method net/minecraft/entity/Entity/getPassengers ()Ljava/util/List;[4403,4416]::getPassengers->func_184188_bt
+Rename method net/minecraft/entity/Entity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[7507,7517]::writeToNBT->func_189511_e
+Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[7548,7554]::hasKey->func_74764_b
+Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[7577,7583]::hasKey->func_74764_b
+Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[7632,7638]::hasKey->func_74764_b
+Rename method net/minecraft/nbt/NBTTagCompound/getBoolean (Ljava/lang/String;)Z[7660,7670]::getBoolean->func_74767_n
+Rename method net/minecraft/entity/passive/AbstractHorse/isTame ()Z[7897,7903]::isTame->func_110248_bS
 Import: com.chocolate.chocolateQuest.entity.EntityHumanBase
 Import: net.minecraft.entity.Entity
 Import: net.minecraft.entity.EntityCreature
@@ -3755,6 +3755,125 @@ Import: org.spongepowered.asm.mixin.Mixin
 Import: org.spongepowered.asm.mixin.Overwrite
 Import: org.spongepowered.asm.mixin.Pseudo
 End  Processing: com/chocotweak/mixin/MixinHelperDamageSource.java
+
+Start Processing: com/chocotweak/mixin/MixinIceAndFireDragon.java
+Rename method net/minecraft/entity/Entity/getPassengers ()Ljava/util/List;[1218,1231]::getPassengers->func_184188_bt
+Rename method net/minecraft/entity/IEntityOwnable/getOwnerId ()Ljava/util/UUID;[1998,2008]::getOwnerId->func_184753_b
+Rename method net/minecraft/entity/IEntityOwnable/getOwnerId ()Ljava/util/UUID;[2035,2045]::getOwnerId->func_184753_b
+Rename method net/minecraft/entity/IEntityOwnable/getOwnerId ()Ljava/util/UUID;[2372,2382]::getOwnerId->func_184753_b
+Import: com.chocolate.chocolateQuest.entity.EntityHumanBase
+Import: net.minecraft.entity.Entity
+Import: net.minecraft.entity.EntityLiving
+Import: org.spongepowered.asm.mixin.Mixin
+Import: org.spongepowered.asm.mixin.Pseudo
+Import: org.spongepowered.asm.mixin.injection.At
+Import: org.spongepowered.asm.mixin.injection.Inject
+Import: org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable
+End  Processing: com/chocotweak/mixin/MixinIceAndFireDragon.java
+
+Start Processing: com/chocotweak/mixin/MixinItemMobToSpawnerMulti.java
+Rename field net/minecraft/entity/Entity/world[1805,1810]::world->field_70170_p
+Rename field net/minecraft/world/World/isRemote[1819,1827]::isRemote->field_72995_K
+Rename method net/minecraft/entity/Entity/isSneaking ()Z[1918,1928]::isSneaking->func_70093_af
+Rename method net/minecraft/entity/Entity/isBeingRidden ()Z[2022,2035]::isBeingRidden->func_184207_aI
+Rename method net/minecraft/entity/Entity/getPassengers ()Ljava/util/List;[2081,2094]::getPassengers->func_184188_bt
+Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[2310,2324]::getTagCompound->func_77978_p
+Rename method net/minecraft/item/ItemStack/setTagCompound (Lnet/minecraft/nbt/NBTTagCompound;)V[2436,2450]::setTagCompound->func_77982_d
+Rename method net/minecraft/nbt/NBTTagCompound/getTagList (Ljava/lang/String;I)Lnet/minecraft/nbt/NBTTagList;[2521,2531]::getTagList->func_150295_c
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[2841,2846]::floor->func_76128_c
+Rename field net/minecraft/entity/Entity/posX[2861,2865]::posX->field_70165_t
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[2913,2918]::floor->func_76128_c
+Rename field net/minecraft/entity/Entity/posY[2933,2937]::posY->field_70163_u
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[2985,2990]::floor->func_76128_c
+Rename field net/minecraft/entity/Entity/posZ[3005,3009]::posZ->field_70161_v
+Rename method net/minecraft/entity/Entity/writeToNBTOptional (Lnet/minecraft/nbt/NBTTagCompound;)Z[3044,3062]::writeToNBTOptional->func_70039_c
+Rename method net/minecraft/entity/Entity/writeToNBTOptional (Lnet/minecraft/nbt/NBTTagCompound;)Z[3218,3236]::writeToNBTOptional->func_70039_c
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[3339,3348]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[3385,3394]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[3436,3445]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[3488,3497]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[3535,3544]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[3587,3596]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagList/appendTag (Lnet/minecraft/nbt/NBTBase;)V[3662,3671]::appendTag->func_74742_a
+Rename method net/minecraft/nbt/NBTTagCompound/setTag (Ljava/lang/String;Lnet/minecraft/nbt/NBTBase;)V[3711,3717]::setTag->func_74782_a
+Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[3821,3828]::getName->func_70005_c_
+Rename method net/minecraft/entity/player/EntityPlayer/sendStatusMessage (Lnet/minecraft/util/text/ITextComponent;Z)V[3862,3879]::sendStatusMessage->func_146105_b
+Rename method net/minecraft/nbt/NBTTagList/tagCount ()I[4083,4091]::tagCount->func_74745_c
+Rename method net/minecraft/entity/Entity/getRidingEntity ()Lnet/minecraft/entity/Entity;[4354,4369]::getRidingEntity->func_184187_bx
+Rename method net/minecraft/entity/Entity/getRidingEntity ()Lnet/minecraft/entity/Entity;[4413,4428]::getRidingEntity->func_184187_bx
+Rename method net/minecraft/entity/Entity/setDead ()V[4430,4437]::setDead->func_70106_y
+Rename method net/minecraft/entity/Entity/setDead ()V[4512,4519]::setDead->func_70106_y
+Rename method net/minecraft/entity/player/EntityPlayer/sendStatusMessage (Lnet/minecraft/util/text/ITextComponent;Z)V[4574,4591]::sendStatusMessage->func_146105_b
+Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[4847,4861]::getTagCompound->func_77978_p
+Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[4905,4911]::hasKey->func_74764_b
+Rename method net/minecraft/nbt/NBTTagCompound/getTagList (Ljava/lang/String;I)Lnet/minecraft/nbt/NBTTagList;[4980,4990]::getTagList->func_150295_c
+Rename method net/minecraft/nbt/NBTTagList/tagCount ()I[5040,5048]::tagCount->func_74745_c
+Rename method net/minecraft/entity/Entity/isBeingRidden ()Z[5164,5177]::isBeingRidden->func_184207_aI
+Rename method net/minecraft/entity/Entity/getPassengers ()Ljava/util/List;[5227,5240]::getPassengers->func_184188_bt
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[5681,5686]::floor->func_76128_c
+Rename field net/minecraft/entity/Entity/posX[5701,5705]::posX->field_70165_t
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[5757,5762]::floor->func_76128_c
+Rename field net/minecraft/entity/Entity/posY[5777,5781]::posY->field_70163_u
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[5833,5838]::floor->func_76128_c
+Rename field net/minecraft/entity/Entity/posZ[5853,5857]::posZ->field_70161_v
+Rename method net/minecraft/entity/Entity/writeToNBTOptional (Lnet/minecraft/nbt/NBTTagCompound;)Z[5896,5914]::writeToNBTOptional->func_70039_c
+Rename method net/minecraft/entity/Entity/writeToNBTOptional (Lnet/minecraft/nbt/NBTTagCompound;)Z[6086,6104]::writeToNBTOptional->func_70039_c
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[6189,6198]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[6239,6248]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[6294,6303]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[6350,6359]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[6401,6410]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[6457,6466]::removeTag->func_82580_o
+Rename method net/minecraft/nbt/NBTTagList/appendTag (Lnet/minecraft/nbt/NBTBase;)V[6508,6517]::appendTag->func_74742_a
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[6617,6622]::floor->func_76128_c
+Rename field net/minecraft/entity/Entity/posX[6637,6641]::posX->field_70165_t
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[6689,6694]::floor->func_76128_c
+Rename field net/minecraft/entity/Entity/posY[6709,6713]::posY->field_70163_u
+Rename method net/minecraft/util/math/MathHelper/floor (D)I[6761,6766]::floor->func_76128_c
+Rename field net/minecraft/entity/Entity/posZ[6781,6785]::posZ->field_70161_v
+Rename field net/minecraft/entity/Entity/world[6890,6895]::world->field_70170_p
+Rename method net/minecraft/nbt/NBTTagCompound/removeTag (Ljava/lang/String;)V[7034,7043]::removeTag->func_82580_o
+Rename method net/minecraft/entity/Entity/getRidingEntity ()Lnet/minecraft/entity/Entity;[7288,7303]::getRidingEntity->func_184187_bx
+Rename method net/minecraft/entity/Entity/getRidingEntity ()Lnet/minecraft/entity/Entity;[7351,7366]::getRidingEntity->func_184187_bx
+Rename method net/minecraft/entity/Entity/setDead ()V[7368,7375]::setDead->func_70106_y
+Rename method net/minecraft/entity/Entity/setDead ()V[7462,7469]::setDead->func_70106_y
+Rename method net/minecraft/entity/player/EntityPlayer/sendStatusMessage (Lnet/minecraft/util/text/ITextComponent;Z)V[7528,7545]::sendStatusMessage->func_146105_b
+Rename method net/minecraft/nbt/NBTTagList/tagCount ()I[7689,7697]::tagCount->func_74745_c
+Rename method net/minecraft/world/IBlockAccess/isAirBlock (Lnet/minecraft/util/math/BlockPos;)Z[8136,8146]::isAirBlock->func_175623_d
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z[8246,8259]::setBlockState->func_175656_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[8288,8303]::getDefaultState->func_176223_P
+Rename method net/minecraft/nbt/NBTTagList/tagCount ()I[8437,8445]::tagCount->func_74745_c
+Rename method net/minecraft/nbt/NBTTagList/getCompoundTagAt (I)Lnet/minecraft/nbt/NBTTagCompound;[8492,8508]::getCompoundTagAt->func_150305_b
+Rename method net/minecraft/nbt/NBTBase/copy ()Lnet/minecraft/nbt/NBTBase;[8509,8513]::copy->func_74737_b
+Rename method net/minecraft/nbt/NBTTagList/tagCount ()I[8632,8640]::tagCount->func_74745_c
+Rename method net/minecraft/nbt/NBTTagList/tagCount ()I[8757,8765]::tagCount->func_74745_c
+Rename method net/minecraft/nbt/NBTTagList/appendTag (Lnet/minecraft/nbt/NBTBase;)V[8811,8820]::appendTag->func_74742_a
+Rename method net/minecraft/nbt/NBTTagList/getCompoundTagAt (I)Lnet/minecraft/nbt/NBTTagCompound;[8832,8848]::getCompoundTagAt->func_150305_b
+Rename method net/minecraft/nbt/NBTBase/copy ()Lnet/minecraft/nbt/NBTBase;[8849,8853]::copy->func_74737_b
+Rename method net/minecraft/nbt/NBTTagCompound/setTag (Ljava/lang/String;Lnet/minecraft/nbt/NBTBase;)V[8912,8918]::setTag->func_74782_a
+Rename method net/minecraft/world/World/setTileEntity (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/tileentity/TileEntity;)V[8997,9010]::setTileEntity->func_175690_a
+Import: com.chocolate.chocolateQuest.ChocolateQuest
+Import: com.chocolate.chocolateQuest.block.BlockMobSpawnerTileEntity
+Import: com.chocolate.chocolateQuest.entity.EntityHumanBase
+Import: com.chocolate.chocolateQuest.entity.npc.EntityGolemMecha
+Import: com.chocolate.chocolateQuest.items.mobControl.ItemMobToSpawner
+Import: net.minecraft.entity.Entity
+Import: net.minecraft.entity.player.EntityPlayer
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.nbt.NBTTagCompound
+Import: net.minecraft.nbt.NBTTagList
+Import: net.minecraft.util.math.BlockPos
+Import: net.minecraft.util.math.MathHelper
+Import: net.minecraft.util.text.TextComponentString
+Import: net.minecraft.util.text.TextFormatting
+Import: net.minecraft.world.World
+Import: org.spongepowered.asm.mixin.Mixin
+Import: org.spongepowered.asm.mixin.Pseudo
+Import: org.spongepowered.asm.mixin.Unique
+Import: org.spongepowered.asm.mixin.injection.At
+Import: org.spongepowered.asm.mixin.injection.Inject
+Import: org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable
+End  Processing: com/chocotweak/mixin/MixinItemMobToSpawnerMulti.java
 
 Start Processing: com/chocotweak/mixin/MixinItemStaffBaseAwakenings.java
 Import: com.chocolate.chocolateQuest.magic.Awakements

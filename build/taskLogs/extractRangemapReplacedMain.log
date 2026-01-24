@@ -2,7 +2,7 @@ Unsupposrted library path: C:\mywork\ChocoTweak\libs\README.md
 Unsupposrted library path: C:\mywork\ChocoTweak\build\classes\java\api
 Unsupposrted library path: C:\mywork\ChocoTweak\build\resources\api
 Symbol range map extraction starting
-Processing 186 files
+Processing 188 files
 startProcessing "com/chocotweak/ChocoTweak.java" md5: 783edb35a2152daf2368fcdd86688064
 endProcessing "com/chocotweak/ChocoTweak.java"
 
@@ -372,7 +372,7 @@ endProcessing "com/chocotweak/mixin/MixinDialogManagerEncoding.java"
 startProcessing "com/chocotweak/mixin/MixinEntityHumanBaseEasterEgg.java" md5: 19b8554dab9bbe2168f68aa849fafcdd
 endProcessing "com/chocotweak/mixin/MixinEntityHumanBaseEasterEgg.java"
 
-startProcessing "com/chocotweak/mixin/MixinEntityHumanBaseMount.java" md5: 0f568d01875a029a71b41a9d63a2279c
+startProcessing "com/chocotweak/mixin/MixinEntityHumanBaseMount.java" md5: fa9726355be3dd044a1f4d5f2974e4ce
 endProcessing "com/chocotweak/mixin/MixinEntityHumanBaseMount.java"
 
 startProcessing "com/chocotweak/mixin/MixinEntityHumanBaseXP.java" md5: f7120d332bd64d9135902e9d1762c19c
@@ -413,6 +413,12 @@ endProcessing "com/chocotweak/mixin/MixinGunDamage.java"
 
 startProcessing "com/chocotweak/mixin/MixinHelperDamageSource.java" md5: 6efe6a617ffe600fd855993787919210
 endProcessing "com/chocotweak/mixin/MixinHelperDamageSource.java"
+
+startProcessing "com/chocotweak/mixin/MixinIceAndFireDragon.java" md5: 2629b884ba24439298da81211df9b81a
+endProcessing "com/chocotweak/mixin/MixinIceAndFireDragon.java"
+
+startProcessing "com/chocotweak/mixin/MixinItemMobToSpawnerMulti.java" md5: e6f6932e18b572265a5a489997d0c7e5
+endProcessing "com/chocotweak/mixin/MixinItemMobToSpawnerMulti.java"
 
 startProcessing "com/chocotweak/mixin/MixinItemStaffBaseAwakenings.java" md5: 1c073a542d9b360d1c0801b286989b6b
 endProcessing "com/chocotweak/mixin/MixinItemStaffBaseAwakenings.java"

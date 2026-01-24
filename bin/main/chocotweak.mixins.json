@@ -42,7 +42,8 @@
         "MixinCommonProxyGui",
         "MixinEntityHumanBaseMount",
         "MixinItemStaffBaseAwakenings",
-        "MixinIceAndFireDragon"
+        "MixinIceAndFireDragon",
+        "MixinItemMobToSpawnerMulti"
     ],
     "client": [
         "MixinGuiAwakement",

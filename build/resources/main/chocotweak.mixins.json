@@ -41,7 +41,9 @@
         "MixinEntityHumanBaseEasterEgg",
         "MixinCommonProxyGui",
         "MixinEntityHumanBaseMount",
-        "MixinItemStaffBaseAwakenings"
+        "MixinItemStaffBaseAwakenings",
+        "MixinIceAndFireDragon",
+        "MixinItemMobToSpawnerMulti"
     ],
     "client": [
         "MixinGuiAwakement",
