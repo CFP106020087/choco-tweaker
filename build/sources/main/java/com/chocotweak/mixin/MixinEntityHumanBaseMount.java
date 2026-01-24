@@ -128,7 +128,7 @@ public abstract class MixinEntityHumanBaseMount {
      * 2. 没有其他骑手
      * 3. 马匹类 - 不需要驯服检查（CQ 在 setMountAI 中处理驯服）
      * 4. 其他生物 - 必须已驯服（有主人）
-     * 5. 支持：马、Lycanites Mobs、Ice and Fire、其他模组坐骑
+     * 5. 支持：马、Lycanites Mobs、Ice and Fire 龙、其他模组坐骑
      */
     @Unique
     private static boolean chocotweak$isUniversallyMountable(Entity entity) {
